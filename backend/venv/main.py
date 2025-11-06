@@ -248,6 +248,7 @@ def scrape_rbi() -> List[Document]:
         return []
 
 # Income Tax Scraper - Complete Extraction
+# Income Tax Scraper - Complete Extraction
 def scrape_income_tax() -> List[Document]:
     """Scrape Income Tax latest updates - ALL pages"""
     driver = None
@@ -265,27 +266,50 @@ def scrape_income_tax() -> List[Document]:
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
         driver.set_page_load_timeout(30)
+        driver.maximize_window()
         
+        print(f"  Loading website: {base_url}")
         driver.get(base_url)
         time.sleep(5)
         
         documents = []
         
         # Get total pages
-        page_source = driver.page_source
-        page_info = re.search(r'Page\s*\[\s*\d+\s+of\s+(\d+)\s*\]', page_source)
-        total_pages = int(page_info.group(1)) if page_info else 1
+        try:
+            page_source = driver.page_source
+            soup = BeautifulSoup(page_source, 'html.parser')
+            
+            page_info = soup.find(text=re.compile(r'Page\s*\[\s*\d+\s+of\s+\d+\s*\]'))
+            
+            if page_info:
+                match = re.search(r'of\s+(\d+)', page_info)
+                if match:
+                    total_pages = int(match.group(1))
+                else:
+                    all_text = soup.get_text()
+                    match = re.search(r'Page\s*\[\s*\d+\s+of\s+(\d+)\s*\]', all_text)
+                    total_pages = int(match.group(1)) if match else 1
+            else:
+                total_pages = 1
+            
+            print(f"  ✓ Detected total pages: {total_pages}")
+        except Exception as e:
+            print(f"  ⚠ Could not detect total pages, defaulting to 1: {e}")
+            total_pages = 1
         
-        print(f"  Found {total_pages} pages to scrape")
+        pdf_counter = 0
         
         # Process all pages
         for page_num in range(1, total_pages + 1):
+            print(f"  {'='*60}")
             print(f"  Processing page {page_num}/{total_pages}...")
+            print(f"  {'='*60}")
             
             page_html = driver.page_source
             soup = BeautifulSoup(page_html, 'html.parser')
             
             news_rows = soup.find_all('div', class_='news-rows')
+            print(f"  ✓ Found {len(news_rows)} items on page {page_num}")
             
             for row in news_rows:
                 try:
@@ -302,35 +326,60 @@ def scrape_income_tax() -> List[Document]:
                     date_elem = row.find('span', id=re.compile('publishDt'))
                     date = date_elem.get_text(strip=True) if date_elem else None
                     
-                    # Extract PDF URL
+                    # Extract PDF URL from onclick attribute
                     onclick = title_link.get('onclick', '')
                     url_match = re.search(r"'(https://[^']+\.pdf)", onclick)
                     
                     if url_match:
                         pdf_url = url_match.group(1)
+                        pdf_counter += 1
+                        
+                        print(f"    [{pdf_counter}] Downloading: {title[:60]}...")
                         
                         # Extract PDF content
                         content = title
                         description = title[:200]
+                        
                         try:
-                            pdf_response = session.get(pdf_url, timeout=30)
-                            pdf_response.raise_for_status()
+                            # Download PDF with retries
+                            max_retries = 3
+                            pdf_content = None
                             
-                            pdf_file = io.BytesIO(pdf_response.content)
-                            pdf_reader = PyPDF2.PdfReader(pdf_file)
+                            for attempt in range(max_retries):
+                                try:
+                                    pdf_response = session.get(pdf_url, timeout=60)
+                                    pdf_response.raise_for_status()
+                                    pdf_content = pdf_response.content
+                                    break
+                                except Exception as e:
+                                    if attempt < max_retries - 1:
+                                        print(f"      Retry {attempt + 1}/{max_retries}...")
+                                        time.sleep(2)
+                                    else:
+                                        raise e
                             
-                            text_content = []
-                            for page_idx in range(len(pdf_reader.pages)):
-                                page = pdf_reader.pages[page_idx]
-                                page_text = page.extract_text()
-                                text_content.append(page_text)
+                            if pdf_content:
+                                # Extract text from PDF
+                                pdf_file = io.BytesIO(pdf_content)
+                                pdf_reader = PyPDF2.PdfReader(pdf_file)
+                                
+                                text_content = []
+                                for page_idx in range(len(pdf_reader.pages)):
+                                    page = pdf_reader.pages[page_idx]
+                                    page_text = page.extract_text()
+                                    text_content.append(f"--- Page {page_idx + 1} ---\n{page_text}\n")
+                                
+                                content = "\n".join(text_content)
+                                description = content[:200] if content else title[:200]
+                                
+                                print(f"      ✓ Extracted PDF text ({len(content)} chars)")
                             
-                            content = "\n".join(text_content)
-                            description = content[:200] if content else title[:200]
+                            time.sleep(1)  # Rate limiting
                             
-                            time.sleep(0.5)
                         except Exception as e:
-                            print(f"    Error extracting PDF: {e}")
+                            print(f"      ⚠ Error extracting PDF: {e}")
+                            content = title
+                            description = title[:200]
                         
                         documents.append(Document(
                             id=str(uuid.uuid4()),
@@ -344,35 +393,52 @@ def scrape_income_tax() -> List[Document]:
                         ))
                         
                 except Exception as e:
-                    print(f"    Error processing Income Tax row: {e}")
+                    print(f"      ✗ Error processing Income Tax row: {e}")
                     continue
             
-            # Navigate to next page
+            print(f"  ✓ Completed page {page_num}")
+            
+            # Navigate to next page (if not the last page)
             if page_num < total_pages:
                 try:
+                    print(f"  Navigating to page {page_num + 1}...")
                     next_button = driver.find_element(By.CSS_SELECTOR, "input[id*='imgbtnNext']")
+                    
                     if next_button.is_enabled():
                         driver.execute_script("arguments[0].scrollIntoView(true);", next_button)
                         time.sleep(1)
                         next_button.click()
                         time.sleep(3)
+                        
+                        # Wait for news rows to be present
                         WebDriverWait(driver, 10).until(
                             EC.presence_of_element_located((By.CLASS_NAME, "news-rows"))
                         )
+                        print(f"  ✓ Successfully navigated to page {page_num + 1}")
+                    else:
+                        print(f"  Next button is disabled (last page reached)")
+                        break
+                        
                 except Exception as e:
-                    print(f"    Error navigating to next page: {e}")
+                    print(f"  ✗ Error navigating to next page: {e}")
                     break
+                
+                time.sleep(2)
         
         print(f"✓ Income Tax: Found {len(documents)} documents")
         return documents
         
     except Exception as e:
         print(f"✗ Income Tax scraping error: {e}")
+        import traceback
+        traceback.print_exc()
         return []
     finally:
         if driver:
+            print("  Closing browser...")
             driver.quit()
 
+# GST Council Scraper - Complete Extraction
 # GST Council Scraper - Complete Extraction
 def scrape_gst_council() -> List[Document]:
     """Scrape GST Council press releases - ALL pages"""
@@ -381,90 +447,104 @@ def scrape_gst_council() -> List[Document]:
         base_url = "https://gstcouncil.gov.in/press-release"
         
         documents = []
-        page_num = 0
         
-        # Scrape all pages until no more data
-        while True:
+        # Determine total pages by checking pagination or use a safe maximum
+        total_pages = 9  # Based on the website structure, adjust if needed
+        
+        print(f"  Will scrape {total_pages} pages")
+        
+        # Scrape all pages
+        for page_num in range(total_pages):
             url = f"{base_url}?page={page_num}"
-            print(f"  Fetching page {page_num + 1}...")
+            print(f"  Fetching page {page_num + 1}/{total_pages}...")
             
-            response = session.get(url, timeout=30, headers={
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            })
-            response.raise_for_status()
-            
-            soup = BeautifulSoup(response.content, 'html.parser')
-            rows = soup.find_all('tr')
-            
-            page_documents = 0
-            
-            for row in rows:
-                link_tag = row.find('a', href=lambda x: x and x.endswith('.pdf'))
-                if link_tag:
-                    href = link_tag.get('href')
-                    title = link_tag.get_text(strip=True)
-                    
-                    # Get date
-                    date_cell = row.find('td', class_='views-field-field-date-of-uploading')
-                    date = date_cell.get_text(strip=True) if date_cell else None
-                    
-                    # Handle relative URLs
-                    if href.startswith('/'):
-                        parsed = urlparse(base_url)
-                        full_url = f"{parsed.scheme}://{parsed.netloc}{href}"
-                    else:
-                        full_url = href
-                    
-                    # Extract PDF content
-                    content = title
-                    description = title[:200]
-                    try:
-                        pdf_response = session.get(full_url, timeout=30)
-                        pdf_response.raise_for_status()
+            try:
+                response = session.get(url, timeout=30, headers={
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                })
+                response.raise_for_status()
+                
+                soup = BeautifulSoup(response.content, 'html.parser')
+                rows = soup.find_all('tr')
+                
+                page_documents = 0
+                
+                for row in rows:
+                    link_tag = row.find('a', href=lambda x: x and x.endswith('.pdf'))
+                    if link_tag:
+                        href = link_tag.get('href')
+                        title = link_tag.get_text(strip=True)
                         
-                        pdf_file = io.BytesIO(pdf_response.content)
-                        pdf_reader = PyPDF2.PdfReader(pdf_file)
+                        # Get date
+                        date_cell = row.find('td', class_='views-field-field-date-of-uploading')
+                        date = date_cell.get_text(strip=True) if date_cell else None
                         
-                        text_content = []
-                        for page_idx in range(len(pdf_reader.pages)):
-                            page = pdf_reader.pages[page_idx]
-                            page_text = page.extract_text()
-                            text_content.append(page_text)
+                        # Handle relative URLs
+                        if href.startswith('/'):
+                            parsed = urlparse(base_url)
+                            full_url = f"{parsed.scheme}://{parsed.netloc}{href}"
+                        else:
+                            full_url = href
                         
-                        content = "\n".join(text_content)
-                        description = content[:200] if content else title[:200]
+                        # Extract PDF content
+                        content = title
+                        description = title[:200]
                         
-                        time.sleep(0.5)
-                    except Exception as e:
-                        print(f"    Error extracting GST PDF: {e}")
-                    
-                    documents.append(Document(
-                        id=str(uuid.uuid4()),
-                        website="gstcouncil.gov.in",
-                        title=title,
-                        description=description,
-                        link=full_url,
-                        content=content,
-                        date=date,
-                        scraped_at=datetime.now().isoformat()
-                    ))
-                    
-                    page_documents += 1
-            
-            # If no documents found on this page, we've reached the end
-            if page_documents == 0:
-                print(f"  No more documents found. Stopping at page {page_num + 1}")
-                break
-            
-            print(f"  Found {page_documents} documents on page {page_num + 1}")
-            page_num += 1
-            time.sleep(1)
+                        try:
+                            print(f"    Downloading: {title[:60]}...")
+                            pdf_response = session.get(full_url, timeout=60)
+                            pdf_response.raise_for_status()
+                            
+                            pdf_file = io.BytesIO(pdf_response.content)
+                            pdf_reader = PyPDF2.PdfReader(pdf_file)
+                            
+                            text_content = []
+                            for page_idx in range(len(pdf_reader.pages)):
+                                page = pdf_reader.pages[page_idx]
+                                page_text = page.extract_text()
+                                text_content.append(page_text)
+                            
+                            content = "\n\n".join(text_content)
+                            description = content[:200] if content else title[:200]
+                            
+                            print(f"      ✓ Extracted PDF text ({len(content)} chars)")
+                            
+                            time.sleep(1)  # Rate limiting after each PDF
+                            
+                        except Exception as e:
+                            print(f"      ⚠ Error extracting GST PDF: {e}")
+                            content = title
+                            description = title[:200]
+                        
+                        documents.append(Document(
+                            id=str(uuid.uuid4()),
+                            website="gstcouncil.gov.in",
+                            title=title,
+                            description=description,
+                            link=full_url,
+                            content=content,
+                            date=date,
+                            scraped_at=datetime.now().isoformat()
+                        ))
+                        
+                        page_documents += 1
+                
+                print(f"  ✓ Found {page_documents} documents on page {page_num + 1}")
+                
+                # Small delay between pages
+                time.sleep(2)
+                
+            except Exception as e:
+                print(f"  ⚠ Error fetching page {page_num + 1}: {e}")
+                continue
         
         print(f"✓ GST Council: Found {len(documents)} documents")
         return documents
         
     except Exception as e:
         print(f"✗ GST Council scraping error: {e}")
+        import traceback
+        traceback.print_exc()
         return []
 
 @app.get("/")
@@ -558,6 +638,51 @@ async def clear_documents():
         return {"message": f"Deleted {result.deleted_count} documents"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to clear documents: {str(e)}")
+# Add this new endpoint after the existing /documents endpoint
+
+@app.post("/documents/filter")
+async def get_filtered_documents(request: ScrapeRequest, limit: int = 1000, skip: int = 0):
+    """Get documents from MongoDB filtered by sources"""
+    if collection is None:
+        raise HTTPException(status_code=500, detail="MongoDB is not connected")
+    
+    if not request.sources:
+        raise HTTPException(status_code=400, detail="At least one source must be selected")
+    
+    try:
+        # Map source names to website domains
+        source_map = {
+            "RBI": "rbi.org.in",
+            "Income Tax": "incometaxindia.gov.in",
+            "GST Council": "gstcouncil.gov.in"
+        }
+        
+        # Create list of website domains to filter by
+        website_filters = [source_map[source] for source in request.sources if source in source_map]
+        
+        # Build MongoDB query
+        query = {"website": {"$in": website_filters}}
+        
+        # Fetch filtered documents
+        cursor = collection.find(query).skip(skip).limit(limit).sort("scraped_at", -1)
+        documents = await cursor.to_list(length=limit)
+        
+        # Convert ObjectId to string
+        for doc in documents:
+            doc['_id'] = str(doc['_id'])
+        
+        # Get total count for filtered results
+        total = await collection.count_documents(query)
+        
+        return {
+            "documents": documents,
+            "total": total,
+            "limit": limit,
+            "skip": skip,
+            "sources": request.sources
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to fetch filtered documents: {str(e)}")
 
 @app.on_event("shutdown")
 async def shutdown_event():
