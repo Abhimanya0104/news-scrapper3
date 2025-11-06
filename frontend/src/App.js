@@ -4,12 +4,10 @@ import './App.css';
 export default function App() {
   const [selectedSources, setSelectedSources] = useState([]);
   const [documents, setDocuments] = useState([]);
-  const [savedDocuments, setSavedDocuments] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [loadingDB, setLoadingDB] = useState(false);
+  const [loadingDisplay, setLoadingDisplay] = useState(false);
   const [error, setError] = useState('');
-  const [scraped, setScraped] = useState(false);
-  const [showSaved, setShowSaved] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
   const [totalInDB, setTotalInDB] = useState(0);
 
   const sources = [
@@ -26,7 +24,8 @@ export default function App() {
     );
   };
 
-  const handleScrape = async () => {
+  // Function to scrape and save to DB only (no display)
+  const handleScrapeAndSave = async () => {
     if (selectedSources.length === 0) {
       setError('Please select at least one source');
       return;
@@ -34,9 +33,7 @@ export default function App() {
 
     setLoading(true);
     setError('');
-    setDocuments([]);
-    setScraped(false);
-    setShowSaved(false);
+    setSuccessMessage('');
 
     try {
       const response = await fetch('http://localhost:8000/scrape', {
@@ -54,32 +51,71 @@ export default function App() {
       }
 
       const data = await response.json();
-      setDocuments(data.documents);
-      setScraped(true);
+      setSuccessMessage(`Successfully scraped and saved ${data.total} documents to database!`);
       
-      // Refresh saved documents count
-      fetchSavedDocuments();
+      // Update the total count
+      fetchTotalCount();
     } catch (err) {
-      setError('Failed to fetch documents. Please ensure the backend and MongoDB are running.');
+      setError('Failed to scrape and save documents. Please ensure the backend and MongoDB are running.');
       console.error(err);
     } finally {
       setLoading(false);
     }
   };
 
-  const fetchSavedDocuments = async () => {
-    setLoadingDB(true);
+  // UPDATED: Function to display documents from DB with filtering
+  const handleDisplayFromDB = async () => {
+    if (selectedSources.length === 0) {
+      setError('Please select at least one source to display documents');
+      return;
+    }
+
+    setLoadingDisplay(true);
+    setError('');
+    setSuccessMessage('');
+
     try {
-      const response = await fetch('http://localhost:8000/documents?limit=100');
+      // Use the new filter endpoint
+      const response = await fetch('http://localhost:8000/documents/filter?limit=1000', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          sources: selectedSources
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch documents from database');
+      }
+
+      const data = await response.json();
+      setDocuments(data.documents);
+      
+      if (data.documents.length === 0) {
+        setError(`No documents found for selected sources: ${selectedSources.join(', ')}`);
+      } else {
+        setSuccessMessage(`Displaying ${data.documents.length} documents from ${selectedSources.join(', ')}`);
+      }
+    } catch (err) {
+      setError('Failed to fetch documents from database. Please ensure MongoDB is running.');
+      console.error(err);
+    } finally {
+      setLoadingDisplay(false);
+    }
+  };
+
+  // Fetch only the total count
+  const fetchTotalCount = async () => {
+    try {
+      const response = await fetch('http://localhost:8000/documents?limit=1');
       if (response.ok) {
         const data = await response.json();
-        setSavedDocuments(data.documents);
         setTotalInDB(data.total);
       }
     } catch (err) {
-      console.error('Error fetching saved documents:', err);
-    } finally {
-      setLoadingDB(false);
+      console.error('Error fetching total count:', err);
     }
   };
 
@@ -93,18 +129,18 @@ export default function App() {
         method: 'DELETE'
       });
       if (response.ok) {
-        setSavedDocuments([]);
+        setDocuments([]);
         setTotalInDB(0);
-        alert('Database cleared successfully');
+        setSuccessMessage('Database cleared successfully');
       }
     } catch (err) {
-      alert('Failed to clear database');
+      setError('Failed to clear database');
       console.error(err);
     }
   };
 
   useEffect(() => {
-    fetchSavedDocuments();
+    fetchTotalCount();
   }, []);
 
   return (
@@ -112,8 +148,7 @@ export default function App() {
       <div className="content">
         {/* Header */}
         <div className="header">
-          
-          
+          <h1>Government News Scraper</h1>
         </div>
 
         {/* Database Info */}
@@ -123,11 +158,8 @@ export default function App() {
             <span className="db-value">{totalInDB}</span>
           </div>
           <div className="db-actions">
-            <button onClick={fetchSavedDocuments} className="btn-secondary" disabled={loadingDB}>
-              {loadingDB ? 'Loading...' : 'Refresh'}
-            </button>
-            <button onClick={() => setShowSaved(!showSaved)} className="btn-secondary">
-              {showSaved ? 'Hide Saved' : 'View Saved'}
+            <button onClick={fetchTotalCount} className="btn-secondary">
+              Refresh Count
             </button>
             <button onClick={clearDatabase} className="btn-danger">
               Clear DB
@@ -153,16 +185,68 @@ export default function App() {
             </div>
           </div>
 
-          {/* Scrape Button */}
-          <div className="section">
-            <button
-              onClick={handleScrape}
-              disabled={loading}
-              className={`scrape-button-full ${loading ? 'scrape-button-disabled' : ''}`}
-            >
-              {loading ? 'Scraping and Saving to Database...' : 'Scrape & Save to MongoDB'}
-            </button>
-          </div>
+         {/* Two Separate Buttons */}
+            <div style={{ marginTop: "1.5rem" }}>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+
+                <button
+                  onClick={handleScrapeAndSave}
+                  disabled={loading}
+                  style={{
+                    flex: 1,
+                    minWidth: '200px',
+                    padding: "12px 18px",
+                    backgroundColor: loading ? "#9ca3af" : "#2563eb",
+                    border: "none",
+                    borderRadius: "6px",
+                    cursor: loading ? "not-allowed" : "pointer",
+                    color: "white",
+                    fontWeight: "600",
+                    fontSize: "15px",
+                    transition: "0.3s",
+                  }}
+                >
+                  {loading ? 'Scraping & Saving...' : 'Scrape & Save to MongoDB'}
+                </button>
+
+                <button
+                  onClick={handleDisplayFromDB}
+                  disabled={loadingDisplay}
+                  style={{
+                    flex: 1,
+                    minWidth: '200px',
+                    padding: "12px 18px",
+                    backgroundColor: loadingDisplay ? "#9ca3af" : "#10b981",
+                    border: "none",
+                    borderRadius: "6px",
+                    cursor: loadingDisplay ? "not-allowed" : "pointer",
+                    color: "white",
+                    fontWeight: "600",
+                    fontSize: "15px",
+                    transition: "0.3s",
+                  }}
+                >
+                  {loadingDisplay ? 'Loading...' : 'Display Documents from DB'}
+                </button>
+
+              </div>
+            </div>
+
+          {/* Success Message */}
+          {successMessage && (
+            <div className="success-box" style={{
+              backgroundColor: '#d1fae5',
+              border: '1px solid #10b981',
+              borderRadius: '8px',
+              padding: '1rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}>
+              <span style={{ fontSize: '1.5rem' }}>✓</span>
+              <p style={{ margin: 0, color: '#065f46' }}>{successMessage}</p>
+            </div>
+          )}
 
           {/* Error Message */}
           {error && (
@@ -173,119 +257,55 @@ export default function App() {
           )}
         </div>
 
-        {/* Show Saved Documents */}
-        {showSaved && (
+        {/* Display Documents */}
+        {documents.length > 0 && (
           <div className="results-panel">
             <div className="results-header">
-              <h2 className="results-title">Saved Documents (Database)</h2>
-              <span className="results-count">{savedDocuments.length} documents</span>
+              <h2 className="results-title">Documents from Database</h2>
+              <span className="results-count">{documents.length} documents</span>
             </div>
 
-            {savedDocuments.length === 0 ? (
-              <div className="no-results">
-                <p>No documents in database yet</p>
-              </div>
-            ) : (
-              <div className="articles-grid">
-                {savedDocuments.map((doc, idx) => (
-                  <div key={idx} className="article-card">
-                    <div className="source-badge">
-                      {doc.website}
-                    </div>
-                    
-                    <h3 className="article-title">
-                      {doc.title}
-                    </h3>
-                    
-                    {doc.description && (
-                      <p className="article-description">
-                        {doc.description.length > 150 
-                          ? doc.description.substring(0, 150) + '...'
-                          : doc.description
-                        }
-                      </p>
-                    )}
-
-                    {doc.date && (
-                      <p className="article-date">
-                        Date: {doc.date}
-                      </p>
-                    )}
-
-                    <div className="article-content-preview">
-                      {doc.content.substring(0, 200)}...
-                    </div>
-                    
-                    <a
-                      href={doc.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="article-link"
-                    >
-                      View Document →
-                    </a>
+            <div className="articles-grid">
+              {documents.map((doc, idx) => (
+                <div key={idx} className="article-card">
+                  <div className="source-badge">
+                    {doc.website}
                   </div>
-                ))}
-              </div>
-            )}
-          </div>
-        )}
+                  
+                  <h3 className="article-title">
+                    {doc.title}
+                  </h3>
+                  
+                  {doc.description && (
+                    <p className="article-description">
+                      {doc.description.length > 150 
+                        ? doc.description.substring(0, 150) + '...'
+                        : doc.description
+                      }
+                    </p>
+                  )}
 
-        {/* Results from Latest Scrape */}
-        {scraped && !showSaved && (
-          <div className="results-panel">
-            <div className="results-header">
-              <h2 className="results-title">Latest Scrape Results</h2>
-              <span className="results-count">{documents.length} documents found & saved</span>
+                  {doc.date && (
+                    <p className="article-date">
+                      Date: {doc.date}
+                    </p>
+                  )}
+
+                  <div className="article-content-preview">
+                    {doc.content.substring(0, 200)}...
+                  </div>
+                  
+                  <a
+                    href={doc.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="article-link"
+                  >
+                    View Document →
+                  </a>
+                </div>
+              ))}
             </div>
-
-            {documents.length === 0 ? (
-              <div className="no-results">
-                <p>No documents found</p>
-              </div>
-            ) : (
-              <div className="articles-grid">
-                {documents.map((doc, idx) => (
-                  <div key={idx} className="article-card">
-                    <div className="source-badge">
-                      {doc.website}
-                    </div>
-                    
-                    <h3 className="article-title">
-                      {doc.title}
-                    </h3>
-                    
-                    {doc.description && (
-                      <p className="article-description">
-                        {doc.description.length > 150 
-                          ? doc.description.substring(0, 150) + '...'
-                          : doc.description
-                        }
-                      </p>
-                    )}
-
-                    {doc.date && (
-                      <p className="article-date">
-                        Date: {doc.date}
-                      </p>
-                    )}
-
-                    <div className="article-content-preview">
-                      {doc.content.substring(0, 200)}...
-                    </div>
-                    
-                    <a
-                      href={doc.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="article-link"
-                    >
-                      View Document →
-                    </a>
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
         )}
       </div>
