@@ -1,0 +1,49 @@
+Source Page: 7
+PDF Index: 58
+Title: ​Order under section 138(1)(a) of the Income-tax Act, 1961
+Date: 27 March 2024
+URL: https://incometaxindia.gov.in/Lists/Latest%20News/Attachments/653/Order-under-section-138-MiscComm-27-3-2024.pdf
+================================================================================
+
+--- Page 1 ---
+F. No. 22S/196/2023-ITA.II 
+Government of India 
+Ministry of Finance 
+Department of Revenue 
+Central Board of Direct Taxes 
+***** 
+New Delhi, the 27th March, 2024 
+Order under section 138(1)(a) of the Income-tax Act, 1961 
+Central Board of Direct Taxes, in exercise of powers conferred under clause (a) of sub­
+section (1) of section 13 8 oflncome-tax Act, 1961 ('the Act'), hereby directs that Director 
+General of Income-tax (Systems), Delhi shall be the specified authority for furnishing 
+information to Principal Secretary, Planning Department, Government of Uttar 
+Pradesh as notified by Notification No. 35/2024 dated 22.03.2024 for the purposes of said 
+clause. 
+2. The mechanism of sharing of information shall be as under: 
+1. Government of Uttar Pradesh shall furnish the PAN ofthe relevant set of citizens 
+along with the Assessment Year(s) to DGIT (Systems) , Delhi. 
+11. DGIT (Systems) , Delhi shall furnish the response to Government of Uttar Pradesh in 
+the form of flag "Yes/No/Not Available" based on the income-tax payer status of the 
+shared PAN and Assessment Year(s). 
+iii. The frequency of furnishing such response shall be decided by the DGIT (Systems), 
+Delhi in consultation with the requesting Government . 
+IV. Mode of exchange of information shall be through API. 
+3. To facilitate the process of furnishing information, Director General of Income-tax 
+(Systems), Delhi would enter into a Memorandum of Understanding ('MoU') with Notified 
+Authority of Government of Uttar Pradesh, which inter alia would include the mode of transfer 
+of data, maintenance of confidentiality , mechanism for safe preservation of data, weeding out 
+after usage, etc. The timeline for furnishing information shall also be decided by Director 
+General ofIncome-tax (Systems) , Delhi in consultation with the notified authority and included 
+in the said Mo U. 
+4. A copy ofMoU shall be forwarded to this Division for record purposes . 
+Copy forwarded to: (Dr. cast~Aa~prakash T.) 
+Under Secretary to the Government of India 
+I. PPS to FMlDir (FMO)/OSD TO MoS (R)IPPS to RSIPPS to chairman, CBDT and all 
+Members , CBDT 
+2. Principal Secretary , Planning Department, Government of Uttar Pradesh 
+3. DGIT (Systems) , New Delhi 
+4. All Pro CCsITIDGsIT for kind information 
+6. Guard File oJ, ~ Web Manager , for placing on the website wWW .incometaxindia.gO ~Vi z8 ~ 
+(Dr. 5'str ayap aka h T.) 
+Under Secretary to the Go ernment ofIndia 

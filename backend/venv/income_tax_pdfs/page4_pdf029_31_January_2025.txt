@@ -1,0 +1,68 @@
+Source Page: 4
+PDF Index: 29
+Title: Order under section 138(1)(a) of the Income-tax Act, 1961​
+Date: 31 January 2025
+URL: https://incometaxindia.gov.in/Lists/Latest%20News/Attachments/695/Order-under-section-138-1-a-of-the-Income-tax-Act-1961.pdf
+================================================================================
+
+--- Page 1 ---
+F.N 0.225/235/20241IT A-II 
+Government of India 
+Ministry of Finance 
+Department of Revenue 
+Central Board of Direct Taxes 
+***** 
+New Delhi, the 31st January, 2025 
+Order under section 138(1)(a) of the Income-tax Act, 1961 
+Central Board of Direct Taxes, in exercise of powers conferred under clause (a) of 
+sub-section (1) of section 13 8 of Income-tax Act, 1961 ('the Act'), hereby directs that 
+Director General of Income-tax (Systems), New Delhi shall be the specified authority for 
+furnishing information to Joint Secretary to Government of India, Department of Food 
+and Public Distribution (DFPD), Ministry of Consumer Affairs, Food & Public 
+Distribution as notified by Notification No . 12/2025 (S.O.: 524(E) ) dated 30.01.2025 for the 
+purposes of the said clause in connection with sharing of information regarding Income-tax 
+payers' for identifying eligible beneficiaries under the Pradhan Mantri Garib Kalyan Anna 
+Yojana (PMGKA Y). 
+2. The mechanism of sharing of information shall be as under: 
+(i) Department of Food and Public Distribution (DFPD) shall furnish the Aadhaar 
+Number(s) or PAN(s) along with the Assessment Year(s) to DGlT (Systems) , New Delhi. 
+(ii) If the PAN is provided or the provided Aadhaar is linked with PAN, DGlT (Systems), 
+New Delhi shall furnish the response to Department of Food and Public distribution 
+(DFPD) in the form of flag "Yes/No/Not Available " in respect of the threshold 'income 
+level of the shared Aadhaar Number(s}/ PAN(s) and Assessment Year(s) as per the lTD 
+database. 
+(iii) If the provided Aadhaar Number is not linked with any PAN in the lTD database, 
+DGlT(Systems), New Delhi shall furnish the response to Department of Food and Public 
+Distribution (DFP D) in the form of flag 'Information cannot be made available due to 
+absence of PAN-Aadhaar linkage'. 
+(iv) The frequency of furnishing such response and Mode of exchange of information 
+shall be decided by the DGlT (Systems) , New Delhi in consultation with the requesting 
+Department. 
+3. To facilitate the process of furnishing information, Director General of Income-tax 
+(Systems) , New Delhi shall enter into a Memorandum of Understanding ('MoV') with 
+notified authority of Department of Food and Public Distribution , which inter alia shall 
+include the mode of transfer of data, maintenance of confidentiality, mechanism for safe 
+preservation of data, weeding out after usage, etc. The time line for furnishing information 
+shall also be decided by Director General of Income-tax (Systems), New Delhi in 
+consultation with the notified authority and included in the said MoU. 
+Page 1 of 2 
+
+--- Page 2 ---
+4. A copy ofMoU shall be forwarded to this Division for record purposes. 
+/ 
+(Dr. casfrJ1ayaprakash.T) 
+Under Secretary to the Government of India 
+Encl: as above. 
+Copy to: 
+1. PPS to FM! OSD to MoS (R) 
+2. PPS to RS/ PPS to Chairman, CBDT and all Members, CBDT 
+3. Secretary to Government of India, Department of Food and Public Distribution , 
+Ministry of Consumer Affairs, Food & Public Distribution. 
+4. DGIT (Systems), New Delhi 
+5. All Pr. CCsITlDsGIT for kind information 
+6. ITCC Division, Central Board of Direct Taxes 
+~Web Manager, for placing on the website www.incometaxindia.gov.in 
+'T.*,~~ 
+(Dr. Castro ityaprakash.T) 8. Guard File 
+Under Secretary to the Government ofIndia 
+Page 2 of 2 

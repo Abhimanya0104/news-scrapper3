@@ -1,0 +1,166 @@
+Source Page: 11
+PDF Index: 93
+Title: ​Inviting comments on the draft rule 11UA for implementing the amendment made by the Finance Act, 2023
+Date: 26 May 2023
+URL: https://incometaxindia.gov.in/Lists/Latest%20News/Attachments/584/11UA-Public-Comments.pdf
+================================================================================
+
+--- Page 1 ---
+F. No. 370142/9/2023-TPL(part-I) 
+Government of India 
+Ministry of Finance 
+Department of Revenue 
+Central Board of Direct Taxes 
+**** 
+New Delhi, dated the 26th of May 2023 
+Subject: Inviting comments on the draft rule llUA for implementing the amendment 
+made by the Finance Act, 2023-reg. 
+Clause (viib) of sub-section (2) of section 56 of the Income-tax Act, 1961 (the Act), 
+prior to amendment vide Finance Act 2023, inter alia, provided that where a company, not 
+being a company in which the public are substantially interested, receives, in any previous 
+year, from any person being a resident, any consideration for issue of shares that exceeds the 
+fair market value of the shares, it shall be chargeable to income-tax under the head 'Income 
+from other sources'. Rule II UA of the Income-tax Rules, 1962 (the Rules) provides the 
+method for computation of the fair market value of unquoted equity shares for the purposes 
+of the Clause (viib) of sub-section (2) of section 56 of the Act. 
+2. In the Finance Act, 2023, an amendment was introduced in this provision to bring the 
+consideration received from non-residents within the ambit of Clause (viib) of sub-section (2) 
+of section 56 of the Income-tax Act, 1961. 
+3. As a result of the above amendment, representations were received from various 
+stakeholders raising their concerns that genuine non-resident investors may have to face 
+undue hardship in matters related to valuation of shares etc. In view of this, rule II UA of the 
+Rules is proposed to be amended . 
+4. The draft notification with proposed amendment to rule II UA of the Rules is 
+enclosed. It is requested that all the stakeholders as well as the general public may provide 
+suggestions / comments on the same and send them at the email address ustpI2@nic.in latest 
+by 5th June, 2023. 
+Enclosed: As above 
+(Amrit Pritom Chetia) 
+Under Secretary (TPL-II) 
+Tel: 011-2309 5469 
+Email: ustpI2@nic.in 
+
+--- Page 2 ---
+[TO BE PUBLISHED IN THE GAZETTE OF INDIA, EXTRAORDINARY, PART II, 
+SECTION 3, SUB-SECTION (i)l 
+MINISTRY OF FINANCE 
+DEPARTMENT OF REVENUE 
+CENTRAL BOARD OF DIRECT TAXES 
+Notification 
+New Delhi, ..... May, 2023 
+Income-tax 
+G.S.R. (E).-In exercise of the powers conferred by sub-clause (i) of clause (a) of the 
+Explanation to clause (viib) of sub-section (2) of section 56 read with section 295 of 
+the Income-tax Act, 1961 (43 of 1961), the Central Government hereby makes the 
+following rules further to amend the Income-ta x Rules, 1962, namely:-
+1. Short title and commencement: -(I) These rules may be called the Income tax 
+...... (Amendment) , Rules, 2023. 
+(2) They shall come into force from the date of publication of the notification in the 
+Official Gazette. 
+2. In the Income-tax Rules, 1962, in rule II UA,-
+(i) For sub-rule (2), the following sub-rule shall be substituted, namely:-
+" (2) Notwithstanding anything contained in sub-clause (b) of clause (c) of sub­
+rule (I), the fair market value of un quoted equity shares for the purposes of sub­
+clause (i) of clause (a) of the Explanation to clause (viib) of sub-section (2) of 
+section 56 shall be the value, on the valuation date, of such unquoted equity 
+shares as determined in the following manner :-
+(i) under clause (a) or clause (b) or clause(c) or clause (e), at the option of the 
+assessee, where the consideration received by the assessee is from a resident; 
+and 
+
+--- Page 3 ---
+(ii) under clause (a), clause (b) ,clause (c), clause (d) or clause (e) at the 
+option of the assessee, where the consideration received by the assessee is from 
+a non-resident , namely:-
+(a)the fair market value of un quoted equity shares =(A-L)x [PV/PEl. 
+where, 
+A book value of the assets in the balance-sheet as reduced by any 
+amount of tax paid as deduction or collection at source or as advance tax 
+payment as reduced by the amount of tax claimed as refund under the Income­
+tax Act and any amount shown in the balance-sheet as asset including the 
+unamortised amount of deferred expenditure which does not represent the value 
+of any asset; 
+L = book value of liabilities shown in the balance-sheet, but not 
+including the following amounts, namely:-
+(i) the paid-up capital in respect of equity shares; 
+(ii) the amount set apart for payment of dividends on preference shares and 
+equity shares where such dividends have not been declared before the date of 
+transfer at a general body meeting of the company; 
+(iii) reserves and surplus, by whatever name called, even if the resulting 
+figure is negative, other than those set apart towards depreciation; 
+(iv) any amount representing provision for taxation, other than amount of tax 
+paid as deduction or collection at source or as advance tax payment as reduced 
+by the amount of tax claimed as refund under the Income-tax Act, to the extent 
+of the excess over the tax payable with reference to the book profits in 
+accordance with the law applicable thereto; 
+(v) any amount representing provIsions made for meeting 
+liabilities, other than ascertained liabilities; 
+
+--- Page 4 ---
+(vi) any amount representing contingent liabilities other than arrears 
+of dividends payable in respect of cumulative preference shares; 
+PE 
+balance-sheet; 
+PY 
+(b) total amount of paid up equity share capital as shown in the 
+the paid up value of such equity shares; or 
+the fair market value of the un quoted equity shares determined 
+by a merchant banker as per the Discounted Free Cash Flow method. 
+(c) where any consideration is received by a venture capital undertaking for 
+issue of shares, from a venture capital fund or a venture capital company or a 
+specified fund, the price of the equity shares corresponding to such 
+consideration may, at the option of such undertaking , be taken as the fair market 
+value of the equity shares to the extent the consideration from such fair market 
+value does not exceed the aggregate consideration that is received from a 
+venture capital fund or a venture capital company or a specified fund; 
+Provided that the consideration has been received by the undertaking from a 
+venture capital fund or a venture capital company or a specified fund, within a 
+period of ninety days of the date of issue of shares which are the subject matter 
+of valuation. 
+Explanation: for the purposes of this clause, "venture capital undertaking", 
+"venture capital fund" , "venture capital company " and "specified fund" shall 
+have the same meaning as respectively assigned to them in the Explanation to 
+clause (viib) of sub-section (2) of section 56. 
+Illustration: If a venture capital undertaking receives a consideration of Rs 
+50000 from a venture capital company for issue of 100 shares at the rate of Rs. 
+500 per share, then such an undertaking can issue 100 shares at this rate to any 
+other investor within a period of 90 days of the receipt of consideration from 
+venture capital company. 
+
+--- Page 5 ---
+(d) the fair market value of the unquoted equity shares determined by a 
+merchant banker in accordance with any of the following methods: 
+(i) Comparable Company Multiple Method; 
+(ii) Probability Weighted Expected Return Method; 
+(iii) Option Pricing Method; 
+(iv) Milestone Analysis Method; 
+(v) Replacement Cost Methods; 
+(e) where any consideration is received by a company for issue of shares, from 
+any entity notified under clause (ii) of the first proviso to clause (viib) of sub­
+section (2) of section 56, the price of the equity shares corresponding to such 
+consideration may, at the option of such company, be taken as the fair market 
+value of the equity shares to the extent the consideration from such fair market 
+value does not exceed the aggregate consideration that is received from the 
+notified entity: 
+Provided that the consideration has been received by the company from the 
+entity notified under clause (ii) of the first proviso to clause (viib) of sub­
+section (2) of section 56, within a period of ninety days of the date of issue of 
+shares which are the subject matter of valuation. " 
+(ii) after sub-rule 2, the following sub-rules shall be inserted, namely:-
+"(3) Where the date of valuation report by the merchant banker for the purposes of sub­
+rule (2) is not more than ninety days prior to the date of issue of shares which are the 
+subject matter of valuation, such date may, at the option of the assessee, be deemed to 
+be the valuation date. 
+(4) Where the issue price of the shares exceeds the value of shares as determined in 
+accordance with -
+
+--- Page 6 ---
+(i) clause (a) or (b) of sub-rule (2), for consideration received from a resident, 
+by an amount not exceeding ten percent of the valuation price, the issue 
+price shall be deemed to be the fair market value of such shares. 
+(ii) clause (a) or (b) or (d) of sub-rule (2), for consideration received from a 
+non-resident, by an amount not exceeding ten percent of the valuation 
+price, the issue price shall be deemed to be the fair market value of such 
+shares." 
+[Notification no ..... .l2023/F. NO.370142 /9/2023-TPL Part (I)] 
+, Under Secretary 

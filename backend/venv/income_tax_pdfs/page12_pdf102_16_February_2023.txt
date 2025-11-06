@@ -1,0 +1,47 @@
+Source Page: 12
+PDF Index: 102
+Title: ​Order under section 138(1)(a) of the Income-tax Act, 1961
+Date: 16 February 2023
+URL: https://incometaxindia.gov.in/Lists/Latest%20News/Attachments/570/Order-us-138-of-the-ITA-1961-MiscComm17-2-23.pdf
+================================================================================
+
+--- Page 1 ---
+F.No.22S/169/2022-ITA.II 
+Government of India 
+Ministry of Finance 
+Department of Revenue 
+Central Board of Direct Taxes 
+***** \ 6 tI--New Delhi, the ............ February, 2023 
+Order under section 138(1)(a) of the Income-tax Act,1961 
+Central Board of Direct taxes, in exercise of powers conferred under section 138(I)(a) of 
+Income-tax Act, 1961 ('the Act'), hereby directs that Director General of Income-tax 
+(Systems), New Delhi shall be the specified authority for furnishing information to 'Secretary 
+(Information Technology & Digital Service Department), Directorate of e-Governance, 
+Government of Tamil Nadu' as notified by Notification No.6 /2023 dated 16.02.2023 for the 
+purposes of sub-clause (ii) of clause (a) of sub-section (1) of Section 138 of the Act. 
+2. The mechanism of sharing of information shall be as under: 
+i. The Nodal agency, i.e., Directorate of e-Governance, Government of Tamil Nadu will 
+furnish the Aadhar number of its resident and the relevant assessment year( s) for which 
+information is sought through SFTP Mode. The concurrence/approval, if any, of UIDAI 
+for Aadhar sharing may be obtained by Government of Tamil Nadu. 
+ii. Director General of Income-tax (Systems) , New Delhi shall furnish (if available) the 
+response to Government of Tamil Nadu in the form of flag "YeslNolNot Available" 
+based on the income-tax payee status of the shared Aadhaar and Assessment Year(s), 
+along with the PAN against the Aadhar provided. 
+iii. The frequency of furnishing such response shall be decided by Director General of 
+Income-tax (Systems) , New Delhi in consultation with the requesting Government. 
+iv. Mode of exchange of information shall be SFTP/API or other secure digital means. 
+Copy forwarded to: -~ 02-\"2.-c2.-J. 
+(Ravinder Maini) 
+Director to the Government of India 
+1. PPS to FMlDir (FMO)/OSD TO MoS (R)/PPS to RS/PPS to chairman, CBDT and all 
+Members , CBDT 
+2. Chief Secretary, Government of Tamil Nadu 
+3. DGIT (Systems) , New Delhi 
+4. All Pr. CCsIT/DGsIT for kind information 
+5. ITCC, Central Board of Direct Taxes (4 copies) 
+6. Web Manager, for placing on the website www.incometaxindia.gov.in 
+7. Guard File lU-k--
+16 \ b~'kl'-3 . 
+(Ravinder Maini) 
+Director to the Government of India 

@@ -1,0 +1,557 @@
+Source Page: 3
+PDF Index: 27
+Title: Key Highlights of Finance Bill, 2025
+Date: 18 February 2025
+URL: https://incometaxindia.gov.in/Lists/Latest%20News/Attachments/699/BudgetHighlights_2025-26.pdf
+================================================================================
+
+--- Page 1 ---
+KEY HIGHLIGHTS
+OF FINANCE BILL,
+2025
+Note: The contents of this document are for information purposes only, to enable the public to have quick and 
+easy access to key information, and do not purport to be legal documents. Viewers are advised to verify the 
+content from the original Finance Bill, 2025 (Visit https://incometaxindia.gov.in/Pages/budget -and-bills/finance -
+bill.aspx for Finance Bill, 2025)
+Source: Finance Bill, 2025
+
+--- Page 2 ---
+•No changes have been proposed in the tax rates for assessees opting for the old tax regime.
+•No changes have been proposed in rates of surcharge and education cess.
+•The tax rates and slabs under the new tax regime of Section 115BAC have been proposed to be 
+revised. The new tax structure under the new regime shall be as follows:1. Personal Tax Rates
+Total Income Tax rate (Assessment Year 2026 -27)
+Up to Rs. 4,00,000 Nil
+From Rs. 4,00,001 to Rs. 8,00,000 5%
+From Rs. 8,00,001 to Rs. 12,00,000 10%
+From Rs. 12,00,001 to Rs. 16,00,000 15%
+From Rs. 16,00,001 to Rs. 20,00,000 20%
+From Rs. 20,00,001 to Rs. 24,00,000 25%
+Above Rs. 24,00,000 30%
+
+--- Page 3 ---
+•The income threshold for claiming a tax rebate under Section 87A for resident individuals taxable 
+under the new regime of Section 115BAC has been proposed to be increased from Rs. 7 lakhs to Rs. 12 
+lakhs, and the maximum rebate amount has been raised from Rs. 25,000 to Rs. 60,000.
+•It is proposed that where resident individuals opt for the new tax regime of Section 115BAC, the 
+incomes chargeable to tax at special rates (for example, capital gains taxable under Section 111A, 
+Section 112, etc.) shall be excluded from calculating the Section 87A rebate.
+
+--- Page 4 ---
+•The TDS rate under Section 194LBC on income payable by a securitisation  trust to a resident investor 
+is proposed to be reduced from 25%/30% to 10%.
+•The threshold limit for deduction of tax under various provisions has been proposed to be increased.2. TDS/TCS
+Section Nature of income Current Threshold Proposed Threshold
+193Interest on securities Nil Rs. 10,000
+Interest payable to resident 
+individual/HUF on any debenture 
+issued by public companyRs. 5,000 Rs. 10,000
+194 DividendRs. 5,000 for individual
+shareholderRs. 10,000 for individual
+shareholder
+194A
+ Interest other than interest on 
+Securities  •Rs. 50,000 for senior 
+citizen
+•Rs. 40,000 in case of 
+others if payer is a bank, 
+cooperative society and 
+post office
+•Rs. 5,000 in other cases •Rs. 1,00,000 for senior 
+citizen 
+•Rs. 50,000 in case of 
+others if payer is a bank, 
+cooperative society and 
+post office 
+•Rs. 10,000 in other cases 
+194BWinning from Lotteries, Crossword 
+Puzzles, gambling, betting, etc. 
+(except online games)Aggregate of amounts 
+exceeding Rs. 10,000 during 
+the financial yearRs. 10,000 in respect of a 
+single transaction
+
+--- Page 5 ---
+Section Nature of income Current Threshold Proposed Threshold
+194BB Winning from horse raceAggregate of amounts 
+exceeding Rs. 10,000 during 
+the financial yearRs. 10,000 in respect of a 
+single transaction
+194D Insurance commission  Rs. 15,000 Rs. 20,000
+194G Commission and other payments 
+on sale of lottery ticketsRs. 15,000 Rs. 20,000
+194H  Commission and Brokerage Rs. 15,000 Rs. 20,000
+194-I RentRs. 2,40,000 during the 
+financial yearRs. 50,000 per month or 
+part of a month
+194J Royalty and fees for professional or 
+technical servicesRs. 30,000 Rs. 50,000
+194K Income in respect of units of 
+mutual fund  Rs. 5,000 Rs. 10,000
+194LA Compensation on account of 
+compulsory acquisition of an 
+immovable property (other than 
+agriculture land)Rs. 2,50,000 Rs. 5,00,000
+•TCS provisions under section 206C(1H) on the sale of goods are proposed to be withdrawn with effect 
+from 01 -04-2025. Section 194Q has also been changed to remove the reference to Section 206C(1H).
+
+--- Page 6 ---
+•Section 206AB, which provides for the deduction of tax at higher rates if the payee fails to furnish his 
+return of income for a specified period, is proposed to be omitted. Consequently, its reference in Section 
+194S has also been proposed to be omitted.
+•Section 206CCA, which provides for the collection of tax at higher rates if the payee fails to furnish his 
+return of income for a specified period, is proposed to be omitted.
+•The definition of ‘Forest Produce’ has been proposed to be introduced under Section 206C(1). It shall have 
+the same meaning as defined in any State Act or the Indian Forest Act 1927.
+•Amendments have been proposed to section 206C(1) to provide that only such other forest produce (not 
+being timber or tendu leaves) which is obtained under forest lease will be covered under TCS.
+•TCS rate for –
+(i) timber or any other forest produce (not being tendu leaves) obtained under a forest lease or
+(ii) timber not obtained under a forest lease,
+is proposed to reduce from 2.5% to 2%..
+•The threshold limit prescribed under Section 206C(1G) for collection of tax at source by authorised  dealer 
+from remittance made under Liberalised  Remittance Scheme (LRS) & seller of an overseas tour program 
+package is proposed to be increased from Rs 7 lakhs to Rs. 10 lakhs.
+•It is proposed that the authorised dealer shall not collect TCS under Section 206C(1G) on remittances in 
+foreign currency from an education loan obtained under Section 80E(3)(b).
+
+--- Page 7 ---
+•Section 17(2) of the Act provides a list of perquisites to be included in employees' salary income. It 
+includes the value of any benefit (such as gas, electricity, water, etc.) granted or provided free of cost 
+or at the concessional rate by the employer to an employee whose salary income as a monetary 
+benefit exceeds Rs 50,000. Further, expenditure incurred by the employer for travel abroad on 
+medical treatment of the employee or his family member is regarded as a perquisites if the gross total 
+income of the employee exceeds Rs 2 lakhs.  The limits of Rs 2 lakhs and Rs 50 thousand were 
+introduced in 1993 and 2001, respectively. To adjust these limits to reflect changes in the standard of 
+living and economic conditions, the Finance Bill 2025 proposes to empower the CBDT to notify the 
+limit in this regard.
+•The annual value of up to two house properties is taken as nil if the property is self -occupied or cannot 
+be occupied by the owner of the property due to his employment, business or profession at any other 
+place. It is proposed that the annual value of up to two house properties shall be nil if the owner 
+occupies the house for his own residence or cannot occupy it for any reason subject to the condition 
+that no rental income is received on these house properties.3. Salary and House Property Income 
+
+--- Page 8 ---
+Presently, the deadline for filing an updated tax return under Section 139(8A) is 24 months from the end 
+of the relevant assessment year. The Finance Bill 2025 proposes to extend this deadline to 48 months 
+from the end of the relevant assessment year. The rate of additional income tax payable to file an 
+updated tax return is as follows:4. Income -tax Return
+Date of Filing Updated Return Additional Tax Payable
+Within 12 months from the end of 
+relevant assessment year25% of aggregate of additional tax and interest
+After 12 months and up to 24 months 
+from the end of relevant assessment 
+year50% of aggregate of additional tax and interest
+After 24 months and up to 36 
+months from the end of relevant 
+assessment year60% of aggregate of additional tax and interest
+After 36 months and up to 48 
+months from the end of relevant 
+assessment year70% of aggregate of additional tax and interest
+
+--- Page 9 ---
+• Inclusions of ULIPs in Capital Asset
+ A ULIP is considered a capital asset only when the exemption under Section 10(10D) does not apply due 
+to the 4th and 5th provisos therefor. Consequently, such ULIPs are subject to capital gains taxation.
+ It is proposed to remove the reference to the phrase “on account of the applicability of the fourth and 
+fifth provisos thereof” from sub -clause (c) of Section 2(14) to broaden its applicability to ULIPs in all 
+instances where the exemption under Section 10(10D) is not available. Consequently, all ULIPs not 
+qualifying for exemption under Section 10(10D) will be classified as capital assets.
+ A corresponding amendment has been made to Section 45(1B) to tax the income arising from receipt of 
+amount under ULIPs, where the exemption under Section 10(10D) is not available, under the head of 
+capital gains.
+• ULIPs to Be Considered Equity -Oriented Fund
+ Clause (a) of the Explanation to Section 112A defines an "equity -oriented fund" as a fund set up under a 
+scheme of a mutual fund specified under Section 10(23D) or under a scheme of an insurance company 
+comprising ULIPs that do not qualify for exemption under Section 10(10D) due to the applicability of the 
+4th and 5th provisos.
+ The second proviso to clause (a) of the Explanation specifies that, in the case of an insurance company 
+scheme comprising ULIPs where an exemption under Section 10(10D) is not available, the minimum 
+investment requirement of 90% or 65%, as applicable, must be maintained throughout the policy's term.
+ It is proposed to amend clause (a) and the second proviso of the Explanation to make them applicable to 
+all ULIPs where an exemption under Section 10(10D) is not available. Therefore, ULIPs that do not qualify 
+for exemption under Section 10(10D) shall be included in the definition of an equity -oriented fund.5. Capital Gains
+
+--- Page 10 ---
+• Rationalisation  of Taxation of Capital Gains Arising to Non -residents
+ Section 115AD of the ITA provides that long -term capital gains from the transfer of securities (other than 
+units referred to in Section 115AB) shall be taxed at 10% in the hands of specified fund or Foreign 
+Institutional Investor (FIIs). However, the Finance (No. 2) Act, 2024, changed the rate of taxation on long -
+term gains arising from the transfer of capital assets to 12.5% for all assessees , whether resident or non -
+resident, with effect from 23 -07-2024. 
+ The tax rates for specified funds or FIIs on long -term gains referred to in Section 112A have been brought 
+to parity with the new rates, i.e., 12.5% applicable to residents. However, the tax rates on long -term 
+capital gains not referred to in Section 112A were retained at 10%. Section 115AD is proposed to be 
+amended to provide that income tax on long -term capital gains from the transfer of securities (other 
+than units referred to in Section 115AB) not referred to in Section 112A, if included in the total income, 
+shall also be calculated at a rate of 12.5%.
+• Securities Held by Investment Funds to Be Treated as Capital Assets
+ Section 2(14) of the ITA defines the term “capital asset.” Securities held by a Foreign Institutional Investor 
+that has invested in such securities as per the regulations made under the SEBI Act, 1992, are also 
+defined as capital assets. There is some uncertainty in the characterisation  of income arising from 
+transactions in securities by investment funds. Should such income be considered capital gains or 
+business income for investment funds (as specified in Explanation 1(a) to Section 115UB)?
+ It is proposed to amend Section 2(14) to clarify that any security held by investment funds referred to in 
+Section 115UB and invested as per the regulations made under the SEBI Act shall be treated only as a 
+capital asset. Therefore, any income arising from the transfer of such securities would be considered 
+capital gains. 
+
+--- Page 11 ---
+• NPS Vatsalya  Scheme
+ The NPS Vatsalya  Scheme was introduced to enable parents to start a National Pension Scheme (NPS) 
+account for their minor children. The parents can make contributions to the account of the minor till they 
+attain the majority of 18 years.  The Finance Bill 2025 proposes to extend tax benefits of NPS under section 
+80CCD to NPS Vatslya  contributions as follows:
+ (a) The amount deposited in the minor’s account is to be allowed as a deduction under Section 
+  80CCD(1B) to the parent subject to a maximum limit of Rs 50,000.
+  (b) The total deduction for contributions made by an assessee  to his own account or to the account of 
+  his minor children cannot exceed Rs. 50,000.
+ (c) The amount allowed as a deduction and interest accrued thereon would be taxable as income when
+  it is withdrawn.
+ (d) The amount received on the closure of the account due to the minor’s death would not be  
+  regarded as income of the parent.
+ (e) In Section 10(12BA), the parent is exempt from tax on partial withdrawals from such accounts 
+  (up to 25% of the contribution amount) in certain situations, such as education, treatment, 
+  and disability of a minor.
+ The provisions will apply from AY 2026 -27 onwards.
+• National Saving Scheme
+ An exemption is proposed to be allowed to individuals in respect of withdrawal of the amount deposited in 
+the National Savings Scheme and interest accrued thereon before April 1, 1992. This exemption is available if 
+the amount is withdrawn on or after 29 -08-2024.. 6. Deductions
+
+--- Page 12 ---
+• Start -ups [Section 80 -IAC]
+ Section 80 -IAC provides that an eligible start -up can claim a deduction for the profits and gains arising from 
+an eligible business under this provision. The deduction can be claimed for up to 100% of the profits and 
+gains derived in three consecutive years out of the ten assessment years, beginning from the year of 
+incorporation. However, one of the conditions is that the start -up must be incorporated on or after 01 -04-
+2016 and before 01 -04-2025. It is now proposed to extend the benefit of the exemption under Section 80 -IAC 
+for an additional five years, making it available to eligible start -ups incorporated before 01 -04-2030. 
+
+--- Page 13 ---
+• No Significant Economic Presence on the Export of Goods
+ Section 9 of the ITA specifies the income deemed to accrue or arise in India. Section 9(1)( i) states that 
+all income accruing or arising, whether directly or indirectly, through or from any business connection 
+in India shall be deemed to accrue or arise in India. Clause (b) of Explanation 1 Section 9(1) clarifies 
+that, in the case of a non -resident, no income shall be deemed to accrue or arise in India if it is derived 
+solely from operations confined to the purchase of goods in India for export.
+ It is proposed that Explanation 2A of Section 9 be amended so that the transactions or activities of a 
+non -resident in India, which are confined to the purchase of goods in India for the purpose of export, 
+shall not constitute a significant economic presence of such non -resident in India. This amendment 
+will align it with Explanation 1 to Section 9(1)( i) concerning business connections.
+• Sovereign Wealth Funds and Pension Fund 
+ The deadline for investing by foreign Sovereign Wealth Funds, Pension Funds, and the Abu Dhabi 
+Investment Authority in Indian infrastructure entities for exemption under section 10(23FE) has been 
+proposed to be extended from 31 -03-2025 to 31 -03-2030. Further, the long -term capital gains arising 
+from investments made by foreign Sovereign Wealth Funds, Pension Funds, and the Abu Dhabi 
+Investment Authority in Indian infrastructure entities are proposed to be exempt under Section 
+10(23FE) even if they are deemed short -term capital gains under section 50AA.7. Taxation of Non -residents
+
+--- Page 14 ---
+• Presumptive Tax Scheme
+ A new presumptive tax scheme has been proposed in Section 44BBD, which would apply to non -
+residents providing services or technology to a resident company in India to set up an electronics 
+manufacturing facility or manufacture/produce electronic goods. Under this scheme, 25% of the total 
+amount paid or payable to the non -resident for such services or technology would be deemed 
+presumptive income.
+• Tonnage Tax Scheme
+ The benefits of the tonnage tax scheme are proposed to be extended to Inland Vessels registered 
+under the Inland Vessels Act of 2021.
+ Further, the time limit for the Joint Commissioner to pass an order under Section 115VP(4) has been 
+proposed to be increased to three months from the end of the quarter in which a qualifying company 
+makes an application to opt for a tonnage tax scheme. Presently, the time limit is expiry of one month 
+from the end of the month in which the application was made.
+
+--- Page 15 ---
+•The sunset dates for the commencement of operations of IFSC units, in relation to several tax 
+concessions or the relocation of funds to the IFSC, are proposed to be extended to March 31, 2030. This 
+extension of the sunset date applies to Sections 80LA, 10(4D), 10(4F), 10(4H), and 47( viiad ).
+•The exemption under Section 10(10D) is not available if the annual premium or aggregate of premiums 
+payable for the unit -linked insurance policies (ULIPs) is above Rs. 2.5 lakhs, and Rs. 5 lakhs for life 
+insurance policies other than ULIPs. The cap on the premium for life insurance policies has been 
+removed if the life insurance policies are issued by IFSC -based insurers. Thus, the sum received under a 
+life insurance policy issued by the IFSC insurance intermediary office shall be exempt regardless of the 
+premium paid by the policyholder, as mentioned above.
+•Capital gains from the transfer of equity shares in a domestic company, which is an IFSC unit, by a 
+non -resident or IFSC unit are exempt from tax under Section 10(4H). This exemption applies if the 
+transferor and the domestic company are primarily engaged in aircraft leasing. The scope of this 
+exemption is proposed to be extended to include cases where both entities are engaged in the ship 
+leasing business.
+•The dividend income of an IFSC unit primarily engaged in the ship leasing business is proposed to be 
+exempt from tax under Section 10(34B) if the company paying the dividend is also an IFSC unit 
+engaged in the ship leasing business.
+•It is proposed that the deemed dividend provisions will not apply to borrowings by a corporate 
+treasury centre  in an IFSC from its group entities, or vice versa, provided that the parent entity or 
+principal entity of such group is listed on stock exchange in a country or territory outside India other 
+than the country or territory outside India as may be specified by the Board in this behalf.8. IFSC
+
+--- Page 16 ---
+•The income of a non -resident on account of the transfer of certain derivative contracts entered into 
+with an offshore banking unit of an IFSC is exempt from tax under Section 10(4E). The scope of this 
+exemption is proposed to be extended to cases where derivatives contracts are entered into with 
+Foreign Portfolio Investors, being an IFSC unit.
+•Retail funds and Exchange -Traded Funds (ETFs) located in an IFSC are included under the definition 
+of specified funds for tax exemption under Section 10(4D), provided they meet certain conditions. 
+These funds are proposed to be classified as resultant funds under Section 47( viiad ), ensuring that the 
+relocation of foreign investment funds to such IFSC -based funds is treated as a tax -neutral 
+transaction.
+•Under Section 9A, an eligible investment fund managed by an eligible fund manager in India will not 
+be considered to have a business connection in India or be deemed a resident of India solely due to 
+the fund manager’s location. An eligible investment fund is defined as a fund established, 
+incorporated, or registered outside India that pools funds from members for investment and meets 
+specific conditions. One such condition is that Indian residents’ participation or investment (direct or 
+indirect) must not exceed 5% of the fund’s corpus. It is proposed that this condition must be met as of 
+1st April and 1st October of the previous year. If not met on these dates, the condition will still be 
+deemed satisfied if fulfilled within 4 months of the respective date. Further, this condition will apply to 
+all the eligible investment funds whether or not their eligible fund managers are based in IFSC.
+•An offshore fund will be deemed an eligible investment fund under Section 9A if it meets specified 
+conditions. It is proposed that the Government may relax these conditions if the fund manager is 
+located in an IFSC and commenced operations on or before March 31, 2024. The deadline for the 
+commencement of operations by the fund manager has now been extended to March 31, 2030.
+
+--- Page 17 ---
+•Undisclosed income arising from the Virtual Digital Assets 
+ Section 158B(b) provides an inclusive meaning of “undisclosed income” for the block assessment 
+scheme. It provides that the following assets shall be considered undisclosed income if such assets 
+represent, wholly or partly, income or property that has not been or would not have been disclosed for 
+the purposes of this Act:
+a)Money,
+b)Bullion,
+c)Jewellery,
+d)Other valuable articles or things, and
+e)Income based on any entry in books of account, other documents, and transactions.
+The Finance Bill 2025 proposes to include virtual digital assets in the scope of undisclosed income. 
+This amendment is applicable with effect from 01 -02-2025.
+•Sequential handling of multiple searches
+ Section 158BA(4) ensures that each search or requisition is handled in an orderly manner, preventing 
+overlap and ensuring adequate time for proper assessment. It provides that if a subsequent search or 
+requisition occurs while a block assessment is pending, the AO must complete the initial assessment 
+before starting the new one.9.  Block Assessment
+
+--- Page 18 ---
+The Finance Bill 2025 proposes substituting the word “pending” with “required to be made” with 
+effect from 01 -02-2025. Thus, where the assessment proceedings are not pending on the date of the 
+subsequent search or requisition but will be required to be made, the AO cannot start a new block 
+assessment. Where the Court/Tribunal invalidates the search action and, in turn, rejects the 
+assessment proceedings, the AO can initiate a new block assessment proceeding pursuant to the 
+subsequent search or requisition.
+•Revival of abated proceedings
+ Section 158BA(2)/(3) of the Act provides that any assessment, reassessment, recomputation , or 
+reference to TPO under Section 92CA(1) or an order under Section 92CA(3) pertaining to any 
+assessment year falling in the block period pending on the date of initiation of the search or making 
+of requisition shall abate. Section 158BA(5) provides that if any block assessment proceedings initiated 
+for the block period have been annulled in appeal or any other legal proceeding, then, the 
+assessment or reassessment relating to any assessment year which was abated under Section 
+158BA(2)/(3) shall revive.
+ Section 158BA(5) provided for the revival of assessment or reassessment post annulment of the block 
+assessment proceedings but did not include the reference to recomputation  or reference to TPO 
+under Section 92CA(1) or an order under Section 92CA(3), which also got abated due to initiation of 
+block assessment. The Finance Bill 2025 proposes to align sub -sections (2)/(3) with sub -sections (5) by 
+adding the words “ recomputation ”, “reference”, or “order” in sub -sections (5) of Section 158BA. Thus, all 
+actions and proceedings abated can now be revived if the block assessment proceedings are 
+annulled.
+
+--- Page 19 ---
+•Computation of total income of block period
+ Section 158BB contains the provision for the computation of the total income of the block period. It 
+provides a comprehensive approach for computing the undisclosed income for the block period. 
+According to sub -section (1), the total income for the block period is computed by aggregating both 
+disclosed and undisclosed income. Sub -sections (5) and (6) of Section 158BB stipulate that disclosed 
+income (excluding any losses) is deducted from the total income calculated under sub -section (1). This 
+is because undisclosed income is taxed under Section 113, while disclosed income is assessed 
+separately under other provisions of the Act. Thus, the method for computing the total undisclosed 
+income of the block period is rather circuitous. In other words, Section 158BB provides for deriving 
+undisclosed income by excluding disclosed income from total income. The Finance Bill 2025 proposes 
+to amend Section 158BB(1) with effect from 01 -02-2025 to provide a new computation mechanism for 
+the undisclosed income.
+•Limitation period for completion of block assessment
+ Section 158BE provides that the order under Section 158BC must be passed within twelve months 
+from the end of the month in which the last authorisation  for a search under Section 132 or requisition 
+under Section 132A was executed or made. For other persons referred to in Section 158BD, the AO 
+must complete the assessment within twelve months from the end of the month in which the notice 
+under Section 158BC was issued to such person.
+ 
+
+--- Page 20 ---
+Search and seizure proceedings generally require coordinated investigations and assessments. The 
+current time limit often leads to multiple time -barring dates, making it difficult to bring the cases to a 
+logical conclusion. Therefore, the Finance Bill 2025 proposes changing the time limit for completing 
+the block assessment to twelve months from the end of the quarter in which the last authorization for 
+search or requisition was executed.
+•Extension in the limitation period
+ Section 158BE(4)( i) provides that the period during which the assessment proceedings are stayed by 
+an order or injunction of any court shall be excluded from the limitation period for completion of the 
+assessment. The Finance Bill 2025 proposes that the period to be excluded shall commence on the 
+date on which the assessment proceeding is stayed by an order or injunction of any court and end on 
+the date on which the jurisdictional Principal CIT or CIT received a certified copy of the order vacating 
+the stay. A similar amendment has been proposed to Section 158BFA, which prescribes the limitation 
+period to levy interest and penalty in block assessment.
+
+--- Page 21 ---
+Section 115UA of the ITA grants a pass -through status to business trusts for interest income, dividend 
+income received by it from a special purpose vehicle (in the case of both REITs and InvITs ), and rental 
+income (for REITs). The total income of a business trust is charged to tax at the maximum marginal rate, 
+subject to the provisions of Sections 111A and 112. It is proposed that Section 115UA be amended to include 
+a reference to Section 112A. Following this proposed amendment, the total income of a business trust will 
+be taxed at the maximum marginal rate, subject to the provisions of Sections 111A, 112, and 112A. As a 
+result of this amendment, long -term capital gains (LTCG) from the sale of specified securities will not be 
+taxable for a business trust if the aggregate capital gain during the year does not exceed Rs. 1,25,000. If 
+the capital gain exceeds Rs. 1,25,000, the excess will be taxed at a rate of 12.5%10. Business Trusts
+
+--- Page 22 ---
+• Period of registration of smaller charitable trusts or institutions
+ Under the current provisions of the ITA, Section 12AB grants registration to charitable trusts or 
+institutions for a period of five years, and where activities have not commenced at the time of 
+application, provisional registration for three years. To ease compliance for smaller trusts or 
+institutions whose total income before exemption does not exceed Rs. 5 crores in each of the two 
+previous years preceding the year of application, it is proposed to extend the validity of registration 
+from five years to ten years. However, this benefit shall not apply to trusts or institutions applying for 
+registration for the first time, whether before or after commencing activities.
+• Rationalisation of ‘Specified Violation’ for cancellation of registration of trusts or institutions
+ Section 12AB(4), inter alia, provides that when the registration or provisional registration of a trust or 
+institution has been granted, and the PCIT/CIT subsequently notices the occurrence of one or more 
+specified violations during any previous year, the PCIT/CIT shall pass a written order cancelling the 
+registration of such trust or institution if satisfied that one or more specified violations have taken 
+place. The Explanation to Section 12AB(4) states that “specified violation”, inter alia, includes cases 
+where the application referred to in Section 12A(1)(ac) is incomplete or contains false or incorrect 
+information. It is proposed that the Explanation to Section 12AB(4) be amended to clarify that an 
+incomplete application for the registration of a trust or institution shall not be considered a specified 
+violation for the purpose of cancellation by the PCIT/CIT. 11. Charitable & Religious Trusts
+
+--- Page 23 ---
+• Relaxation in the classification of specified persons
+ Section 13 of the ITA, inter alia, provides that Section 11 or Section 12 shall not apply to exclude any 
+income from the total income of a trust or institution if such income enures  to, or if any income or 
+property of the trust or institution is used or applied, directly or indirectly, for the benefit of any person 
+referred to in Section 13(3). Any person who has made a contribution to the trust or institution of more 
+than Rs. 50,000 up to the end of the relevant previous year is regarded as a specified person. 
+Additionally, the relatives of such substantial contributors and concerns in which they have a 
+substantial interest are also considered specified persons. The Finance Bill 2025 proposes to amend 
+Section 13(3) to provide that a person is to be treated as a substantial contributor under Section 
+13(3)(b) if his contribution during the previous year exceeds Rs. 1 lakh or his total contribution during 
+the lifetime of the trust up to the end of previous year exceeds Rs. 10 lakhs. The relatives of substantial 
+contributors shall no longer be treated as specified persons for the purposes of Section 13(3). Further, 
+any concern in which a substantial contributor has a substantial interest shall no longer be included 
+in the category of specified persons under Section 13(3). 
+
+--- Page 24 ---
+• Rationalisation of TP assessments for carrying out Arm’s Length Price determination
+ Under the current provisions, the arm’s length price for specified domestic and international 
+transactions is determined by the transfer pricing officer each financial year based on a reference 
+from the assessing officer. In many instances, the specified domestic and international transactions 
+occurring over several years are similar and repetitive in nature. These transactions involve the same 
+enterprises, functions, asset and risk analysis (FAR), and the same ALP determination. This creates 
+unnecessary compliance and administrative burdens for both assessees  and the TPO. 
+ 
+ The Finance Bill 2025 proposes to carry out TP analysis over a block of three years: the financial year in 
+question (the first year) and two consecutive years immediately following (later years). The provisions 
+apply from AY 2026 -27 and subsequent AYs. The procedure for the same is explained below:
+a)The assessee would be required to exercise the option for a block of TP assessment in the 
+prescribed form and manner.
+b)TPO must declare within 1 month from the end of the month in which the option is exercised 
+whether such option is valid.
+c)Once the option is declared valid, the TPO shall pass the order applying the ALP of transactions 
+in the first year to similar transactions in later years. The AO will also recompute the assessee's 
+total income for the later years on receipt of the order of TPO.
+d)No reference shall be made to TPO by AO for computation of ALP in relation to such 
+transactions for subsequent years for which option is exercised.
+e)The provisions of exercising the option and consequent proceedings shall not apply to search 
+cases.12. Transfer Pricing
+
+--- Page 25 ---
+• Furnishing Information on Crypto Assets
+ A new section 285BAA is proposed to be introduced regarding the obligation to file information on 
+crypto assets. The prescribed reporting entity would be required to furnish information regarding 
+transactions in crypto assets. The amendment is effective from 1.4.2026.
+• Amendment in Definition of Crypto Assets 
+ The Finance Bill 2025 proposes to include any crypto asset that is a digital representation of a value 
+that relies on a cryptographically secured distributed ledger or similar technology to validate and 
+secure transactions within the ambit of a ‘virtual digital asset’ (whether or not already included in 
+the definition of a virtual digital asset). The amendment is effective from the assessment year
+ 2026 -27.13. Crypto Assets
+
+--- Page 26 ---
+•It is proposed that no prosecution will be instituted against the collector for failing to pay tax to the 
+credit of the central government if the payment is made at any time on or before the time limit 
+prescribed for filing quarterly statements.
+•Section 271AAB is proposed to be amended to provide that the provisions do not apply if a search is 
+initiated under section 132 on or after 01 -09-2024.
+•It is proposed that the power to impose penalties under Section 271C (failure to deduct tax), Section 
+271CA (failure to collect tax), Section 271D (failure to comply with Section 269SS), Section 271DA 
+(failure to comply with Section 269ST), Section 271DB (failure to comply with Section 269SU), and 
+Section 271E (penalty for failure to comply with provisions of Section 269T) be exercised by the 
+assessing officer instead of the Joint Commissioner subject to the provisions of section 274(2) of the 
+Income -tax Act, 1961.
+•The time limit for passing an order under Section 270AA(4) to grant immunity from imposition of 
+penalty or prosecution has been proposed to be increased to three months from the end of the 
+month in which the Assessing officer receives the application for immunity. Presently, the time limit 
+is one month from the end of the month in which the assessing officer receives the application for 
+immunity.14. Penalties and Prosecutions
+
+--- Page 27 ---
+•Section 275 has been proposed to be substituted to provide a new time limit for passing orders, 
+imposing the penalty. It is proposed that no penalty order shall be passed after six months from the 
+end of the quarter in which any of the following events occur:
+ (a) Completion of proceedings where the penalty was initiated, provided the assessment or 
+  order is not under appeal (Sections 246, 246A, or 253).
+ (b) Passing of a revision order under Section 263 or 264 if the assessment or order is under 
+  revision.
+ (c) Receipt of an appeal order under Section 246 or 246A by the jurisdictional Principal 
+  Commissioner or Commissioner if no further appeal has been filed under Section 253.
+ (d) Receipt of an appeal order under Section 253 by the jurisdictional Principal Commissioner or 
+  Commissioner.  
+ (e) Issuance of a penalty notice in any other case.
+•Section 271BB states that if a person fails to subscribe to units issued under a scheme mentioned in 
+Section 88A, they may have to pay a penalty of 20% of the amount, as directed by the Joint 
+Commissioner. However, Section 88A was already removed by the Finance (No. 2) Act, 1996, with 
+effect from April 1, 1994. Since the main section no longer exists, the penalty provision under Section 
+271BB is no longer relevant. Therefore, the Finance Bill 2025 proposes to remove Section 271BB from 
+the Act.
+
+--- Page 28 ---
+Rule 68B(1) of the Second Schedule prescribes that the sale of immovable property (attached for tax 
+recovery) must be completed within 7 years from the end of the financial year in which the order for 
+tax, interest, fine, penalty, or any other sum becomes final. However, the Board may extend this period 
+by up to three more years, but only if they provide written reasons for doing so.
+Further, if the property is required to be re -sold (because the highest bid was lower than the reserve 
+price, or due to some specific circumstances mentioned in rules 57, 58 or 61), the above time limit is 
+extended by one more year.
+Rule 68B(2) prescribes that the period during which the proceedings are stayed by an order or 
+injunction of any court shall be excluded in computing the time limit for conclusion of the proceedings. 
+However, there was an ambiguity regarding the commencement date and the end date of the period 
+stayed by an order or injunction of any court which was required to be excluded.
+With a view to removing such ambiguity, the Finance Bill, 2025 proposed to amend the said rule so as 
+to exclude the period ‘commencing on the date on which stay was granted by an order or injunction of 
+any court and ending on the date on which certified copy of the order vacating the stay was received 
+by the jurisdictional Principal Commissioner or Commissioner’ while computing limitation period.15. The Time Limit for the Sale of Attached    
+      Immovable Property
+
+--- Page 29 ---
+•The end date for notifying faceless schemes under Section 92CA (reference to TPO), Section 144C 
+(reference to DRP), Section 253 (Appeal to ITAT), and Section 255 (procedure of ITAT) is proposed to 
+be omitted, This would allow the central government to issue directions beyond the cutoff of March 
+31, 2025.
+•Sections 72A and 72AA are proposed to be amended to limit the carried forward loss of a 
+predecessor entity to be offset by the successor entity for a maximum of eight assessment years. 
+Eight assessment years are the years succeeding the assessment year for which such loss was first 
+computed for the original predecessor entity, wherein the original predecessor entity is the 
+predecessor entity in respect of the first amalgamation or first business reorganisation , as the case 
+maybe.
+•Section 132(8) is proposed to be amended to provide that the time limit for obtaining approval for 
+retention is one month from the end of the quarter in which the assessment, reassessment, or 
+recomputation  order was made. Currently, the timeline is 30 days from the date of the assessment, 
+reassessment, or recomputation  order.
+ 
+•The word ‘ authorisation ’ is proposed to be replaced with ‘ authorisations ’ in Explanation 1 to Section 
+132 to align with other provisions of the Act.
+• It is proposed to amend clause (ii) of Explanation 1 to Section 132B to update the reference from 
+Section 158BE to Section 158B, reflecting the changes made by the Finance (No. 2) Act, 2024.
+• Amendments are proposed to Sections 144BA, 153, 153B, 158BE, 158BFA, 263, 264, and Rule 68B of 
+Schedule II to exclude stay periods in computing time limits for assessment/reassessment 
+proceedings. The period from the date of the court's stay order to the date the jurisdictional 
+Principal Commissioner or Commissioner receives the certified copy of the stay vacation order shall 
+be excluded in computing time limits for assessment/reassessment proceedings.16. Other Amendments
+
+--- Page 30 ---
+Thank You
+For more, refer the FAQs: Budget 2025 at https://incometaxindia.gov.in/Pages/Budget -2025.aspx

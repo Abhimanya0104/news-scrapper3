@@ -1,0 +1,53 @@
+Source Page: 2
+PDF Index: 11
+Title: Order under section 138(1)(a) of the Income-tax Act, 1961
+Date: 6 June 2025
+URL: https://incometaxindia.gov.in/Lists/Latest%20News/Attachments/718/Order-under-section-138-1-a-of-the-Income-tax-Act-1961-dated-06-06-2025.pdf
+================================================================================
+
+--- Page 1 ---
+F. No. 225/213/2024-ITA.II 
+Government of India 
+Ministry of Finance 
+Department of Revenue 
+Central Board of Direct Taxes 
+***** 
+New Delhi, the 06th June, 2025 
+Order under section 138(1)(a) of the Income-tax Act, 1961 
+Central Board of Direct Taxes, in exercise of powers conferred under clause (a) of sub-section (1) 
+of section 138 of Income-tax Act, 1961 ('the Act'), hereby directs that Director General of Income-tax 
+(Systems), New Delhi shall be the specified authority for furnishing information to Secretary to the 
+Government of Maharashtra, Women and Child Development, as notified by Notification No 54/2025 
+(S.O. 2479(E»dated 03.06.2025 in connection with sharing of information regarding Income Tax payers 
+for identification of eligible beneficiaries under "Mukhyamantri Mazi Ladki Bahin Y ojana". 
+2. The mechanism of sharing of information shall be as under: 
+(i) Government of Maharashtra shall furnish the Aadhaar Number(s) or PAN(s) along with the 
+Assessment Year(s) to DGIT (Systems), New Delhi. 
+(ii) If the PAN is provided or the provided Aadhaar is linked with PAN, DGIT (Systems), New 
+Delhi shall furnish the response to Government of Maharashtra in the form of flag "Yes/NolNot 
+Available" in respect of the Income tax return filing status and threshold income level of the shared 
+Aadhaar Number(s) 1 PAN(s) and Assessment Year(s) as per the lTD database. 
+(iii) If the provided Aadhaar Number is not linked with any PAN in the lTD database, 
+DGIT(Systems), New Delhi shall furnish the response to Government of Maharashtra in the form 
+offlag 'Information cannot be made available due to absence of PAN-Aadhaar linkage'. 
+(iv) The frequency of furnishing such response and Mode of exchange of information shall be 
+decided by the DGIT (Systems), New Delhi in consultation with the Government of Maharashtra. 
+3. To facilitate the process of furnishing information, Director General of Income-tax (Systems), New 
+Delhi shall enter into a Memorandum ofVnderstanding ('MoV') with notified authority of Government of 
+Maharashtra, which inter alia shall include the mode of transfer of data, maintenance of confidentiality, 
+mechanism for safe preservation of data, weeding out after usage, etc. The timeline for furnishing 
+information shall also be decided by Director General ofIncome-tax (Systems), New Delhi in consultation 
+with the notified authority and as included in the said MoV. 
+4. A copy ofthe MoV shall be forwarded to this Division for record purposes. 
+"It/' (Dr. Castro Jayaprakash T.) 
+Under Secretary to the Government of India 
+Copy forwarded to: 
+1. PPS to FMlOSD TO MoS (Finance)IPPS to RSIPPS to chairman, CBDT and all Members, 
+CBDT 
+2. Secretary to the Government of Maharashtra, Women and Child Development 
+3. DGIT (Systems), New Delhi 
+4. All Pro CCsITlDsGIT for kind information 
+\Y.' Web Manager, for placing on the website www.incometaxindia.gov.in 
+6. Guard File :C 
+QJr. Clt~o ~~~~::T.) 
+Under Secretary to the Government of India 

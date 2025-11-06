@@ -1,0 +1,1402 @@
+Source Page: 10
+PDF Index: 87
+Title: APA report (for FY 2022-23)​​
+Date: 1 September 2023
+URL: https://incometaxindia.gov.in/Lists/Latest%20News/Attachments/601/APA-Report-Final-2023.pdf
+================================================================================
+
+--- Page 1 ---
+ 
+Page 1 of 38 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Advance Pricing Agreement  
+(APA)  
+Programme of India  
+ 
+ 
+ 
+Annual Report  
+(2022-23)  
+ 
+ 
+Central Board of Direct Taxes  
+September, 2023   
+
+
+--- Page 2 ---
+ 
+Page 2 of 38 
+  
+ 
+Contents 
+Foreword by the Chairman, CBDT  ......................................................................................................... 3 
+Preface by Member (L), CBDT  .............................................................................................................. 4 
+Chapter 1: APA Programme of India – Introduction  .............................................................................. 5 
+Chapter 2: Data and Qualitative Analyses  .............................................................................................. 9 
+Chapter 3: Unilateral APAs  .................................................................................................................. 13 
+Chapter 4: Bilateral APAs  .................................................................................................................... 24 
+Chapter 5: Other dispute resolution processes  ...................................................................................... 36 
+Conclusion  ............................................................................................................................................ 38 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+--- Page 3 ---
+. '. Foreword by the Chairman, CBDT 
+The Advance Pricing Agreement (APA) programme of the CBDT, is one of its 
+leading programmes for fostering a tax regime in India that provides an investor 
+conducive environment. 516 APAs have been entered into by the CBDT till 
+March, 2023, which demonstrates the widespread acceptance of the 
+programme by taxpayers and stakeholders alike. This year witnessed the 
+highest number of APA signings in any single year since the commencement of 
+the APA programme . 
+Over more than a decade long period of its existence , the APA programme has 
+contributed significantly to the Government of India's mission of promoting ease 
+of doing business, especially for MNEs, which have transactions spanning 
+across borders, within their group entities. Each signed APA brings tax certainty 
+for a taxpayer that spans multiple years. The number of APAs signed till date 
+have cumulatively brought about certainty for more than 3,200 Assessment 
+Years. 
+Apart from running the Unilateral leg of the APA programme successfully, the 
+CBDT has also actively engaged with its various tax treaty partners to negotiate 
+and enter into Bilateral APAs, which provide taxpayers an added benefit of 
+relieving double taxation. The record number of bilateral agreements signed this 
+year is a testament to the strengthening of our relationship with taxpayers and 
+treaty partners. 
+As we release this Report, I would like to place on record my appreciation of the 
+hard work and dedication of the officers in the Foreign Tax & Tax Research 
+Division of the CBDT and the officers in the APA teams under Principal CCIT 
+(International Taxation) . My appreciation to taxpayers for being equal and active 
+partners in this programme . CBDT will continue to strive towards further 
+increasing the efficacy of the APA programme and take it forward to greater 
+heights. Feedback/suggestions on the Report are welcome , which will help us 
+in identifying how we can further strengthen the APA programme . 
+. ~ . 
+Nitin Gupta 
+Chairman, Central Board of Direct Taxes 
+Ministry of Finance, Government of India 
+Page 3 of 38 
+
+--- Page 4 ---
+. , Preface by Member (L), CBOT 
+The Advance Pricing Agreement (APA) programme was introduced in India through Finance 
+Act, 2012 with a view to fulfil the objectives of tax certainty and double taxation avoidance ­
+two key focus areas of the CBDT for several years now. Being founded on principles of mutual 
+co-operation and trust between taxpayers and revenue authorities, the programme has 
+strengthened the Indian tax administration's orientation of enabling and empowering the 
+growth of our taxpayers. 
+The programme has constantly strived for a meticulous, positive, fact-intensive and 
+collaborative perspective on transfer pricing. Thus, a more cooperative rather than adversarial 
+approach, forms the cornerstone of the APA programme. 
+It gives me immense pleasure to present this fifth Annual Report (for FY 2022-23) of the Indian 
+AP A programme. This Annual Report presents abundant numerical data and detailed analysis 
+that confirms the immense popularity and acceptability of the AP A programme in India. The 
+year FY 2022-23 in particular has been one of resounding success for the programme with 
+several milestones in terms of number of signings surpassed. 
+I would like to appreciate the efforts put in by the officers in the Foreign Tax & Tax Research 
+Division of the CBDT and the officers in the APA teams under Principal CCIT (International 
+Taxation) to make this programme a success. The financial year has been a record-breaking 
+year for the AP A programme in many respects, be it the highest number of signings in any year 
+in the history of the programme or record single day signings, for which I would like to put on 
+record my special appreciation for the dedication and hard work of the officers, as well as the 
+positive support extended by taxpayers and tax consultants. I would specifically also like to 
+thank our taxpayers for reposing their faith in the APA programme and extending their ful\­
+fledged cooperation in ensuring that the programme continues to be a success. 
+Pragya sah~ena 
+Member (Legislation), Central Board of Direct Taxes 
+
+--- Page 5 ---
+ 
+Page 5 of 38 
+ Chapter 1: APA Programme of India – Introduction  
+ 
+An Advance Pricing Agreement (APA) is an agreement between the tax administration and a 
+person (taxpayer), which determines, in advance, the Arm’s Length Price (ALP) or specifies 
+the manner of the determination of ALP (or both), in relation to an international transaction1. 
+APA programmes are operational in a number of countries for a long time. The primary goal 
+of such programmes is to provide certainty to taxpayers in respect of the pricing of cross-border 
+transactions undertaken by taxpayers with their group entities.  
+Unprecedented growth in international trade involving cross-border transactions within group 
+entities has given rise to numerous tax disputes on the issue of transfer pricing. An APA is a 
+mechanism to resolve transfer pricing disputes in advance, i.e., before the cross-border related 
+party transaction actually takes place or, at least, before a dispute arises in respect of such cross-
+border transaction. The transfer price of goods and services transacted between group entities 
+is decided in advance by the tax authorities and the taxpayers, so as to prevent any dispute 
+arising from such transfer pricing.  
+The APA programme in India was launched in 2012 vide the Finance Act, 2012 through the 
+insertion of sections 92CC and 92CD in the Income-tax Act, 1961. These statutory provisions, 
+effective from 1st July, 2012, lent the legal backing to the CBDT to enter into APAs with 
+taxpayers for a maximum period of 5 years in respect of international transactions between 
+Associated Enterprises (AEs) to determine the ALP or to specify the manner in which the ALP 
+is to be determined.  
+Vide notification no. 36/2012 [F. No. 133/5/2012-SO(TPL)]/SO 2005 (E), dated 30th August, 
+2012, the APA Scheme [Rules 10F to 10T] was inserted in the Income-tax Rules, 1962 to 
+operationalize the APA programme. Thus, the Indian APA programme, which commenced 
+from 1st July, 2012, became functional and operational from 30th August, 2012 with the 
+notification of the rules. The rules deal with the various procedural aspects of the APA process, 
+including procedures for filing of pre-filing consultation application; pre-filing consultation; 
+payments of fees; filing of APA application; processing of APA application; withdrawal of 
+APA application; terms and conditions of APA; filing of Annual Compliance Report; 
+Compliance Audit; revision, cancellation and renewal of APA; etc.  
+ 
+1Advance Pricing Agreement Guidance with FAQs released as part of Taxpayer Information Series No. 43 
+
+--- Page 6 ---
+ 
+Page 6 of 38 
+ Rollback provisions allow the ALP or the methodology for determining the ALP as agreed to 
+in the APA, to be rolled back to a period prior to the commencement of the APA. Roll-back of 
+APAs was announced by the Government on 10th July, 2014. The necessary legislative 
+changes in this regard were carried out through the Finance (No. 2) Act, 2014. The amendment 
+to the Income-tax Rules, 1962 for implementing the Roll-back provisions were notified on 14th  
+March, 2015 and the existing APA Scheme got amended accordingly. The Rollback provisions 
+are applicable for a maximum of four years prior to the first year of the APA period. Thus, a 
+taxpayer would be able to have certainty in matters of transfer pricing for a maximum period 
+of 9 years at any one time by applying for an APA with Rollback provisions. Circular No. 10 
+of 2015 was issued by the CBDT on 10th June, 2015 to provide clarity on Rollback issues in 
+the form of answers to FAQs.  
+Under the Indian APA programme, APAs can be bilateral (involving CBDT and the tax 
+authorities of another country) or unilateral (involving the CBDT only). Over the last 11 years, 
+more than 1600 applications have been filed in India. About 75% of these are for unilateral 
+APAs between the Indian taxpayer and the CBDT. Till 31st March, 2023, 516 Agreements have 
+been entered into (420 unilateral and 96 bilateral).  
+The APA applications are processed and analysed by dedicated APA teams working under the 
+overall supervision of Pr. CCIT (International Taxation), New Delhi. Each APA team is headed 
+by a Commissioner of Income-tax. The team also comprises Addl./Joint Commissioners of 
+Income-tax and Deputy/Asst. Commissioners of Income-tax. Presently, there are four APA 
+teams. These teams are based in Delhi, Mumbai and Bengaluru. A new APA team has been 
+constituted in this financial year in Gurugram, to further streamline processing of APAs.  
+In respect of unilateral APAs (UAPAs), the position papers developed by the APA teams are 
+approved by the Pr. CCIT (International Taxation), New Delhi and sent to the CBDT for 
+approval. In the CBDT, officers of the Foreign Tax & Tax Research (FT & TR-I and II) 
+Divisions examine and process the position papers. Joint Secretary, FT & TR-I and FT & TR-
+II review the examination done by the officers below and further process the position papers 
+before sending it for final approval of the designated Member of the CBDT. The Member 
+approves the final negotiating position to be adopted by the APA teams. Once the negotiation 
+is complete, a draft Agreement is sent to the CBDT for approval. Thereafter, the Agreement is 
+entered into between the CBDT and the taxpayer.  
+
+--- Page 7 ---
+ 
+Page 7 of 38 
+ In respect of bilateral APAs (BAPAs), once the position papers are sent to the FT & TR-I & II 
+Divisions by the Pr. CCIT (International Taxation), the Competent Authority of India (either 
+Joint Secretary, FT & TR-I or Joint Secretary, FT & TR-II, depending upon the country with 
+which the bilateral APA is to be negotiated under the Tax Treaty) initiates discussions with 
+their counterpart in the other country. The officers in the FT & TR Division of the CBDT 
+working with the Competent Authority examine the position paper received from the Pr.CCIT 
+(International Taxation) and prepare the position of the Indian Competent Authority. The same 
+is shared with the Competent Authority of the other country. Once positions have been 
+exchanged, the Competent Authorities of both countries discuss and negotiate the terms and 
+conditions of the APA. If they reach an understanding, then a Mutual Agreement, containing 
+the terms and conditions of the APA, is entered into by the Competent Authorities of both 
+countries. Thereafter, each country usually enters into an Agreement with its own taxpayer. On 
+the Indian side, the Mutual Agreement is shared with the taxpayer and its concurrence is sought 
+within 30 days. Once the taxpayer agrees to the resolution reached in the Mutual Agreement, a 
+draft Agreement is prepared in consultation with the Indian taxpayer and the same is submitted 
+for the approval of the designated Member in the CBDT.  
+For both UAPAs and BAPAs, the Agreements are entered into by either Joint Secretary, FT & 
+TR-I or Joint Secretary, FT & TR-II (the two Competent Authorities of India) with the 
+taxpayer, on behalf of the CBDT.  
+The fifth Annual Report on the APA programme highlights the progress made in financial year 
+2022-23. This has been a landmark year for the APA programme. This year, CBDT recorded 
+the highest ever APA signings in any financial year since the launch of the APA programme, 
+signing a total of 95 APAs. This year, CBDT also signed the maximum number of BAPAs in 
+any financial year till date, with the signing on 32 BAPAs. The BAPAs were signed as a 
+consequence of entering into Mutual Agreements with India’s treaty partners namely Finland, 
+the UK, the US, Denmark, Singapore, and Japan. A record of the largest number of single day 
+signings in the history of the programme was also created with a total of 21 APAs signed on 
+24th March, 2023.This was possible due to the efforts of the CBDT and its officers working in 
+the Foreign Tax & Tax Research Division and in the APA teams [under the Principal CCIT 
+(International Taxation)]. The CBDT also acknowledges the cooperation and efforts of the 
+taxpayers and their consultants in making the APA programme a success.  
+
+--- Page 8 ---
+ 
+Page 8 of 38 
+ This Annual Report carries forward the CBDT’s unique initiative to bring into the public 
+domain various statistical and qualitative aspects of India’s APA programme. The idea is to 
+encourage discussion and debate amongst taxpayers, policy makers, and economists, among 
+others, on the strengths and weaknesses of the programme. This Annual Report also underlines 
+the importance that the APA programme holds in the Government’s endeavour to promote and 
+preserve a non-adversarial tax regime.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+--- Page 9 ---
+ 
+Page 9 of 38 
+ Chapter 2: Data and Qualitative Analyses  
+ 
+2.1 Applications filed  
+The total number of applications filed on an annual basis can be seen from Table 2-1 and Figure 
+2-1 below. The total number of applications remained largely consistent from FY 2017-18 to 
+FY 2019-20 before a sharp drop in FY 2020-21 and FY 2021-22. However, the number of 
+filings bounced back in FY 2022-23, driven primarily by the highest number of BAPA filings 
+ever. Although premature to declare this as a trend based on one year, the shift towards BAPAs 
+indicates confidence in the quick and efficient resolutions with many of our treaty partners.  
+Table 2-1 APA Applications Filed till 31.03.2023  
+Financial 
+Year2 UAPA 
+applications  BAPA 
+applications  Total 
+2012-13 97 37 134 
+2013-14 175 39 214 
+2014-15 169 30 199 
+2015-16 113 24 137 
+2016-17 80 25 105 
+2017-18 121 52 173 
+2018-19 124 47 171 
+2019-20 76 50 126 
+2020-21 100 33 133 
+2021-22 39 35 74 
+2022-23 116 77 193 
+Total 1210 449 1659 
+  
+Figure 2-1 APA applications filed
+ 
+ 
+2 Some filing years have been corrected 97175 169
+11380121 124
+76100
+39116373930
+24
+2552 47
+5033
+3577
+050100150200250
+2012-13 2013-14 2014-15 2015-16 2016-17 2017-18 2018-19 2019-20 2020-21 2021-22 2022-23
+UAPA BAPA
+
+--- Page 10 ---
+ 
+Page 10 of 38 
+ 2.2 Status of applications filed  
+Table 2-2 shows the status of applications filed. Out of a total 1659 applications filed till 31st 
+March 2023, a total of 831 applications have been disposed and 828 applications are under 
+processing.  A comparison of applications filed, disposed, and under processing, is presented 
+in Figure 2-2.  
+ Table 2-2 Status of applications filed 
+Sl. 
+No. FY Appli-
+cations 
+Filed 
+(Post 
+Con-
+version)  Agree-
+ments 
+Signed Applications 
+disposed off 
+due to other 
+reasons Applications 
+under pro-
+cessing  
+    A B C D = A – B – 
+C  
+1 2012-13 134 107 21 6 
+2 2013-14 214 130 65 19 
+3 2014-15 199 96 72 31 
+4 2015-16 137 56 51 30 
+5 2016-17 105 33 34 38 
+6 2017-18 173 32 31 110 
+7 2018-19 171 39 26 106 
+8 2019-20 126 13 6 107 
+9 2020-21 133 9 7 117 
+10 2021-22 74 1 1 72 
+11 2022-23 193 0 1 192 
+Total 1659 516 315 828 
+Figure 2-2 Status of applications filed from initiation of APA programme till 31.03.2023  
+ 
+ 516315828Status of applications filed
+Agreements Signed Applications disposed due to other reasons Applications Under Processing
+
+--- Page 11 ---
+ 
+Page 11 of 38 
+ 2.3 Agreements signed: Year-wise  
+The number of agreements signed in various years of the APA programme are detailed in Table 
+2-3 and Figure 2-3 below. While there was a significant fall in the number of APAs signed in 
+FY 2020-21, mainly due to the CoVID-19 pandemic, the APA programme bounced back in 
+FY 2021-22, and hit a record high in FY 2022-23. The highest number of BAPAs ever were 
+signed in this year. Additionally, signing of the 400th UAPA and the 500th APA were also 
+milestones achieved in this year.  
+Table 2-3 Agreements signed year wise 
+FY UAPAs BAPAs Total 
+2013-14 5 0 5 
+2014-15 3 1 4 
+2015-16 53 2 55 
+2016-17 80 8 88 
+2017-18 58 9 67 
+2018-19 41 11 52 
+2019-20 50 7 57 
+2020-21 18 13 31 
+2021-22 49 13 62 
+2022-23 63 32 95 
+Total 420 96 516 
+ 
+Figure 2-3 UAPAs and  BAPAs signed since initiation of APA programme  
+ 
+ 5 35380
+58
+4150
+184963
+0128
+9
+117
+131332
+0102030405060708090100
+2013-14 2014-15 2015-16 2016-17 2017-18 2018-19 2019-20 2020-21 2021-22 2022-23
+UAPA BAPA
+
+--- Page 12 ---
+ 
+Page 12 of 38 
+ 2.4 Total covered years in Agreements signed  
+The impact of the APA programme in increasing the ease of doing business is evident from the 
+number of years for which it has brought certainty in transfer pricing matters and reduced 
+litigation. In its short period of existence in India, the APA programme has cumulatively 
+brought about certainty for over 3200 years.  
+Particulars  APA years  Rollback Years  Total Years  
+Agreements signed till 
+2021-22 2023 years & 7 
+Months 693 years  2716 years & 7 
+months 
+Agreements signed 
+in 2022-23 452 years, 3 months, 
+& 21 days  84 years & 8 months  536 years, 11 
+months & 21 days  
+    
+Total Agreements 
+signed till 31st 
+March 2023  2475 years, 10 
+months, & 21 days  777 years & 8 
+months 3253 years, 6 
+months, & 21 days  
+ 
+ 
+The APA programme is also an important tool to decongest the tax tribunals and higher 
+judiciary of transfer pricing litigation. Even if we assume that only about half of these 
+assessment years would have ended up in litigation, the APA programme has managed to 
+prevent or resolve this litigation for more than 1600 assessment years, in other words more 
+than 1600 transfer pricing matters related appeals. During the last financial year itself, the  APA 
+programme has provided tax certainty to more than 500 assessment years annually.  
+
+--- Page 13 ---
+ 
+Page 13 of 38 
+ Chapter 3: Unilateral APAs  
+ 
+3.1 Applications Filed  
+Statistics pertaining to UAPA applications are presented in Table 3-1. The number of 
+applications filed in past years remains dynamic because of conversion of UAPAs into BAPAs 
+and vice versa, physical verification of pendencies, etc.  
+Table 3-1 Applications filed3 (original and post-conversion) 
+S.No F.Y Application UAPA 
+(Original) Application UAPA 
+(Post Conversion) 
+1 2012-13 105 97 
+2 2013-14 188 175 
+3 2014-15 185 169 
+4 2015-16 120 113 
+5 2016-17 81 80 
+6 2017-18 120 121 
+7 2018-19 124 124 
+8 2019-20 73 76 
+9 2020-21 100 100 
+10 2021-22 39 39 
+11 2022-23 116 116 
+Total 1251 1210 
+ 
+3.2 Status of Applications Filed  
+The number of UAPAs disposed off and number of UAPAs still under processing are detailed 
+in Table 3-2 and Figure 3-2 below. The disposal in earlier years is high while number of cases 
+still under processing is low. For recent years, a large proportion of cases are still under 
+processing. Reason for this is that processing of APAs involves conducting site visits, various 
+due diligence processes, and multiple rounds of negotiations, all of which take time. More than 
+20% of the applications under processing pertain to applications filed in March 2023 and so 
+the processing is at a preliminary stage. 
+ 
+ 
+ 
+ 
+3 Some filings have been corrected 
+
+--- Page 14 ---
+ 
+Page 14 of 38 
+ Table 3-2 Status of UAPAs filed 
+S.No F.Y (A) (B) (C) (D) 
+No. of Ap-
+plications 
+Filed 
+(Post-Con-
+version) No. of 
+Agreements 
+Signed out 
+of (A) No. of Applica-
+tions Disposed 
+of out of (A) 
+due to other 
+reasons No. of Applica-
+tions under Pro-
+cessing out of (A) 
+1 2012-13 97 81 13 3 
+2 2013-14 175 117 51 7 
+3 2014-15 169 80 67 22 
+4 2015-16 113 47 45 21 
+5 2016-17 80 24 31 25 
+6 2017-18 121 24 28 69 
+7 2018-19 124 33 23 68 
+8 2019-20 76 8 5 63 
+9 2020-21 100 5 6 89 
+10 2021-22 39 1 1 37 
+11 2022-23 116 0 1 115 
+TOTAL 1210 420 271 519 
+ 
+Figure 3-2 Status of UAPAs  
+ 
+3.3 Agreements Signed – Year wise  
+The number of UAPA agreements signed in various years are detailed in Table 3-3 and Figure 
+3-3. In 2022-23, the 63 agreements entered have provided tax certainty for 301 APA years & 
+3 months and 54 rollback years. A total of 16 APAs out of the 63 signed, had a rollback.  97175169
+113
+80121 124
+76100
+39116
+81117
+80
+47
+24 2433
+8 51 0135167
+45
+31 2823
+5 61 1 3722 212569 686389
+37115
+020406080100120140160180200
+2012-13 2013-14 2014-15 2015-16 2016-17 2017-18 2018-19 2019-20 2020-21 2021-22 2022-23
+No. of Applications Filed No. of Agreements Signed
+No. of Applications Disposed of No. of Applications under Processing
+
+--- Page 15 ---
+ 
+Page 15 of 38 
+ Table 3-3 UAPAs signed  
+FY Agreements Signed  
+2013-14 5 
+2014-15 3 
+2015-16 53 
+2016-17 80 
+2017-18 58 
+2018-19 41 
+2019-20 50 
+2020-21 18 
+2021-22 49 
+2022-23 63 
+Total 420 
+ 
+Figure 3-3 UAPAs signed  
+ 
+ 
+3.4 Duration of Processing  
+The number of UAPAs signed in FY 2022-23 segregated on the basis of duration taken from 
+application to signing are mentioned in Table 3-4-1 below. It is seen that the average duration 
+for closure of applications in FY 2022-23 is approximately 59.73 months. The average duration 
+of processing on a cumulative basis is approximately 44.2 months. In the recent years, the focus 
+of the APA programme has been on closure of backlog as well as more complex cases. The 
+average duration of processing of cases in FY 2022-23, when compared to cumulative figure, 
+highlights the impact of these factors.  535380
+58
+4150
+184963
+0102030405060708090
+2013-14 2014-15 2015-16 2016-17 2017-18 2018-19 2019-20 2020-21 2021-22 2022-23
+APAs Signed
+
+--- Page 16 ---
+ 
+Page 16 of 38 
+  
+Table 3-4-1 Duration of processing of UAPAs in FY 2022-23 
+Duration of processing FY 2022-23 
+Within 12 Months 1 
+13-24 Months 2 
+25-36 Months 9 
+37-48 Months 16 
+49-60 months 12 
+61-72 months 7 
+More than 72 months 16 
+Total 63 
+ 
+Figure 3-4-1 The duration taken in processing and negotiation of UAPAs signed in FY 2022-23  
+ 
+ 
+ 
+The cumulative data on period of processing of all UAPAs signed till 31st March, 2023, is as presented 
+in Table 3-4-2 and Figure 3-4-2 hereunder: 
+ 
+Table 3-4-2 Cumulative data on period of processing for UAPAs signed till March 2023 
+Duration of 
+processing Agreements signed till 
+31st March 2023 
+Within 12 Months  10 
+13-24 Months  54 
+25-36 Months 123  
+37-48 Months 104 
+49-60 months  52 
+61-72 months  46 
+More than 72 months  31 
+Total 420 12
+916127
+16Agreements signed in 2022-23
+within 12 Months 13-24 Months 25-36 Months
+37-48 Months 49-60 months 61-72 months
+More than 72 months
+
+--- Page 17 ---
+ 
+Page 17 of 38 
+  
+Figure 3-4-2 The duration taken in processing and negotiation of UAPAs signed till March 2023  
+ 
+3.5 Sectoral distribution of applicants  
+The primary economic activity of applicants in whose cases UAPAs were signed in FY 2022-
+23 are mentioned in Table 3-5 below. As can be seen, a majority of applications which 
+culminated into agreement in FY 2022-23 pertain to the service sector. A majority of these, in 
+turn, are captive companies involved in software development and IT enabled services. Some 
+of these companies are also involved in engineering design services, contract R&D services, 
+and Knowledge Process Outsourcing (KPO). It may be noted that 14 out of the 63 companies 
+with which CBDT entered into agreements also have manufacturing activities. Further, 11 out 
+of 63 companies are involved in trading activities. Hence, the entire spectrum of trading, 
+manufacturing, and services, are covered under UAPAs signed.  
+ 
+Table 3-5 Number of UAPAs signed in FY 2022-23 
+Sl. No. Economic Activity  Agreements signed  
+1 Service 44 
+2 Manufacturing & Trading  4 
+3 Trading & Service  5 
+4 Manufacturing & Service  8 
+5 Manufacturing, trading & Service  2 
+  Total 63 
+ 10
+54
+123
+104524631Agreements signed till 31stMarch 2023
+Within 12 Months 13-24 Months 25-36 Months 37-48 Months
+49-60 months 61-72 months More than 72 months
+
+--- Page 18 ---
+ 
+Page 18 of 38 
+ 3.6 Industry-wise distribution of agreements  
+A majority of UAPAs signed in the financial year 2022-23 pertain to the I-T industry, banking 
+& insurance, and engineering services. This reflects on the fact that India is a major outsourcing 
+destination for information technology and business processes, and significant number of 
+foreign MNEs have presence in I-T clusters of India such as Bengaluru, Hyderabad, Chennai, 
+Gurgaon, and Noida. The pharmaceutical/chemical industry has also been increasingly 
+reflected in the APAs signed, mirroring the importance of the Indian pharmaceutical industry 
+globally. The industry wise distribution of UAPAs is as given in Table 3-6 and Figure 3-6 
+below.  
+Table 3-6 Industry-wise distribution of UAPAs 
+ 
+ 
+Figure 3-6 Industries that UAPAs signed in FY 2022-23  pertain to
+ 
+ 
+ 18
+11268Industry Classification
+Information Technology Pharmaceuticals/Chemicals Services OthersS. No Industry Agreements Signed  
+1 Information Technology  18 
+2 Cement 1 
+3 Pharmaceuticals/Chemicals  11 
+4 Automotive  2 
+5 Services 26 
+6 Packaging  1 
+7 Beverages  2 
+8 Publication  1 
+9 Apparel 1 
+   
+  Total 63 
+
+--- Page 19 ---
+ 
+Page 19 of 38 
+ 3.7 Nature of Transactions Covered  
+The nature of the 267 international transactions covered by the 63 UAPAs signed in FY 2022-
+23 are mentioned in Table 3-7 and Figure 3-7 below. As can be seen from the table, a wide 
+variety of transactions have been covered by the UAPAs signed in this year. A diversified 
+basket of international transactions indicates the maturity of the APA programme and 
+competence of the APA teams in processing applications that include complex transactions.  
+While captive services like SWD services and ITeS services are usually benchmarked at cost 
+plus a mark-up under the Transactional Net Margin Method (TNMM), the determination of 
+arm’s length price for manufacturing, royalty transactions, IGS, etc.  is more intricate. Some 
+complex transactions need to be benchmarked using multiple methods (a primary method and 
+a secondary method for sanity check).  
+Table 3-7 Nature of international transactions covered by UAPAs signed 
+Sl. No. Covered Transaction  FY 2022-23 
+1 Reimbursement / Recovery of expenses  60 
+2 Provision of IT enabled services  18 
+3 Purchase of Capital goods/ assets/software  16 
+4 Import/ purchase of ingredients/ raw materials/ consum-
+ables 12 
+5 Provision of SWD services  10 
+6 Outstanding trade receivable/payables  10 
+7 Payment of interest on borrowings  9 
+8 Provision of IT support services  9 
+9 Provision of marketing support/business support/consul-
+tancy services  7 
+10 Provision of support services  7 
+11 Receipt of management/ corporate support services  6 
+12 Payment of royalty/licence fee  6 
+13 Export/sale of finished goods/products  6 
+14 Payment for IT charges/IT services  5 
+15 Receipt/Payment of corporate guarantee fee  5 
+16 Provision of non -binding investment advisory service  4 
+17 Receipt of Technical services 4 
+18 Provision of engineering design services  3 
+19 Import of finished goods  3 
+20 Sale of ingredients/ raw materials/ consumables  3 
+21 Provision of contract R&D Services  3 
+22 Contract manufacturing  3 
+23 Any other closely linked transaction  3 
+24 Provision/Receipt of training services  3 
+25 Provision of analytics/ KPO services  3 
+26 Deemed international transactions  3 
+
+--- Page 20 ---
+ 
+Page 20 of 38 
+ 27 Provision of sourcing support services  3 
+28 Purchase of software licences  2 
+29 Receipt of interest  2 
+30 Sale of assets  2 
+31 Receipt of facility standby charges  2 
+32 Provision  of engineering and consultancy services  2 
+33 Provision of EPCM services  2 
+34 Licensing of intangibles  2 
+35 Repair and maintenance expenses  2 
+36 Collection and remittance of contribution toward Em-
+ployee Stock Purchase Plan  2 
+37 Availing of other support services  1 
+38 AMP expense  1 
+39 Receipt of commission  1 
+40 Receipt of Technical Services  1 
+41 Provision of contract services  1 
+42 Payments to third party vendors  1 
+43 After sales Service Income during the warranty period  1 
+44 Availing of Engineering & Consultancy services  1 
+45 Provision of IT consulting services  1 
+46 Receipt of Legal, consultancy and professional services  1 
+47 Distribution/Trading of IT products  1 
+48 Grant of non -exclusive and recoverable license  1 
+49 Transfer of inventories, components and spare pertain-
+ing to Manufacturing/  1 
+50 Provision of coordination support and liaisoning ser-
+vices 1 
+51 Sale of bulk drugs/bulk drug intermediaries  1 
+52 Payment of service charges  1 
+53 Rental income  1 
+54 Bank charges  1 
+55 Provision of monitored buying services  1 
+56 Availing support services 1 
+57 Payment for professional services  1 
+58 Provision of global audit services  1 
+59 Payment of plant facility charges  1 
+60 Payment of sales and marketing fee  1 
+61 Export of R&D products and services  1 
+ 
+
+--- Page 21 ---
+ 
+Page 21 of 38 
+ Figure 3-7 Nature of international transactions covered by the signed UAPAs 
+ 
+3.8 Transfer Pricing Methodologies Used  
+A total of 267 transactions were benchmarked using 4 different methods, across the 63 UAPAs 
+signed in the financial year. The various methods are given in Table 3-8 and Figure 3-8 below.  
+Table 3-8 TP methods used to benchmark international transactions 
+Sl. No TP Methodology  No. of Transactions  
+1 TNM Method  152 
+2 Other Method  95 
+3 CUP Method  19 
+4 Resale Price Method  1 
+  Total 267 
+ 
+Figure 3-8 Methods used to benchmark transactions in UAPA agreements 
+ 
+ 
+0100200
+TNM Method Other Method CUP Method Resale Price 
+MethodNo. of Transactions0 10 20 30 40 50 60 70Reimbursement / Recovery of expensesProvision of IT enabled servicesPurchase of Capital goods/ assets/softwareImport/ purchase of ingredients/ raw materials/ consumablesProvision of SWD servicesOutstanding trade receivable/payablesPayment of interest on borrowingsProvision of IT support servicesProvision of marketing support/business support/consultancy servicesProvision of support servicesReceipt of management/ corporate support services
+
+--- Page 22 ---
+ 
+Page 22 of 38 
+ 3.9 Location of AEs  
+The 63 UAPAs entered into in the financial year have AEs across 130 countries, as given in 
+Table 3-9 below. Usually, a single APA covers AEs located in multiple jurisdictions. The 
+transactions with these AEs could be the primary covered international transaction, or a closely 
+linked transaction like reimbursement/recovery of expenses, etc. In a majority of cases, AEs 
+are located in the United States, the United Kingdom, France, Germany, etc. The APA 
+applicants are usually a part of MNE groups, whose parent jurisdictions are in these countries. 
+Many AEs are also located in investment and business hubs such as Singapore, Hong Kong, 
+and Ireland.  
+Table 3-9: Location of AEs 
+Sl. No. Countries Location of 
+AEs in 
+signed 
+UAPAs Sl. No. Countries Location of 
+AEs in 
+signed 
+UAPAs 
+1 USA 302 30 Austria 13 
+2 China 96 31 Belgium 13 
+3 UK 83 32 Hungary 12 
+4 France 61 33 Luxembourg  12 
+5 Germany 58 34 Bermuda 11 
+6 Singapore  58 35 New Zealand  11 
+7 Netherlands  51 36 Romania 11 
+8 Japan 42 37 Russia 11 
+9 Australia 41 38 Sweden 11 
+10 Ireland 39 39 Czechia 10 
+11 Canada 29 40 Indonesia 10 
+12 Taiwan 25 41 Cayman 
+Islands 9 
+13 Spain 24 42 Colombia 9 
+14 UAE 24 43 Turkey 9 
+15 Malaysia 23 44 Vietnam 9 
+16 Denmark 22 45 Ghana 8 
+17 Hong Kong 21 46 Argentina 7 
+18 Israel 20 47 Bulgaria 7 
+19 Italy 19 48 Chile 7 
+20 Mexico 19 49 Egypt 7 
+21 Poland 18 50 Morocco 7 
+22 Brazil 17 51 Norway 7 
+23 India 17 52 Qatar 7 
+24 Philippines  17 53 Slovakia 7 
+25 Switzerland  17 54 Bangladesh  6 
+26 Thailand 17 55 Cyprus 6 
+27 South Korea 15 56 Kenya 6 
+28 Saudi Arabia 14 57 Portugal 6 
+29 South Africa 14 58 Costa Rica 5 
+
+--- Page 23 ---
+ 
+Page 23 of 38 
+ Sl. No. Countries Location of 
+AEs in 
+signed 
+UAPAs Sl. No. Countries Location of 
+AEs in 
+signed 
+UAPAs 
+59 Croatia 5 100  Brunei 1 
+60 Finland 5 101 Burkina Faso  1 
+61 Nigeria 5 102  Cameroon  1 
+62 Ukraine 5 103 Cote d'Ivoire  1 
+63 Bahrain 4 104  Ecuador 1 
+64 Macedonia  4 105 El Salvador  1 
+65 Madagascar  4 106  Equatorial 
+Guinea 1 
+66 Oman 4 107 French 
+Polynesia  1 
+67 Pakistan 4 108  Gayana 1 
+68 Peru 4 109 Greece 1 
+69 Republic of 
+Congo 4 110  Guatemal  1 
+70 Serbia 4 111 Iran 1 
+71 Uganda 4 112  Iraq 1 
+72 Chad 3 113 Jamaica 1 
+73 Kazakhstan  3 114  Kuwait 1 
+74 Lithuania 3 115 Lebanon 1 
+75 Mauritius 3 116  Saint Lucia  1 
+76 Myanmar  3 117 Macau 1 
+77 Senegal 3 118  Malta 1 
+78 Slovenia 3 119 Mauritiana  1 
+79 Sri Lanka 3 120  Montenegro  1 
+80 Tanzania 3 121 Mozambique  1 
+81 Tunisia 3 122  Republic of 
+Moldova 1 
+82 Cambodia  2 123 Republique 
+de Guinee  1 
+83 Estonia 2 124  Rwanda 1 
+84 Gabon 2 125 Sierra Leone  1 
+85 Guernsey 2 126  Suriname  1 
+86 Jordan 2 127 Togo 1 
+87 Latvia 2 128  Trinidad & 
+Tobago 1 
+88 Malawi 2 129 Uruguay 1 
+89 Niger 2 130 Yugoslav 1 
+90 Panama 2    
+91 Seychelles  2    
+92 Venezuela 2    
+93 Zambia 2    
+94 Albania 1    
+95 Aruba  1    
+96 Azerbaijan  1    
+97 Bahamas  1    
+98 Barbados  1    
+99 Benin  1    
+
+--- Page 24 ---
+ 
+Page 24 of 38 
+  
+Chapter 4: Bilateral APAs  
+ 
+4.1 Applications Filed  
+BAPA applications filed in various years, and UAPA applications filed in various years but 
+subsequently converted into BAPA applications are detailed in Table 4-1. This financial year 
+has been a landmark year in BAPA filings, with 77 new applications being received. This 
+demonstrates the trust reposed in the bilateral process by our taxpayers, and reflects deeper 
+relationships with our treaty partners, leading to quicker resolutions.  
+Table 4-1 Number of BAPA applications filed4 
+FY Applications 
+(Original)  Applications (After 
+Conversions)  
+2012-13 29 37 
+2013-14 26 39 
+2014-15 14 30 
+2015-16 17 24 
+2016-17 24 25 
+2017-18 53 52 
+2018-19 47 47 
+2019-20 53 50 
+2020-21 33 33 
+2021-22 35 35 
+2022-23 77 77 
+Total 408 449 
+ 
+4.2 Country-wise Distribution of applications  
+The country-wise distribution of BAPAs is detailed in Table 4-2 and Figure 4-2. More than 
+half of BAPA applications are with one treaty partner, i.e., the United States of America. Other 
+treaty partners with whom large number of applications have been filed in FY 2022-23 are the 
+UK, Japan, Finland, and South Korea.  
+ 
+ 
+ 
+ 
+4 Some filing years have been corrected  
+
+--- Page 25 ---
+ 
+Page 25 of 38 
+ Table 4-2 Country-wise distribution of BAPAs 
+Countries  Applications filed in 
+2022-23 
+USA 41 
+UK 7 
+Japan 6 
+Finland 6 
+South Korea  3 
+Ireland 2 
+Switzerland  2 
+Sweden 2 
+Singapore  2 
+Germany 1 
+Denmark 1 
+Netherlands  1 
+Italy 1 
+Canada 1 
+Australia 1 
+Total 77 
+ 
+Figure 4-2 Major countries to which BAPA applications filed in FY 2022-23 pertain 
+ 
+ 
+4.3 Status of Applications Filed  
+The status of applications filed is shown in Table 4-3 below. Out of a total 449 applications 
+filed by 31st March 2023, a total of 140 applications have been disposed and 309 applications 
+are under processing.  A comparison of status of applications signed, disposed, and under 
+processing for the BAPA applications filed till FY 2022-23 (as on 31st March, 2023) is 
+presented in Figure 4-3.  051015202530354045
+Country distribution of Bilateral APAs
+FY 2022-23
+
+--- Page 26 ---
+ 
+Page 26 of 38 
+ Table 4-3 Status of BAPA applications filed 
+Sl. 
+No. FY Applications 
+Filed (Post 
+Conversion)   Agreements 
+Signed Applications 
+disposed off due 
+to other reasons  Applications 
+under 
+processing  
+  A B C D = A – B – C  
+1 2012-13 37 26 8 3 
+2 2013-14 39 13  14 12 
+3 2014-15 30 16 5 9 
+4 2015-16 24 9 6 9 
+5 2016-17 25 9 3 13 
+6 2017-18 52 8 3 41 
+7 2018-19 47 6 3 38 
+8 2019-20 50 5 1 44 
+9 2020-21 33 4 1 28 
+10 2021-22 35 0 0 35 
+11 2022-23  77 0 0 77 
+Total 449 96 44 309 
+ 
+Figure 4-3 Status of BAPA applications filed till FY 2022-23, as on 31st March 2023 
+ 
+In the 96 BAPAs signed so far, CBDT has provided tax certainty of 614 years,5 months & 21 
+days. These 614 years, 5 months & 21 days include 151 years & 8 months covered under the 
+Rollback period of the concluded APAs. Out of the 96 Agreements, 47 have Rollback 
+provisions. In FY 2022-23, the 32 BAPAs entered into have provided tax certainty totalling to 
+181 years, 8 months, & 21 days.  Of these 32 BAPAs, 10 BAPAs have Rollback period of 30 
+years & 8 months.     
+4.4  Country wise status of application filed (post conversion)  
+The country-wise status of BAPA applications filed is shown in Table 4-4 and Figures 4-4-1 
+and 4-4-2 below. More than 70% of the total BAPA applications that are still under processing, 96
+44
+309
+Agreements Signed
+Applications disposed off due to other reasons
+Applications under processing 
+
+--- Page 27 ---
+ 
+Page 27 of 38 
+ are with 5 countries – the USA, the UK, Japan, Switzerland, and Singapore. The maximum 
+number of BAPAs signed so far have been with the USA followed by the UK and Japan.  
+Table 4-4 Status of application filed 
+Sl. 
+No. Country Applications 
+Filed  Agreements 
+Signed Applications 
+disposed off 
+due to other 
+reasons Applications under 
+Processing 
+    A B C D = A – B – C 
+1 USA 205 45 9 151 
+2 UK 71 18 23 30 
+3 Japan 39 10 2 27 
+4 Switzerland 20 6 1 13 
+5 Singapore 16 2 2 12 
+6 Finland 15 3 1 11 
+7 Germany 10 0 0 10 
+8 Sweden 9 0 0 9 
+9 South Korea 9 0 0 9 
+10 Australia 9 3 0 6 
+11 Canada 6 0 0 6 
+12 Ireland 6 0 1 5 
+13 Denmark 10 6 0 4 
+14 France 5 0 1 4 
+15 The Nether-
+lands 10 3 4 3 
+16 Luxembourg 2 0 0 2 
+17 Italy 2 0 0 2 
+18 New Zealand 1 0 0 1 
+19 China 1 0 0 1 
+20 Czech Repub-
+lic 1 0 0 1 
+21 Belgium 1 0 0 1 
+22 Indonesia 1 0 0 1 
+  TOTAL 449 96 44 309 
+ 
+
+--- Page 28 ---
+ 
+Page 28 of 38 
+ Figure 4-4-1 BAPAs signed
+ 
+Figure 4-4-2 BAPA applications under processing  
+ 
+4.5 Agreements Signed – Year wise  
+The Table 4-5 and Figure 4-5 below show the year-wise details of BAPAs entered into till 31st 
+March, 2023. As can be seen below, almost a three-fold increase in signing of BAPAs was 
+achieved in FY 2022-23. This stellar performance was possible due to increasing frequency of 
+communication with treaty partners, streamlined efforts by officers, and maturity of the APA 
+programme.  
+In FY 2022-23, out of the 32 Agreements signed with taxpayers, 22 pertained to the USA, 3 to 
+Finland, and 2 each to the UK, Singapore, and Denmark, while 1 pertained to Japan.  45
+1810663332Agreements Signed
+USAUKJapanSwitzerland Denmark Finland Australia The Netherlands Singapore
+151
+30271312111055Applications under processing
+USAUKJapan Switzerland Singapore Finland Germany Others
+
+--- Page 29 ---
+ 
+Page 29 of 38 
+ Table 4-5 Year-wise BAPAs signed 
+FY Agreements Signed  
+2013-14 0 
+2014-15 1 
+2015-16 2 
+2016-17 8 
+2017-18 9 
+2018-19 11 
+2019-20 7 
+2020-21 13 
+2021-22 13 
+2022-23 32 
+Total 96 
+ 
+Figure 4-5 Year-wise BAPAs signed  
+ 
+ 
+4.6 Duration of Processing  
+In FY 2022-23, the average time taken to conclude BAPAs has come down to approximately 
+62.1 months. The detailed analysis of this is depicted in Table 4-6-1 and Figure 4-6-1 below. 
+With hard-fought negotiations with treaty partners longstanding BAPAs were successfully 
+concluded in this year which however led to a high average processing time for the year. 
+However, there was a simultaneous focus on quick resolution of renewals in order to leverage 
+the due diligence done while processing original applications and ensure movement in a mixed-
+basket of cases. This has reduced the average time taken for all BAPAs concluded till 31st 
+March, 2023 marginally from 58.91 months (as on 31st March, 2022) to approximately 58.77 0128911
+713 1332
+05101520253035
+2013-14 2014-15 2015-16 2016-17 2017-18 2018-19 2019-20 2020-21 2021-22 2022-23Agreements Signed
+Agreements Signed
+
+--- Page 30 ---
+ 
+Page 30 of 38 
+ months. A number of BAPAs are actually resolved much before they are finally signed. 
+However, due to several reasons such as the desire of the Applicants to conclude both the 
+unilateral and bilateral legs of the application together, the Applicant waiting to clear the draft 
+of agreements through multiple levels of internal approvals etc., the formal signing takes longer 
+even after bilateral resolution, which increases the final duration of processing of BAPAs.  
+ 
+  
+Table 4-6-1 Duration of processing of BAPA applications 
+S. No.  Duration of processing No. of Agreements signed 
+during FY 2022-23 
+1 within 12 Months 0 
+2 13-24 Months 2 
+3 25-36 Months 5 
+4 37-48 Months 6 
+5 49-60 months 8 
+6 61-72 months 2 
+7 73-84 months 3 
+8 85-96 months 4 
+9 97-108 months 1 
+10 108-120 months 1 
+ Total 32 
+ 
+Figure 4-6-1 Duration of processing of all BAPAs signed during FY 2022-23 
+ 
+The cumulative figures for duration of processing of all BAPAs signed till 31st March 2023 
+are as given in Table 4-6-2 and Figure 4-6-2 hereunder: 
+ 
+ 0123456789
+13-24
+Months25-36
+Months37-48
+Months49-60
+months61-72
+months73-84
+months85-96
+months97-108
+months108-120
+monthsDuration of Processing
+
+--- Page 31 ---
+ 
+Page 31 of 38 
+ Table 4-6-2 Cumulative figures for duration of processing of BAPAs  
+Duration of processing  Agreements signed till 31st March 2023  
+Within 12 Months  1 
+13-24 Months  3 
+25-36 Months  11 
+37-48 Months  22 
+49-60 months  22 
+61-72 months  13 
+73-84 months  14 
+85-96 months  6 
+97-108 months  3 
+108-120 months 1 
+Total 96 
+ 
+Figure 4-6-2 Duration of processing of all BAPAs signed till 31st March 2023 
+ 
+ 
+4.7  Distribution of agreements –Economic Activity wise  
+Table 4-7 and Figure 4-7 below capture the data regarding the economic activity or the pre-
+dominant economic activity in each of the BAPAs entered into during FY 2022-23. As in 
+UAPAs, the service sector of the Indian economy has been the dominant sector that has been 
+covered in BAPAs. 
+Table 4-7 Distribution of BAPAs as per economic activity 
+S. No Economic Activity  Agreements Signed in  
+FY 2022-23  
+1 Service 25 
+2 Manufacturing & trading  5 
+3 Service & trading  1 
+4 Manufacturing, trading & services  1 
+Total 32 
+ 0510152025
+Within 12
+Months13-24
+Months25-36
+Months37-48
+Months49-60
+months61-72
+months73-84
+months85-96
+months97-108
+months108-120
+monthsDuration of Processing
+
+--- Page 32 ---
+ 
+Page 32 of 38 
+ Figure 4-7 Economic activity distribution of BAPAs signed in FY 2022-23  
+ 
+ 
+4.8 Distribution of Agreements – Industry-wise  
+Table 4-8 and the Figure 4-8 below reveal that there are six broad industry categories that have 
+been covered under BAPAs concluded in FY 2022-23. The Information Technology industry 
+is the leading industry when it comes to being a part of the APA programme.  
+ 
+Table 4-8 Industry wise distribution of BAPAs signed in FY 2022-23 
+S. No Industry No. of Agreements Signed  
+1 Information Technology  14 
+2 Pharmaceuticals/Chemicals  3 
+3 Automotive  1 
+4 Services 10 
+5 Electronics  3 
+6 Real Estate  1 
+  Total 32 
+ 
+Figure 4-8 Industry-wise distribution of BAPAs 
+ 255101
+Service Manufacturing & trading
+Service & trading Manufacturing & service
+Manufacturing, trading & services
+14
+103311Information Technology
+Services
+Pharmaceuticals/Chemicals
+Electronics
+Automotive
+Real Estate
+
+--- Page 33 ---
+ 
+Page 33 of 38 
+ 4.9 Nature of Covered Transactions  
+During FY 2022-23, the 32 BAPAs entered into had a total of 179 covered international 
+transactions as depicted in Table 4-9 and Figure 4-9. As can be seen, a wide variety of 
+transactions have been covered by the APAs signed in the year. Service-related transactions 
+continue to lead in the transaction mix.  
+ 
+Table 4-9 Nature of covered transactions 
+S. 
+No Nature of Transactions Frequency 
+1 Reimbursement/ Recovery of expenses  36 
+2 Provision of Information Technology enabled Services (ITeS)  19 
+3 Trade receivables and payables  16 
+4 Provision of Software Development Services  13 
+5 Other closely linked transactions  11 
+6 Purchase of fixed assets  11 
+7 Receivables/payables  8 
+8 Deemed international transactions under Section 92B(2)  6 
+9 Import of raw material, components and sub-assemblies for manu-
+facturing/assembling of network equipment 4 
+10 Provision of Support Services  3 
+11 Payment of Royalty  3 
+12 Provision of Information Technology services  3 
+13 Import of network equipment for re -sale 2 
+14 Export of manufactured/assembled network equipment  2 
+15 Sale of capital items  2 
+16 Provision of warranty support services  2 
+17 Provision of welcome support center services  2 
+18 Provision of repair and exchange services  2 
+19 Provision of remote network management and other support ser-
+vices 2 
+20 Provision of operational support services  2 
+21 Provision of software services  2 
+22 Import of assets free of charge  1 
+23 Receipt of intra Group Services/ other services  1 
+24 Purchase of finished good/ consumables  1 
+25 Provision of technical support services  1 
+26 Provision of new product launch services  1 
+27 Provision of limited supervision activities  1 
+28 Provision of clinical trial services  1 
+29 Payment of training charges  1 
+30 Payment of consultancy charges  1 
+31 Reimbursement of share based payments  1 
+32 Recovery of secondment charges  1 
+33 Provision of Non -binding investment advisory services  1 
+34 Provision of services to end customers  1 
+
+--- Page 34 ---
+ 
+Page 34 of 38 
+ 35 Export of finished goods  1 
+36 Provision of management support services  1 
+37 Purchase of software license  1 
+38 Purchase of computer hardware  1 
+39 Provision of contract software development and IT support ser-
+vices 1 
+40 Payment of business adv isory services  1 
+41 Payment of BAS charges 1 
+42 Provision of software consulting services  1 
+43 Employee Stock Option Plans or similar benefits such as 1 
+44 Lease line connectivity/WAN/third party software/tools  1 
+45 Purchase of raw materials  1 
+46 Receipt of royalty  1 
+47 Import of traded goods  1 
+48 Availing of services for provision of services to end customers  1 
+49 Provision of export services  1 
+TOTAL 179 
+ 
+Figure 4-9 Frequency of covered transactions
+ 
+ 
+4.10 Transfer Pricing Methodology adopted  
+Table 4-10 and Figure 4-10 below shows a break up of Transfer Pricing Methodologies adopted 
+in the signed cases. Out of 179 covered transactions, 147 have been benchmarked by using 
+TNMM.  
+ 
+ 19
+16
+13
+11
+1173
+Provision of IT enabled Services Trade receivables/payables
+Provision of Software Development Services Other closely linked transactions
+Purchase of fixed assets Others
+
+--- Page 35 ---
+ 
+Page 35 of 38 
+ Table 4-10 Frequency of usage of TP methods 
+S. No TP Methodology  No. Of Transactions  
+1 TNM Method  147 
+2 Other Method  23 
+3 CUP Method  1 
+4 Profit Split Method  8 
+ Total 179 
+ 
+Figure 4-10 Frequency of usage of various TP methods to benchmark covered transactions in BAPA  
+ 
+ 
+4.11 Renewal of BAPAs  
+ 
+An overwhelming majority of the applicants who have signed a BAPA with the CBDT have 
+opted to file a renewal. This shows the trust reposed by the taxpayers in the APA programme 
+and the preference for obtaining advance certainty rather than undergoing possible TP litigation 
+and its related costs. Out of the 96 BAPAs signed till 31.03.2023, 63 applicants have opted for 
+a renewal of the APA till date.  
+  147231
+8
+TNM Method Other Method CUP Method Profit Split Method
+
+--- Page 36 ---
+ 
+Page 36 of 38 
+ Chapter 5: Other dispute resolution processes  
+ 
+BAPAs are a special type of dispute prevention/resolution process between two treaty partners. 
+Another dispute resolution channel available under India’s Double Taxation Avoidance 
+Agreements (DTAAs) is the Mutual Agreement Procedure (MAP). It is an alternate dispute 
+resolution process involving two treaty partners, that seeks to remove taxation not in 
+accordance with the DTAA arising from action by one or both treaty partners. India participates 
+in the FTA MAP Forum of the Organisation of Economic Cooperation and Development 
+(OECD) and shares its MAP statistics with the Forum. The statistics are available in the public 
+domain.  
+MAP cases are negotiated by the Competent Authorities of India, namely the Joint Secretary 
+(FT&TR-I) and Joint Secretary (FT&TR-II) in the CBDT, and other officers supporting them 
+in this regard. MAP can be filed to avoid anticipated double taxation or resolve double taxation. 
+The inventory of MAP cases in calendar years 2022as also reported under MAP statistics with 
+the OECD is detailed in Table 5-1 below. As can be seen from the table, the number of MAP 
+cases closed in 2022 are substantially more than the number of new MAP applications invoked. 
+As a result, the total number of MAP in India’s inventory is gradually reducing.  
+Table 5-1 MAP cases resolved in 2022 Sl.No. Calendar 
+Year Opening 
+Inventory  Invocations 
+during the year  Closures 
+during the 
+year Closing 
+Inventory  
+1 2022 740* 101 144 697 
+*Opening inventory has been corrected by agreement with the respective treaty partners 
+As can be seen from Figures 5-1 and 5-2, the number of cases being resolved under MAP has 
+been steadily increasing with a corresponding decline in closing inventory. This is primarily 
+due to the maturing of our relationships with treaty partners and efforts to increase frequency 
+of communication with our treaty partners.  
+Figure 5-1 Pendency of cases in MAP inventory from 2019 onwards
+ 
+866947
+873
+751697
+6008001000
+2019 2020 2021 2022 2023Pendency
+
+--- Page 37 ---
+ 
+Page 37 of 38 
+  
+Figure 5-2 Number of MAP applications closed by India and its treaty partners from 2019 onwards 
+ 
+ 
+  0 50 100 150 2002019202020212022MAPs closed
+
+--- Page 38 ---
+ 
+Page 38 of 38 
+  
+Conclusion 
+ 
+The Indian APA programme is a very important part of CBDT’s efforts to enhance the ease of 
+doing business in India and providing tax certainty to taxpayers. Since its commencement in 
+July, 2012, the APA programme has resolved many complex transfer pricing issues which were 
+prone to long drawn and expensive litigation.  
+The Indian APA programme has successfully achieved resolutions that are beneficial to both 
+taxpayers and the Government. While taxpayers have managed to get certainty over transfer 
+pricing issues for five to nine years (depending upon whether rollback provisions are applicable 
+to an Agreement), the Government has been able to streamline limited resources on more 
+productive audits and other procedures.  
+APAs are beneficial to the Government at the same time, by assuring tax revenues from 
+multinationals on the basis of the terms and conditions embedded in the Agreements. Though 
+revenue mobilisation has never been the primary objective of the Indian APA programme, it is 
+a positive externality flowing out from the programme that provides assured revenues to the 
+Government of India. It is estimated that the 516 signed APAs have resulted in bringing finality 
+in taxation to income of about Rs. 19,000 crore. This translates into a payment of tax of about 
+Rs. 7,000 Crore. This is litigation-free and does not give rise to appellate proceedings. Though 
+the APA programme has been successful in enabling a positive economic environment for 
+multinationals doing business in India, the Government is committed to increase the efficacy 
+of the programme further by providing it with adequate resources.  
+ 
+ 
+ 
+ 

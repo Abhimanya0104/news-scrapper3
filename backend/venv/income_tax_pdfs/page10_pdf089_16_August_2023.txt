@@ -1,0 +1,887 @@
+Source Page: 10
+PDF Index: 89
+Title: ​Inviting comments on draft Form no. 6C for implementing the Amendment made by Finance Act, 2023 wrt Sub-Section (2A) of the Section 142 of the Income Tax Act, 1961, regarding inventory valuation
+Date: 16 August 2023
+URL: https://incometaxindia.gov.in/Lists/Latest%20News/Attachments/598/Public-consultation-OM-and-draft-form.pdf
+================================================================================
+
+--- Page 1 ---
+F. No. 370142/29/2023-TPL 
+Government of India 
+Ministry of Finance 
+Department of Revenue 
+Central Board of Direct Taxes 
+**** 
+New Delhi, dated the 16th of August 2023 
+Subject: Inviting comments on the draft Form No. 6C for implementing the amendment 
+made by the Finance Act, 2023 wrt Sub-section (2A) of the Section 142 of the Income 
+Tax Act, 1961 regarding inventory valuation. 
+Sub-section (2A) of section 142 of the Income Tax Act, 196 I ("the Act") provided 
+that if at any stage of proceedings before him, the Assessing Officer, having regard to the 
+nature and complexity of the accounts, volume of the accounts, doubts about the correctness 
+of the accounts, multiplicity of transactions in the accounts or specialized nature of business 
+activity of the assessee, and the interests of the revenue, is of the opinion that it is necessary 
+so to do, he may, with the pre'lious approval of the Pr Chief Commissioner or Chief 
+Commissioner or Pr Commissioner or Commissioner direct assessee to have their accounts 
+audited by an accountant. Form No. 6B has been prescribed in the Income-tax Rules 1962 
+("the Rules") in this regard. 
+2. Vide Finance Act 2023, in order to ensure that inventory is valued in accordance with 
+the various provisions of the Act, sub-section (2A) of section 142 of the Act was amended to 
+enable Assessing Officer to direct the assessee to get inventory valued by a Cost Accountant , 
+nominated by the Pr Chief Commissioner or Chief Commissioner or Pr Commissioner or 
+Commissioner. Assessee is required to furnish the report of inventory valuation in the 
+prescribed form duly signed and verified by the Cost Accountant. 
+3. Relevant amendments shall be carried out in Rule 14A and Rule 14B of the Rules to 
+make the above provision operational. In addition, a draft Form No. 6C (form for inventory 
+valuation report) has been formulated which is enclosed herewith. It is requested that all 
+stakeholders as well as the general public may provide suggestions / comments on draft Form 
+No. 6C and send them at the email address ustpl3lQ2nic.in latest by 31 st August, 2023. 
+Enclosed: As above 
+(K~ 
+DCIT(OSD) (TPL-III) 
+Tel: 011-2309 5469 
+Email: ustpI3@nic.in 
+
+--- Page 2 ---
+Draft for comments  
+ 
+1 
+ FORM NO. 6 C 
+[See rule 14A]  
+[e-Form] 
+Inventory Valuation report unde r clause (ii) of section 142(2A) of the Income -tax Act, 1961  
+ 
+* I/We have examined the Inventory of__________________________[name and address of the assessee] Permanent Account 
+No. ___________________ as at ________________________.  
+ 
+* I/We have conducted Inventory Valuation in compliance with the requirements unde r the relevant provisions of Income -tax Act 
+1961 and Income –tax Rules 1962. The opening inventory has been valued at Rs. _________________ (in words 
+________________) and the closing inventory has been valued at Rs. _______________ (in words ______________ ___).  
+ 
+I/ We have obtained all the information and explanations which to the best of * my/our knowledge and belief were necessary fo r 
+the purposes of the Inventory Valuation.  
+ 
+In * my/our opinion , proper books of account with respect to inventory have be en kept by the head office and the branches of the 
+assessee visited by * me/us so far as appears from * my/our examination of books,  and proper data adequate for the purposes of 
+inventory valuation have been received from branches not visited by * me/us su bject to the comments given below:  
+ 
+1.  
+2.  
+ 
+In * my/our opinion and to the best of * my/our information and according to explanations given to * me/us, the Inventory 
+Valuation presented herein below in my /our report is appropriate.  
+ 
+The prescribed parti culars and such other particulars as were required by the Assessing Officer by order No. 
+_______________________ dated __________________are annexed hereto. In * my/our opinion and to the best of * my/our 
+information and according to explanations given to * me/us, these are true and correct.  
+ 
+Any variations observed in the presented Inventory Valuation Report compared to the disclosures made  in Form 3CD (or if no 
+Form 3CD has been filed, then as per audited accounts) have been adequately explained along with the reasons and justifications 
+thereof. 
+ 
+Place ........... . 
+Date ............. 
+Signed  
+**Name of Cost Accountant:……..  
+Address:     ………. 
+Membership Number     ……… 
+UDIN ……………..  
+ 
+Notes : 
+1. *Delete whichever is not applicable.  
+2. **This report has to be given by the Cost Accountant nominated by the Pr . Chief Commissioner or Chief Commissioner 
+or Pr. Commissioner or Commissioner of Income -tax under clause (ii) of section 142(2A)  of the Income -tax Act, 1961. 
+3. Where any of the matters stated in this report is answe red in the negative or with a qualification, the report shall state the 
+reasons therefor.  
+ 
+ANNEXURE  
+ 
+Inventory Valuation Report of Cost Accountant  
+ 
+ Information of the Assessee   
+1 Address (Head Office and branches)   
+a.   
+b.   
+c.   
+   
+   
+2. Date of incorporation   
+3. Nature of business   
+4. Details of principal products   
+
+--- Page 3 ---
+Draft for comments  
+ 
+2 
+ 5. Details of books of account maintained with respect to inventory   
+6. Method of accounting employed with respect to inventory 
+maintained. Indicate whether there is any change fr om the method 
+of valuation employed with respect to inventory maintained in the 
+immediately two preceding previous year s  
+7. (i) Method of valuation of opening and closing stock of following 
+inventory items used by the Assessee:  
+a) Finished Goods / Stock-in-trade 
+b) Work-in-progress (WIP) 
+c) Raw materials  
+d) By-products 
+e) Intermediate Product  
+f) Jigs, Tools, and Dies  
+g) Stores, Spares & Consumables  
+h) Scrap 
+  
+ (ii) State whether there is any change in the method of valuation of 
+any of the aforesaid items as compared to the method employed in 
+the immediately two preceding previous year s  
+ (iii) If the answer to (ii) above is in the affirmative, specify the 
+amount by which the profit or loss for the year has been affected 
+by such change   
+ 
+8. Give summarized details of Financial Results (as per the Audited Accounts of the Assessee)  
+ 
+Details of Financial Results  
+ 
+S No. Particulars  Year under 
+reporting  Previous 
+Year 1 Previous 
+Year 2 
+1 Turnover        
+2 Profit (Loss) before tax        
+3 Less: Taxes paid     
+4 Net Profit (Loss) after tax     
+5 Value of Production     
+6 Raw Materials Consumed     
+7 Output/Input Ratio (5/6)     
+8 Opening Inventory     
+9 Closing Inventory     
+10 Avg. Inventory Holding Period (days)  
+(365/(1/(( 8+9)/2)))    
+11 Avg. Raw Material Stock to Consumption (days)     
+12 Avg. Stores & Spares Stock to Consumption (days)     
+13 Avg. Finished Goods Stock to Cost of Sales (days)     
+ 
+9. In respect of items manufactured , full quantitative details of raw materials and finished products as indicated below:  
+ 
+(i) Details of Raw Material for the year under reporting - 
+S No. Details RM1 RM2 RM3   
+1 Raw Material description       
+2 Unit of Measurement (UOM)       
+3 Opening stock  
+     
+
+--- Page 4 ---
+Draft for comments  
+ 
+3 
+ 4 Purchases during the year  
+     
+5 Consumption during the year to WIP  
+     
+6 Consumption during the year to Finished products       
+7 Raw Material sold during the year       
+8 Closing stock  
+     
+9 Shortage/ Wastages / Rejects , etc. 
+     
+Notes: 
+1. Inventory of all such raw materials that constitute top 80% of the total inventory value of raw materials should be 
+reported item -wise separately. Inventory of all other raw materials constituting balance may be clubbed under “Others”.  
+2. Add number of columns depending on the number of raw  materials  
+ 
+ 
+(ii)(a) Quantitative details in respect of items manufactured / traded by the Assessee  - 
+ 
+S No. Finished products / Work -in-Progress Item 1 Item 2 Item 3 Item 4   
+1 Description        
+2 Item Code       
+3 Unit of Measurement  (UOM)       
+4 Opening stock           
+5 Quantity manufactured during the year           
+6 Quantity purchased during the year        
+7 Quantity sold during the year           
+8 Quantity rejected during the year        
+9 Quantitative adjustments, if any  * (add reasons)        
+10 Closing stock at the end of the year           
+11 Opening Work -in-Progress       
+12 Closing Work -in-Progress       
+ 
+*(ii)(b) Quantitative adjustments - 
+SNo. Finished products / Work -in-Progress Item 1 Item 2 Item 3 Item 4   
+1 If there are quantitative adjustments in (ii)(a), 
+furnish the detailed reasons for quantitative 
+adjustments        
+Notes:  
+1. Add number of columns depending on the number of items  
+2. Separate quantitative details on the above lines should be given in respect of by -products, if any.  
+3. Where the assessee is a dealer in goods, quantitative details on the above lines should be given in respect of the goods 
+dealt in. 
+4. Inventory of all such manufactured goods / traded goods / work -in-progress items that constitute top 80% of the value of 
+total manufactured goods / traded goods / work -in-progress items respectively should be reported item -wise separately. 
+Inventory of all other manufactured go ods / traded goods / work -in-progress items constituting balance may be clubbed 
+under “Others”.  
+ 
+ 
+ 
+ 
+
+--- Page 5 ---
+Draft for comments  
+ 
+4 
+ 10. (i) Has the assessee conducted physical verification of raw 
+materials, stores and finished products, etc. or the goods dealt in  
+mentioned above ?  
+ (ii) Details of discrepancies, if any   
+11. (i) Whether valuation is in conformity with the Income 
+Computation and Disclosure Standards notified under sub -section 
+(2) of Section 145 of the Income Tax Act, 1961 (“the Act”) ?   
+ (ii) Details of discrepancies, if  any  
+ 
+ 
+12. Details of inventory valuation for the year under reporting by the Cost Accountant  (wherever ICDS II is applicable) -  
+ 
+(i) Valuation of Finished Goods / Stock-in-trade 
+Sr. 
+ Description  
+ Item 
+Code UOM 
+ Opening Stock  Closing Stock  
+Qty 
+ COP
+/ PV 
+ NRV 
+ Lower 
+of (6) 
+or (7) Value 
+(5) x 
+(8) 
+(Rs.) Qty COP
+/ PV NRV Lower 
+of (11) 
+or (12) Value 
+(10) x 
+(13) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) 
+1 Product 1              
+2 Product 2              
+3 Product 3              
+              
+ Total              
+COP: Cost of Production   
+PV: Purchase Value     
+NRV: Net Realisable Value  
+ 
+Notes:  
+1. Add or delete rows as per the number of finished products  
+2. Enclose the working of product -wise Cost of Production  
+3. Enclose details of average Purchase Value in case of Traded Products  
+4.  Enclose the working/basis of product -wise Net Realisable Value  
+ 
+(ii) Valuation of Work -in-Progress (WIP) 
+Sr. 
+ Description  
+ Item 
+Code UOM 
+ Opening Stock  Closing Stock  
+Qty 
+ COP 
+ NRV 
+ Lower 
+of (6) 
+or (7) Value 
+(5) x 
+(8) 
+(Rs.) Qty COP NRV Lower 
+of (11) 
+or (12) Value 
+(10) x 
+(13) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) 
+1 WIP 1             
+2 WIP 2             
+3 WIP 3             
+              
+ Total              
+COP: Cost of Production  
+ 
+Notes:  
+1. Add or delete rows as per the number of finished products  
+2. Enclose the working of WIP -wise Cost of Production  
+3. NRV here means NRV of relevant finished product less estimated completion cost.  
+ 
+ 
+
+--- Page 6 ---
+Draft for comments  
+ 
+5 
+ (iii) Valuation of Raw Materials  
+Sr. 
+ Description  
+ Item 
+Code UOM 
+ Opening Stock  Closing Stock  
+Qty 
+ Purchase 
+rate 
+ Repla-
+cement 
+rate 
+ Lower 
+of (6) 
+or (7) Value 
+(5) x 
+(8) 
+(Rs.) Qty Purchase 
+rate 
+ Repla-
+cement 
+rate 
+ Lower 
+of (11) 
+or (12) Value 
+(10) x 
+(13) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) 
+1 RM 1             
+2 RM 2             
+3 RM 3             
+              
+ Total              
+Note: Add or delete rows as per the number of Raw Material items  
+ 
+(iv) Valuation of By -Products  
+Sr. Description  UOM Opening Stock Closing Stock  
+Quantity  NRV 
+(Rs.) Value 
+(4)x(5) 
+(Rs.) Quantity  NRV 
+(Rs.) Value 
+(7)x(8) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) 
+1 By-Product 1         
+2 By-Product 2         
+3 By-Product 3         
+         
+ Total         
+NRV: Net Realisable Value 
+Note: Add/Delete Rows as per the number of By -Products.  
+ 
+(v) Valuation of Intermediate Products  (IMP) 
+Sr. 
+ Description  
+ Item 
+Code UOM 
+ Opening Stock  Closing Stock  
+Qty 
+ COP 
+ NRV 
+ Lower 
+of (6) 
+or (7) Value 
+(5) x 
+(8) 
+(Rs.) Qty COP NRV Lower 
+of (11) 
+or (12) Value 
+(10) x 
+(13) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) 
+1 IMP 1             
+2 IMP 2             
+3 IMP 3             
+              
+ Total              
+Note:  
+1. Add/Delete Rows as per the number of Intermediate Products 
+2. Intermediate products include only such products which are at intermediate stage and not included elsewhere.  
+ 
+ 
+ 
+
+--- Page 7 ---
+Draft for comments  
+ 
+6 
+  
+(vi) Valuation  of Other Stores  
+Description  Opening Value 
+(Rs.) Closing Value  
+(Rs.) 
+Jigs, Tools, and Dies    
+Stores, Spares & Consumables    
+Scrap   
+Total   
+ 
+(vii) Summary of Inventory Valuation for the Reporting Year  
+Sr. Particulars  Value as per Form 3CD  
+(If Form 3CD not filed, 
+then value as per 
+audited accounts)  Value as per Cost 
+Accountant  Variation if any  
+  Opening Closing Opening Closing Opening Closing 
+(1) (2) (3) (4) (5) (6) (7) (8) 
+    (5) - (3) (6) – (4) 
+1 Finished Goods / Stock- 
+in-Trade         
+2 Work-in-Progress       
+3 Raw Material        
+4 By-Products       
+5 Intermediate products        
+6 Jigs, Tools, and Dies       
+7 Stores, Spares& 
+Consumables        
+8 Scrap       
+ Total       
+9 Impact on Profit or Loss    
+10 Impact on Income Tax    
+ 
+Notes:  
+1. Specify the method of valuation of opening and closing stock of following inventory items adopted by the Cost Accountant:  
+a) Finished Goods / Stock -in-trade 
+b) Work-in-progress 
+c) Raw materials  
+d) By-products 
+e) Intermediate Product  
+f) Jigs, Tools, and Dies  
+g) Stores, Spares & Consumables  
+h) Scrap 
+2. In case of variation in the method adopted by the assessee, state reasons for variations in  quantity, rates and value along with method 
+adopted by the Cost Accountant for various items of inventory giving full justification.  
+3. Specify the amount by which profit or loss for the year would be affected by the changed valuation computed by the Cost Ac countant. 
+4. State reasons for year -to-year variation in operational efficiency (output / input ratio) for various products, if any.  
+5. Any other relevant observation of the Cost Accountant.  
+6. Income Computation and Disclosure Standard II shall be applied for valu ation of inventories, except:  
+(a) Work-in-progress arising under ‘construction contract’ including directly related service contract which is dealt with by the Income 
+Computation and Disclosure Standard on construction contracts;  
+(b) Work-in-progress which is deal t with by other Income Computation and Disclosure Standard;  
+(c) Shares, debentures and other financial instruments held as stock -in-trade which are dealt with by the Income Computation and 
+Disclosure Standard on securities;  
+(d) Producers’ inventories of livestock,  agriculture and forest products, mineral oils, ores and gases to the extent that they are measured 
+at net realisable value;  
+
+--- Page 8 ---
+Draft for comments  
+ 
+7 
+ 13. Details of inventory valuation for the year under reporting by the Cost Accountant  (wherever ICDS II is not 
+applicable) – 
+A. Inventory valuation for  Assessees engaged i n the Construction Contracts which are dealt with by the Income 
+Computation and Disclosure Standard III  
+(i) Valuation of Completed Units Ready for Sale 
+Sr. Description  Type of 
+Completed 
+units Subtype if 
+any Closing Stock  Opening Stock  
+  Qty Cost of the 
+unit for each 
+type NRV Value 
+[(5) X 
+lesser of 
+((6) or 
+(7))] Qty Cost of the 
+unit for 
+each type  NRV Value [(9) X 
+lesser of ((10) 
+or (11))] 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+1 Project 1           
+2 Project 2           
+3 Project 3           
+            
+ Total           
+Notes: 
+1. Type means BHK size/Affordable/ Premium/Commercial  etc. which is identifiable as different sale unit  
+2. Completed Units mean Plots/Flats/commercial units/Villas/Floors which are ready for sale and have been included in inventory as such  
+3. The valuation of Land (Shown separately in Inventory Valuation in financials) and Development Rights can  be shown here using the 
+relevant column  
+ 
+(ii) Valuation of Construction Work -in-progress 
+Sr. Description  Closing Stock  Opening Stock  
+%age 
+Completion  Total to-date 
+construction 
+cost Cost as per 
+recognized 
+revenue Value of 
+Work-in-
+progress 
+[(4)-(5)] %age 
+Completion  Total to-date 
+construction 
+cost Cost as per 
+recognized 
+revenue Value of Work -
+in-progress 
+[(8)-(9)] 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) 
+1 Project 1         
+2 Project 2         
+3 Project 3         
+          
+ Total         
+Note : Add number of rows depending on the number of Projects  
+ 
+(iii) Valuation of Construction Materials  
+Sr. 
+ Description  
+ Item 
+Code UOM 
+ Opening Stock  Closing Stock  
+Qty 
+ Purchase 
+rate 
+ Repla-
+cement 
+rate 
+ Lower 
+of (6) or 
+(7) Value 
+(5) x 
+(8) 
+(Rs.) Qty Purchase 
+rate 
+ Repla-
+cement 
+rate 
+ Lower 
+of (11) 
+or 
+(12) Value 
+(10) x 
+(13) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) 
+1 Material 1              
+2 Material 2              
+3 Material 3              
+              
+ Total              
+Note : Add number of rows depending on the number of Construction Materials  
+ 
+
+--- Page 9 ---
+Draft for comments  
+ 
+8 
+  
+(iv) Valuation of Construction Fittings 
+Sr. 
+ Description  
+ Item 
+Code UOM 
+ Opening Stock  Closing Stock  
+Qty 
+ Purchase 
+rate 
+ Repla-
+cement 
+rate 
+ Lower 
+of (6) 
+or (7) Value 
+(5) x 
+(8) 
+(Rs.) Qty Purchase 
+rate 
+ Repla-
+cement 
+rate 
+ Lower 
+of (11) 
+or 
+(12) Value 
+(10) x 
+(13) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) 
+1 Item 1             
+2 Item 2             
+3 Item 3             
+              
+ Total              
+Note: Add number of rows depending on the number of Items  
+ 
+(v) Summary of Inventory Valuation for the Reporting Year  for Construction Contracts  
+Sr. Particulars  Value as per 
+Form 3CD (If 
+Form 3CD not 
+filed, then value 
+as per audited 
+accounts)  Value as per Cost 
+Accountant  Variation if any  
+  Opening Closing Opening Closing Opening Closing 
+(1) (2) (3) (4) (5) (6) (7) (8) 
+      (5)-(3) (6)-(4) 
+        
+1 Completed Units Ready For 
+Sale       
+2 Construction Work -in-
+progress        
+3 Construction Materials        
+4 Construction Fittings        
+ Total       
+ Impact on Profit or Loss    
+ Impact on Income Tax    
+ 
+Notes:  
+1. Specify the method used to determine the stage of completion of contracts in progress.  
+2. In case of variation in the method adopted by the assessee, state reasons for variation.  
+3. Specify the amount by which profit or loss for the year would be affected by the changed valuation.  
+4. Any other relevant observation of the Cost Accountant.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- Page 10 ---
+Draft for comments  
+ 
+9 
+ B. Inventory valuation for  Assessees engaged in the trading of Securities which are dealt with by the Income Computation 
+and Disclosure Standard VIII.  
+(i) Valuation of Shares held as Stock -in-trade 
+Sr. 
+ Description  
+ Opening Stock  Closing Stock  
+Qty 
+ AC 
+ NRV 
+ Lower 
+of (4) 
+or (5) Value 
+(3)X 
+(6) 
+(Rs.) Qty AC NRV Lower 
+of (10) 
+or (11) Value 
+(8)X 
+(11) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+1 Share 1           
+2 Share 2           
+3 Share 3           
+            
+ Total            
+AC: Acquisition Cost   
+NRV: Net Realisable Value  
+Note : Add number of rows depending on the number of shares  
+(ii) Valuation of Debt Securities held as Stock -in-trade 
+Sr. 
+ Description  
+ Opening Stock  Closing Stock  
+Qty 
+ AC 
+ NRV 
+ Lower 
+of (4) 
+or (5) Value 
+(3)X 
+(6) 
+(Rs.) Qty AC NRV Lower 
+of (10) 
+or (11) Value 
+(8)X 
+(11) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+1 Debt Security 1            
+2 Debt Security 2            
+3 Debt Security 3            
+            
+ Total            
+AC: Acquisition Cost   
+NRV: Net Realisable Value  
+Note:Add number of rows depending on the number of Debt securities  
+(iii) Valuation of Convertible Securities held as Stock -in-trade 
+Sr. 
+ Description  
+ Opening Stock  Closing Stock  
+Qty 
+ AC 
+ NRV 
+ Lower 
+of (4) 
+or (5) Value 
+(3)X 
+(6) 
+(Rs.) Qty AC NRV Lower 
+of (10) 
+or (11) Value 
+(8)X 
+(11) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+1 Convertible Security 1            
+2 Convertible Security 2            
+3 Convertible Security 3            
+            
+ Total            
+AC: Acquisition Cost   
+NRV: Net Realisable Value  
+Note :Add number of rows depending on the number of Convertible Securities  
+ 
+
+--- Page 11 ---
+Draft for comments  
+ 
+10 
+  
+(iv) Valuation of Any other security  held as Stock -in-trade 
+Sr. 
+ Description  
+ Opening Stock  Closing Stock  
+Qty 
+ AC 
+ NRV 
+ Lower 
+of (4) 
+or (5) Value 
+(3)X 
+(6) 
+(Rs.) Qty AC NRV Lower 
+of (10) 
+or (11) Value 
+(8)X 
+(11) 
+(Rs.) 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 
+1 Any other Security 1            
+2 Any other Security 2            
+3 Any other Security 3            
+            
+ Total            
+AC: Acquisition Cost   
+NRV: Net Realisable Value  
+Note :Add number of rows depending on the number of Any other Securities  
+ 
+(v) Summary of Inventory Valuation for the Reporting Year  for Shares,  Debentures  and other Financial Instruments  
+held as stock-in-trade 
+Sr. Category  Value as per Form 3CD 
+(If Form 3CD not filed, 
+then value as per 
+audited accounts)  Value as per Cost 
+Accountant  Variation if any  
+  Opening Closing Opening Closing Opening Closing 
+(1) (2) (3) (4) (5) (6) (7) (8) 
+      (5) – (3) (6) – (4) 
+1 Shares        
+2 Debt Securities        
+3 Convertible Securities        
+4 Any other Security        
+ Total       
+ Impact on Profit or Loss    
+ Impact on Income Tax    
+Notes:  
+1. Specify the method used to determine the Acquisition Cost and Net Realisable Value for each category of financial 
+instruments.  
+2. In case of variation in the method adopted by the assessee, state reasons for variation.  
+3. Specify the amount by which profit or loss for the year would be affected by the changed valuation.  
+4. Any other relevant observation of the Cost Accountant.  
+5. Securities not listed on a recognized stock exchange; or listed but not quoted on a recognized stock exchange with 
+regularity from time to time shall be valued at actual cost ini tially recognized.  
+ 
+ 
+  
+
+--- Page 12 ---
+Draft for comments  
+ 
+11 
+ C. Inventory valuation  of livestock,  agriculture  and forest products,  mineral oils, ores and gases, except those held by the 
+trader of such inventories  
+ 
+i. Valuation of Inventory of Livestock  
+Sr. Description  UOM Closing Stock  Opening Stock 
+Quantity  NRV 
+(Rs.) Value 
+(Rs.) Quantity  NRV 
+(Rs.) Value 
+(Rs.) 
+1 Livestock 1         
+2 Livestock 2         
+3 Livestock 3         
+         
+ Total        
+NRV: Net Realisable Value  
+Note:Add number of rows depending on the number of Livestock  
+ 
+ii. Valuation of Inventory of Agriculture & Forest Produce  
+Sr. Description  UOM Closing Stock  Opening Stock  
+Quantity  NRV 
+(Rs.) Value 
+(Rs.) Quantity  NRV 
+(Rs.) Value 
+(Rs.) 
+1 Produce 1         
+2 Produce 2         
+3 Produce 3         
+         
+ Total        
+NRV: Net Realisable Value  
+Note:Add number of rows depending on the number of produce  
+ 
+iii. Valuation of Inventory of Mineral Oils, Ores and Gases  
+Sr. Description  UOM Closing Stock  Opening Stock  
+Quantity  NRV 
+(Rs.) Value 
+(Rs.) Quantity  NRV 
+(Rs.) Value 
+(Rs.) 
+1 Product 1         
+2 Product 2         
+3 Product 3         
+         
+ Total        
+NRV: Net Realisable Value  
+Note:Add number of rows depending on the number of Products  
+ 
+  
+
+--- Page 13 ---
+Draft for comments  
+ 
+12 
+ iv. Summary of Comparison - 
+Sr. Category  (Drop down 
+to be provided)  Value as per Form 3CD 
+(If Form 3CD not filed, 
+then value as per 
+audited accounts)  Value as per Cost 
+Accountant  Variation if any  
+  Opening Closing Opening Closing Opening Closing 
+(1) (2) (3) (4) (5) (6) (7) (8) 
+      (5) – (3) (6) – (4) 
+1 Livestock       
+2 Agriculture & Forest 
+Produce       
+3 Mineral oils, Ores and 
+Gases       
+ Total       
+ Impact on Profit or Loss    
+ Impact on Income Tax    
+Notes:  
+1. In case of variation in the method adopted by the assessee, state reasons for variation.  
+2. Specify the amount  by which profit or loss for the year would be affected by the changed valuation.  
+3. Any other relevant observation of the Cost Accountant.  
+ 
+ 
+Place ……………. .. 
+Date ……………. .. 
+Signed  
+Name of Cost Accountant **:……………. .. 
+Address:   ……………. .. 
+Membership Number  ……………. .. 
+UDIN    ……………..  
+ 

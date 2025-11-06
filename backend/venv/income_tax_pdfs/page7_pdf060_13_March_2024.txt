@@ -1,0 +1,135 @@
+Source Page: 7
+PDF Index: 60
+Title: ​Order under section 119 of the Income-tax Act, 1961
+Date: 13 March 2024
+URL: https://incometaxindia.gov.in/Lists/Latest%20News/Attachments/651/Order-under-section-119-of-the-ITA-1961-MiscComm-13-3-24.pdf
+================================================================================
+
+--- Page 1 ---
+SUbject: F. No. 225/5/2021-ITA-II 
+Government of India 
+Ministry of Finance 
+Department of Revenue 
+(Central Board of Direct Taxes) 
+***** 
+New Delhi, the 13th March, 2024 
+Order under section 119 of the Income-tax Act, 1961-reg. 
+The Board is in receipt of applications from entities seeking approval to furnish return of 
+income in pursuance to the business reorganisation i.e. scheme of amalgamationlmerger/demerger 
+sanctioned by the order of the High Court or Tribunal or an Adjudicating Authority, as defined in 
+clause (1) of section (5) of the Insolvency and Bankruptcy Code, 2016 (hereinafter 'competent 
+authority') issued prior to 01.04.2022. In respect of such entities (Le. successor companies), Apex 
+Court in Civil Appeal Nos.9496-99 of2019 (arising out ofSLP (C) Nos.l9678-681 of2019) has 
+held that the Return of Income filed by the successor companies, after taking into account the 
+Scheme of Arrangement and Amalgamation as sanctioned by the NCLT be received. National 
+Company Law Tribunal (NCLT) has been constituted by the Central Government u/s 408 of the 
+Companies Act, 2013 w.e.f. 1 st June, 2016. 
+2. Section 170A of the Income-tax Act,1961 (the Act), inserted vide the Finance Act, 2022 
+with effect from 1 st April, 2022, provides that the entities going through such business 
+reorganization may furnish modified return of income for any assessment year to which such 
+order of business reorganisation is applicable, within six months from the end of the month of 
+issuance of order of competent authority. The Board vide its order u/s 119 dated 26.09.2022 
+allowed successor companies in cases where the order of business reorganisation of the 
+competent authority was issued between the period 01.04.2022 to 30.09.2022, to furnish modified 
+returns under section 170A of the Act till 31 st March, 2023. The entities, whose scheme of 
+business reorganisation has been sanctioned by the competent authority vide orders dated prior to 
+01.04.2022 are, therefore, outside the purview of section 170A of the Act. Consequently, these 
+entities could not file modified return of income u/s 170A of the Act. 
+3. On consideration of difficulties being faced by such entities in electronic filing of return 
+of income pursuant to order of the competent authority issued after 01.06.2016 but prior to 
+01.04.2022 ('order') and to mitigate their genuine hardship, the Board, hereby allows the 
+successor companies to furnish the return with modified particulars (,return') for the relevant­
+assessment year( s) in accordance with and limited to the said order by using functionality on e­
+filing portal "uls JJ9(2)(b) -after condonation of delay I Court Order or Sanction Order of 
+Business reorganisation of the Competent authority issued prior to 01.04.2022". 
+Page 1 of 2 
+
+--- Page 2 ---
+4. As all such cases would entail verification as to whether the return is resulting from and 
+limited to the said order, the taxpayer shall first communicate to the Jurisdictional Assessing 
+Officer (JAO) as per the proforma annexed herewith, requesting for enablement of electronic 
+filing of the return for relevant assessment year(s) on the e-filing portal as per the following time­
+line: 
+Step Action Time-Line 
+Communication by the taxpayer to the Jurisdictional Assessing 
+Up to 
+First Officer (JAO) as per the proforma, for enablement of electronic 
+30.04.2024. 
+filing of the return. (A) 
+Completion of verification by the JAO as to whether the return is Preferably, 
+Second resulting from and limited to the order of the competent authority & within 30 days 
+enablement through ITBA, information about which will be of the receipt 
+received by taxpayer on its e-filing portal. of (A). 
+Electronic filing of the return for relevant assessment year(s) on the Up to 
+Third 
+e-filing portal by the taxpayer. 30.06.2024. 
+5. It is clarified that henceforth no separate application uls 119(2)(b) of the Act is required to 
+be filed before the Board by the successor companies in cases where the order of business 
+reorganisation of the competent authority was issued after 01.06.2016 but prior to 01.04.2022. 
+6. This order shall come into force with immediate effect. 
+Enel.: as above 
+Copy to: 
+i. Chainnan (CBDT) and all Members of CBDT 
+ii. All Pr. CCsIT IDsGIT / r) ." 
+(Dr. Castro Jayaprakash.T) 
+Under Secretary to the Government of India 
+iii. DGIT(Systems), Delhi & DGIT (Systems), Bengaluru with request for further necessary action in 
+the matter $. ADG(Systems)-4 with request for uploading on department's official website 
+v. JCIT, Database Cell for uploading on IRS Officers website 
+vi. Guard file 
+<'\' fA rf.",\?A. 
+(Dr. Cast:Q ~}aprakaSh. T) 
+Under Secretary to the Government of India 
+Page 2 of 2 
+
+--- Page 3 ---
+Proforma for communication to JAO for enablement of electronic filing of the return with modified particulars 
+for applicable assessment year(s) on the e-filing portal in cases where the order of business reorganisation of the 
+competent authority was issued after 01.06.2016 but prior to 01.04.2022. 
+GENERAL INFORMATION 
+(I): Details of the successor entity filing the return of income: 
+PAN Corporate Date of Date of 
+of successor Name of Identity Number incorporation commencement 
+entity filing successor entity (CIN) issued by of business 
+the return MCA (DD/MM/YYYY) (DD/MMNYYY) 
+(i) (ii) (iii) (iv) (v) 
+(II): Details of the other successor entities in the scheme of arrangement/business re-organisation: 
+PANes) Name(s) of Corporate Date(s) of Date(s) of 
+of successor successor entity Identity Number( s) incorporation commencement 
+entity filing (CIN) issued by (DD/MM/YYYY) of business 
+the return MCA (DD/MM/YYYY) 
+(i) (ii) (iii) (iv) (v) 
+(III): Details of the predecessor entities: 
+PANes) of the Name (s) of Corporate Identity Date (s) of Date (s) I Year of 
+predecessorentities predecessor entities Number (s)(CIN) incorporation commencement of 
+issued by MCA (DD/MMNYYY) business 
+. (DDIMM/YYYY) 
+(i) (ii) (iii) (iv) (v) 
+(V) whether return previously filed for this 
+~VI) If yes, Whether filed u/s 
+(IV) Assessment Year assessment year? 
+• Yes • 139(1) 
+• No • Others (specify) 
+(VII) Enter form filed, Acknowledgement Acknowledgement Date of Filing no. or Receipt No. and Date of filing ITR-6 Number 
+original return (DDIMMIYYYY) 
+(VIII) Details of order of business re-organisation: 
+(i) Details of Competent Authority as per Board Order under section 119 of 
+the Income-tax Act, 1961 dated 13.03.2024 
+(ii) Date of order 
+(iii) Order No. 
+(iv) Date from which the business re-organisation has been made effective as 
+per the order 
+(IX) Any other information: 
+VERIFICA TION 
+I, ................................................................................................................. son/daughter/wife [name in full and in 
+block letters] of ........................................................................................... and holding Permanent Account Number 
+.................................. do hereby solemnly declare that to the best of my knowledge and belief what is stated 
+above, including in the documents accompanying this proforma, is correct and complete. 
+I further declare that I am submitting this proforma in my capacity as ............. (designation) and that I am competent 
+to submitting this proforma and verify it. 
+I further declare that the terms and conditions specified in the order of business re-organisation passed by the 
+competent authority have been complied with. 
+Verified today, the ............................... day of .......................... 
+. ............................. 
+Signature 
+3 
