@@ -10,6 +10,7 @@ export default function App() {
   const [successMessage, setSuccessMessage] = useState('');
   const [totalInDB, setTotalInDB] = useState(0);
   const [keywordInput, setKeywordInput] = useState('');
+  const [keywordEntries, setKeywordEntries] = useState([]);
 
   const sources = [
     { id: 'RBI', name: 'Reserve Bank of India' },
@@ -23,6 +24,24 @@ export default function App() {
         ? prev.filter(s => s !== sourceId)
         : [...prev, sourceId]
     );
+  };
+
+  const addKeywordEntry = () => {
+    if (keywordInput.trim()) {
+      setKeywordEntries(prev => [...prev, keywordInput.trim()]);
+      setKeywordInput('');
+    }
+  };
+
+  const removeKeywordEntry = (index) => {
+    setKeywordEntries(prev => prev.filter((_, i) => i !== index));
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      addKeywordEntry();
+    }
   };
 
   // Function to scrape and save to DB only (no display)
@@ -76,11 +95,8 @@ export default function App() {
     setSuccessMessage('');
 
     try {
-      // Parse keywords from input (comma or space separated)
-      const keywords = keywordInput
-        .split(/[,\s]+/)
-        .map(k => k.trim())
-        .filter(k => k.length > 0);
+      // Use keyword entries directly (each entry is treated as a phrase)
+      const keywords = keywordEntries.length > 0 ? keywordEntries : null;
 
       // Use the filter endpoint with keywords
       const response = await fetch('http://localhost:8000/documents/filter?limit=1000', {
@@ -90,7 +106,7 @@ export default function App() {
         },
         body: JSON.stringify({
           sources: selectedSources,
-          keywords: keywords.length > 0 ? keywords : null
+          keywords: keywords
         })
       });
 
@@ -102,10 +118,10 @@ export default function App() {
       setDocuments(data.documents);
       
       if (data.documents.length === 0) {
-        const keywordText = keywords.length > 0 ? ` with keywords: ${keywords.join(', ')}` : '';
+        const keywordText = keywords ? ` with keywords: ${keywords.join(', ')}` : '';
         setError(`No documents found for selected sources: ${selectedSources.join(', ')}${keywordText}`);
       } else {
-        const keywordText = keywords.length > 0 ? ` matching keywords: ${keywords.join(', ')}` : '';
+        const keywordText = keywords ? ` matching ANY of these keywords: ${keywords.join(', ')}` : '';
         setSuccessMessage(`Displaying ${data.documents.length} documents from ${selectedSources.join(', ')}${keywordText}`);
       }
     } catch (err) {
@@ -198,27 +214,91 @@ export default function App() {
           {/* Keyword Input */}
           <div className="section" style={{ marginTop: '1.5rem' }}>
             <label className="label">Filter by Keywords (Optional)</label>
-            <input
-              type="text"
-              value={keywordInput}
-              onChange={(e) => setKeywordInput(e.target.value)}
-              placeholder="Enter keywords separated by commas or spaces (e.g., policy, rate, tax)"
-              style={{
-                width: '100%',
-                padding: '12px',
-                border: '1px solid #d1d5db',
-                borderRadius: '6px',
-                fontSize: '14px',
-                fontFamily: 'inherit'
-              }}
-            />
+            <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.75rem' }}>
+              <input
+                type="text"
+                value={keywordInput}
+                onChange={(e) => setKeywordInput(e.target.value)}
+                onKeyPress={handleKeyPress}
+                placeholder='Enter keyword/phrase (e.g., "corporate finance") and press Enter or Add'
+                style={{
+                  flex: 1,
+                  padding: '12px',
+                  border: '1px solid #d1d5db',
+                  borderRadius: '6px',
+                  fontSize: '14px',
+                  fontFamily: 'inherit'
+                }}
+              />
+              <button
+                onClick={addKeywordEntry}
+                style={{
+                  padding: '12px 20px',
+                  backgroundColor: '#3b82f6',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '6px',
+                  cursor: 'pointer',
+                  fontWeight: '600',
+                  fontSize: '14px'
+                }}
+              >
+                Add
+              </button>
+            </div>
+            
+            {/* Display keyword entries as tags */}
+            {keywordEntries.length > 0 && (
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem',
+                marginBottom: '0.75rem'
+              }}>
+                {keywordEntries.map((keyword, index) => (
+                  <div
+                    key={index}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      backgroundColor: '#dbeafe',
+                      border: '1px solid #3b82f6',
+                      borderRadius: '6px',
+                      padding: '6px 12px',
+                      fontSize: '14px'
+                    }}
+                  >
+                    <span style={{ color: '#1e40af' }}>{keyword}</span>
+                    <button
+                      onClick={() => removeKeywordEntry(index)}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        color: '#ef4444',
+                        cursor: 'pointer',
+                        fontWeight: 'bold',
+                        fontSize: '16px',
+                        padding: 0,
+                        lineHeight: 1
+                      }}
+                    >
+                      ×
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
+            
             <p style={{
               fontSize: '13px',
               color: '#6b7280',
               marginTop: '0.5rem',
               marginBottom: 0
             }}>
-              Leave empty to display all documents from selected sources
+              • Each entry is treated as an exact phrase (e.g., "corporate finance" matches the whole phrase)<br/>
+              • Add multiple keyword phrases - documents matching ANY phrase will be displayed<br/>
+              • Leave empty to display all documents from selected sources
             </p>
           </div>
 
