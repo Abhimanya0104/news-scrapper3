@@ -51,6 +51,10 @@ executor = ThreadPoolExecutor(max_workers=3)
 class ScrapeRequest(BaseModel):
     sources: List[str]
 
+class FilterRequest(BaseModel):
+    sources: List[str]
+    keywords: Optional[List[str]] = None
+
 class Document(BaseModel):
     id: str
     website: str
@@ -60,8 +64,8 @@ class Document(BaseModel):
     content: str
     date: Optional[str] = None
     scraped_at: str
-    csv_data: Optional[str] = None  # For RBI table data
-    table_index: Optional[int] = None  # For RBI tables
+    csv_data: Optional[str] = None
+    table_index: Optional[int] = None
 
 class ScrapeResponse(BaseModel):
     documents: List[Document]
@@ -247,8 +251,6 @@ def scrape_rbi() -> List[Document]:
         print(f"✗ RBI scraping error: {e}")
         return []
 
-# Income Tax Scraper - Complete Extraction
-# Income Tax Scraper - Complete Extraction
 def scrape_income_tax() -> List[Document]:
     """Scrape Income Tax latest updates - ALL pages"""
     driver = None
@@ -438,8 +440,6 @@ def scrape_income_tax() -> List[Document]:
             print("  Closing browser...")
             driver.quit()
 
-# GST Council Scraper - Complete Extraction
-# GST Council Scraper - Complete Extraction
 def scrape_gst_council() -> List[Document]:
     """Scrape GST Council press releases - ALL pages"""
     try:
@@ -638,11 +638,10 @@ async def clear_documents():
         return {"message": f"Deleted {result.deleted_count} documents"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to clear documents: {str(e)}")
-# Add this new endpoint after the existing /documents endpoint
 
 @app.post("/documents/filter")
-async def get_filtered_documents(request: ScrapeRequest, limit: int = 1000, skip: int = 0):
-    """Get documents from MongoDB filtered by sources"""
+async def get_filtered_documents(request: FilterRequest, limit: int = 1000, skip: int = 0):
+    """Get documents from MongoDB filtered by sources and keywords"""
     if collection is None:
         raise HTTPException(status_code=500, detail="MongoDB is not connected")
     
@@ -663,6 +662,36 @@ async def get_filtered_documents(request: ScrapeRequest, limit: int = 1000, skip
         # Build MongoDB query
         query = {"website": {"$in": website_filters}}
         
+        # Add keyword filtering if keywords are provided
+        if request.keywords and len(request.keywords) > 0:
+            # Filter out empty keywords
+            valid_keywords = [k.strip() for k in request.keywords if k.strip()]
+            
+            if valid_keywords:
+                # Create regex patterns for case-insensitive partial matching
+                keyword_conditions = []
+                for keyword in valid_keywords:
+                    # Escape special regex characters
+                    escaped_keyword = re.escape(keyword)
+                    keyword_regex = {"$regex": escaped_keyword, "$options": "i"}
+                    
+                    # Search in title, description, and content
+                    keyword_conditions.append({
+                        "$or": [
+                            {"title": keyword_regex},
+                            {"description": keyword_regex},
+                            {"content": keyword_regex}
+                        ]
+                    })
+                
+                # Combine with source filter using AND logic
+                query = {
+                    "$and": [
+                        {"website": {"$in": website_filters}},
+                        {"$or": keyword_conditions}
+                    ]
+                }
+        
         # Fetch filtered documents
         cursor = collection.find(query).skip(skip).limit(limit).sort("scraped_at", -1)
         documents = await cursor.to_list(length=limit)
@@ -679,7 +708,8 @@ async def get_filtered_documents(request: ScrapeRequest, limit: int = 1000, skip
             "total": total,
             "limit": limit,
             "skip": skip,
-            "sources": request.sources
+            "sources": request.sources,
+            "keywords": request.keywords
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to fetch filtered documents: {str(e)}")
