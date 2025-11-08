@@ -9,6 +9,7 @@ export default function App() {
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [totalInDB, setTotalInDB] = useState(0);
+  const [keywordInput, setKeywordInput] = useState('');
 
   const sources = [
     { id: 'RBI', name: 'Reserve Bank of India' },
@@ -63,7 +64,7 @@ export default function App() {
     }
   };
 
-  // UPDATED: Function to display documents from DB with filtering
+  // Function to display documents from DB with filtering
   const handleDisplayFromDB = async () => {
     if (selectedSources.length === 0) {
       setError('Please select at least one source to display documents');
@@ -75,14 +76,21 @@ export default function App() {
     setSuccessMessage('');
 
     try {
-      // Use the new filter endpoint
+      // Parse keywords from input (comma or space separated)
+      const keywords = keywordInput
+        .split(/[,\s]+/)
+        .map(k => k.trim())
+        .filter(k => k.length > 0);
+
+      // Use the filter endpoint with keywords
       const response = await fetch('http://localhost:8000/documents/filter?limit=1000', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          sources: selectedSources
+          sources: selectedSources,
+          keywords: keywords.length > 0 ? keywords : null
         })
       });
 
@@ -94,9 +102,11 @@ export default function App() {
       setDocuments(data.documents);
       
       if (data.documents.length === 0) {
-        setError(`No documents found for selected sources: ${selectedSources.join(', ')}`);
+        const keywordText = keywords.length > 0 ? ` with keywords: ${keywords.join(', ')}` : '';
+        setError(`No documents found for selected sources: ${selectedSources.join(', ')}${keywordText}`);
       } else {
-        setSuccessMessage(`Displaying ${data.documents.length} documents from ${selectedSources.join(', ')}`);
+        const keywordText = keywords.length > 0 ? ` matching keywords: ${keywords.join(', ')}` : '';
+        setSuccessMessage(`Displaying ${data.documents.length} documents from ${selectedSources.join(', ')}${keywordText}`);
       }
     } catch (err) {
       setError('Failed to fetch documents from database. Please ensure MongoDB is running.');
@@ -185,52 +195,79 @@ export default function App() {
             </div>
           </div>
 
-         {/* Two Separate Buttons */}
-            <div style={{ marginTop: "1.5rem" }}>
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          {/* Keyword Input */}
+          <div className="section" style={{ marginTop: '1.5rem' }}>
+            <label className="label">Filter by Keywords (Optional)</label>
+            <input
+              type="text"
+              value={keywordInput}
+              onChange={(e) => setKeywordInput(e.target.value)}
+              placeholder="Enter keywords separated by commas or spaces (e.g., policy, rate, tax)"
+              style={{
+                width: '100%',
+                padding: '12px',
+                border: '1px solid #d1d5db',
+                borderRadius: '6px',
+                fontSize: '14px',
+                fontFamily: 'inherit'
+              }}
+            />
+            <p style={{
+              fontSize: '13px',
+              color: '#6b7280',
+              marginTop: '0.5rem',
+              marginBottom: 0
+            }}>
+              Leave empty to display all documents from selected sources
+            </p>
+          </div>
 
-                <button
-                  onClick={handleScrapeAndSave}
-                  disabled={loading}
-                  style={{
-                    flex: 1,
-                    minWidth: '200px',
-                    padding: "12px 18px",
-                    backgroundColor: loading ? "#9ca3af" : "#2563eb",
-                    border: "none",
-                    borderRadius: "6px",
-                    cursor: loading ? "not-allowed" : "pointer",
-                    color: "white",
-                    fontWeight: "600",
-                    fontSize: "15px",
-                    transition: "0.3s",
-                  }}
-                >
-                  {loading ? 'Scraping & Saving...' : 'Scrape & Save to MongoDB'}
-                </button>
+          {/* Two Separate Buttons */}
+          <div style={{ marginTop: "1.5rem" }}>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
 
-                <button
-                  onClick={handleDisplayFromDB}
-                  disabled={loadingDisplay}
-                  style={{
-                    flex: 1,
-                    minWidth: '200px',
-                    padding: "12px 18px",
-                    backgroundColor: loadingDisplay ? "#9ca3af" : "#10b981",
-                    border: "none",
-                    borderRadius: "6px",
-                    cursor: loadingDisplay ? "not-allowed" : "pointer",
-                    color: "white",
-                    fontWeight: "600",
-                    fontSize: "15px",
-                    transition: "0.3s",
-                  }}
-                >
-                  {loadingDisplay ? 'Loading...' : 'Display Documents from DB'}
-                </button>
+              <button
+                onClick={handleScrapeAndSave}
+                disabled={loading}
+                style={{
+                  flex: 1,
+                  minWidth: '200px',
+                  padding: "12px 18px",
+                  backgroundColor: loading ? "#9ca3af" : "#2563eb",
+                  border: "none",
+                  borderRadius: "6px",
+                  cursor: loading ? "not-allowed" : "pointer",
+                  color: "white",
+                  fontWeight: "600",
+                  fontSize: "15px",
+                  transition: "0.3s",
+                }}
+              >
+                {loading ? 'Scraping & Saving...' : 'Scrape & Save to MongoDB'}
+              </button>
 
-              </div>
+              <button
+                onClick={handleDisplayFromDB}
+                disabled={loadingDisplay}
+                style={{
+                  flex: 1,
+                  minWidth: '200px',
+                  padding: "12px 18px",
+                  backgroundColor: loadingDisplay ? "#9ca3af" : "#10b981",
+                  border: "none",
+                  borderRadius: "6px",
+                  cursor: loadingDisplay ? "not-allowed" : "pointer",
+                  color: "white",
+                  fontWeight: "600",
+                  fontSize: "15px",
+                  transition: "0.3s",
+                }}
+              >
+                {loadingDisplay ? 'Loading...' : 'Display Documents from DB'}
+              </button>
+
             </div>
+          </div>
 
           {/* Success Message */}
           {successMessage && (
