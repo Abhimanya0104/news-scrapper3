@@ -668,23 +668,28 @@ async def get_filtered_documents(request: FilterRequest, limit: int = 1000, skip
             valid_keywords = [k.strip() for k in request.keywords if k.strip()]
             
             if valid_keywords:
-                # Create regex patterns for case-insensitive partial matching
+                # Create regex patterns for stricter matching (word boundaries)
                 keyword_conditions = []
                 for keyword in valid_keywords:
                     # Escape special regex characters
                     escaped_keyword = re.escape(keyword)
-                    keyword_regex = {"$regex": escaped_keyword, "$options": "i"}
+                    # Use word boundaries for stricter matching - matches exact phrase
+                    # \b ensures we match whole words/phrases
+                    keyword_regex = {"$regex": f"\\b{escaped_keyword}\\b", "$options": "i"}
                     
-                    # Search in title, description, and content
+                    # Search in ALL fields: title, description, content, date, and csv_data
                     keyword_conditions.append({
                         "$or": [
                             {"title": keyword_regex},
                             {"description": keyword_regex},
-                            {"content": keyword_regex}
+                            {"content": keyword_regex},
+                            {"date": keyword_regex},
+                            {"csv_data": keyword_regex}
                         ]
                     })
                 
                 # Combine with source filter using AND logic
+                # OR logic between keywords means ANY keyword match will include the document
                 query = {
                     "$and": [
                         {"website": {"$in": website_filters}},
