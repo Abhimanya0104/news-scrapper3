@@ -12,6 +12,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 import time
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
@@ -28,7 +29,8 @@ import json
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
-
+import hashlib
+from pathlib import Path
 
 app = FastAPI(title="Government News Scraper API")
 
@@ -551,7 +553,1413 @@ def scrape_gst_council() -> List[Document]:
         import traceback
         traceback.print_exc()
         return []
-
+def scrape_icai() -> List[Document]:
+    """Scrape ICAI announcements - ALL pages with PDF extraction"""
+    try:
+        print("Starting ICAI announcements scraper...")
+        base_url = "https://www.icai.org"
+        main_url = "https://www.icai.org/category/announcements"
+        
+        documents = []
+        pdf_counter = 0
+        
+        # Get all pagination pages
+        print("  Fetching pagination pages...")
+        response = session.get(main_url, timeout=30, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        })
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.content, 'html.parser')
+        pages = [main_url]
+        
+        # Find pagination links
+        pagination = soup.find('nav', {'aria-label': '...'})
+        if pagination:
+            page_links = pagination.find_all('a', class_='page-link')
+            for link in page_links:
+                href = link.get('href')
+                if href and href != '#':
+                    page_url = urljoin(base_url, href)
+                    if page_url not in pages:
+                        pages.append(page_url)
+        
+        print(f"  ✓ Found {len(pages)} pagination pages")
+        
+        # Process each page
+        for page_num, page_url in enumerate(pages, 1):
+            print(f"  {'='*60}")
+            print(f"  Processing page {page_num}/{len(pages)}...")
+            print(f"  {'='*60}")
+            
+            try:
+                page_response = session.get(page_url, timeout=30, headers={
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                })
+                page_response.raise_for_status()
+                page_soup = BeautifulSoup(page_response.content, 'html.parser')
+                
+                # Extract PDF links from list items
+                list_items = page_soup.find_all('li', class_='list-group-item')
+                print(f"  ✓ Found {len(list_items)} announcements on page {page_num}")
+                
+                page_pdf_count = 0
+                
+                for item in list_items:
+                    try:
+                        anchor = item.find('a')
+                        if not anchor or not anchor.get('href'):
+                            continue
+                        
+                        link = anchor['href']
+                        title = anchor.get_text(strip=True)
+                        
+                        # Check if it's a PDF
+                        if not link.lower().endswith('.pdf'):
+                            continue
+                        
+                        # Convert relative URLs to absolute
+                        full_url = urljoin(base_url, link)
+                        pdf_counter += 1
+                        page_pdf_count += 1
+                        
+                        print(f"    [{pdf_counter}] Downloading: {title[:60]}...")
+                        
+                        content = title
+                        description = title[:200]
+                        
+                        try:
+                            max_retries = 3
+                            pdf_content = None
+                            
+                            for attempt in range(max_retries):
+                                try:
+                                    pdf_response = session.get(full_url, timeout=60)
+                                    pdf_response.raise_for_status()
+                                    pdf_content = pdf_response.content
+                                    break
+                                except Exception as e:
+                                    if attempt < max_retries - 1:
+                                        print(f"      Retry {attempt + 1}/{max_retries}...")
+                                        time.sleep(2)
+                                    else:
+                                        raise e
+                            
+                            if pdf_content:
+                                pdf_file = io.BytesIO(pdf_content)
+                                pdf_reader = PyPDF2.PdfReader(pdf_file)
+                                
+                                text_content = []
+                                for page_idx in range(len(pdf_reader.pages)):
+                                    page = pdf_reader.pages[page_idx]
+                                    page_text = page.extract_text()
+                                    if page_text:
+                                        text_content.append(f"--- Page {page_idx + 1} ---\n{page_text}\n")
+                                
+                                content = "\n".join(text_content)
+                                description = content[:200] if content else title[:200]
+                                
+                                print(f"      ✓ Extracted PDF text ({len(content)} chars)")
+                            
+                            time.sleep(1)
+                            
+                        except Exception as e:
+                            print(f"      ⚠ Error extracting PDF: {e}")
+                            content = title
+                            description = title[:200]
+                        
+                        documents.append(Document(
+                            id=str(uuid.uuid4()),
+                            website="icai.org",
+                            title=title,
+                            description=description,
+                            link=full_url,
+                            content=content,
+                            date=None,
+                            scraped_at=datetime.now().isoformat()
+                        ))
+                        
+                    except Exception as e:
+                        print(f"      ✗ Error processing ICAI item: {e}")
+                        continue
+                
+                print(f"  ✓ Completed page {page_num} ({page_pdf_count} PDFs)")
+                time.sleep(1)
+                
+            except Exception as e:
+                print(f"  ⚠ Error fetching page {page_num}: {e}")
+                continue
+        
+        print(f"✓ ICAI: Found {len(documents)} documents")
+        return documents
+        
+    except Exception as e:
+        print(f"✗ ICAI scraping error: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+def scrape_press_releases() -> List[Document]:
+    """Scrape PIB (Press Information Bureau) press releases from all pages"""
+    try:
+        print("Starting PIB Press Releases scraper...")
+        base_url = "https://www.pib.gov.in/allRel.aspx"
+        
+        documents = []
+        
+        print(f"  Fetching PIB press releases...")
+        
+        try:
+            response = session.get(base_url, timeout=30, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find the main content area
+            content_area = soup.find('div', class_='content-area')
+            
+            if not content_area:
+                print("  ⚠ Could not find content area")
+                return documents
+            
+            # Find all category headings and their associated links
+            page_documents = 0
+            
+            # Process all ul > li structures containing categories and links
+            category_sections = content_area.find_all('ul')
+            
+            for ul_section in category_sections:
+                # Get the category name from h3 tag if it exists
+                category_heading = ul_section.find_previous(['h3', 'h2'])
+                category_name = category_heading.get_text(strip=True) if category_heading else "General"
+                
+                # Find all links (press releases) in this section
+                links = ul_section.find_all('a', href=True)
+                
+                for link_tag in links:
+                    href = link_tag.get('href')
+                    title = link_tag.get_text(strip=True)
+                    
+                    if not href or not title:
+                        continue
+                    
+                    # Construct full URL if relative
+                    if href.startswith('/'):
+                        parsed = urlparse(base_url)
+                        full_url = f"{parsed.scheme}://{parsed.netloc}{href}"
+                    else:
+                        full_url = href
+                    
+                    print(f"    Processing: {title[:60]}...")
+                    
+                    try:
+                        # Fetch the individual press release page
+                        release_response = session.get(full_url, timeout=30, headers={
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                        })
+                        release_response.raise_for_status()
+                        
+                        release_soup = BeautifulSoup(release_response.content, 'html.parser')
+                        
+                        # Extract content from h2, h3, and p tags
+                        content_parts = []
+                        
+                        # Add title as first part
+                        content_parts.append(title)
+                        
+                        # Extract all relevant content
+                        for tag in release_soup.find_all(['h2', 'h3', 'p']):
+                            tag_text = tag.get_text(strip=True)
+                            if tag_text:
+                                content_parts.append(tag_text)
+                        
+                        content = "\n\n".join(content_parts)
+                        description = content[:200] if content else title[:200]
+                        
+                        # Try to extract date if available
+                        date_element = release_soup.find('span', class_=lambda x: x and 'date' in x.lower())
+                        date = date_element.get_text(strip=True) if date_element else None
+                        
+                        print(f"      ✓ Extracted content ({len(content)} chars)")
+                        
+                        documents.append(Document(
+                            id=str(uuid.uuid4()),
+                            website="pib.gov.in",
+                            title=title,
+                            description=description,
+                            link=full_url,
+                            content=content,
+                            date=date,
+                            category=category_name,
+                            scraped_at=datetime.now().isoformat()
+                        ))
+                        
+                        page_documents += 1
+                        
+                        # Rate limiting
+                        time.sleep(1)
+                        
+                    except Exception as e:
+                        print(f"      ⚠ Error fetching press release: {e}")
+                        # Still save with title only as fallback
+                        documents.append(Document(
+                            id=str(uuid.uuid4()),
+                            website="pib.gov.in",
+                            title=title,
+                            description=title[:200],
+                            link=full_url,
+                            content=title,
+                            date=None,
+                            category=category_name,
+                            scraped_at=datetime.now().isoformat()
+                        ))
+                        continue
+            
+            print(f"  ✓ Found {page_documents} documents")
+            
+        except Exception as e:
+            print(f"  ⚠ Error fetching PIB page: {e}")
+        
+        print(f"✓ PIB Press Releases: Found {len(documents)} documents")
+        return documents
+        
+    except Exception as e:
+        print(f"✗ PIB scraping error: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+    
+def scrape_dpiit_recent_documents() -> List[Document]:
+    """Scrape DPIIT Recent Documents using Selenium headless browser"""
+    try:
+        print("Starting DPIIT Recent Documents scraper (with Selenium)...")
+        base_url = "https://dpiit.gov.in"
+        documents_url = f"{base_url}/documents"
+        
+        documents = []
+        
+        # Setup Chrome options
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--window-size=1920,1080")
+        chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
+        
+        print("  Launching browser...")
+        driver = webdriver.Chrome(options=chrome_options)
+        
+        try:
+            print(f"  Navigating to {documents_url}...")
+            driver.get(documents_url)
+            
+            # Wait for the recent documents to load
+            print(f"  Waiting for documents to load...")
+            wait = WebDriverWait(driver, 15)
+            
+            try:
+                # Wait for the recent documents container
+                wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "li.colRecentDocument")))
+                print("  ✓ Documents container found")
+            except Exception as e:
+                print(f"  ⚠ Could not find documents container: {e}")
+                driver.quit()
+                return documents
+            
+            # Additional wait for any dynamic content
+            time.sleep(2)
+            
+            # Get the page content
+            page_source = driver.page_source
+            soup = BeautifulSoup(page_source, 'html.parser')
+            
+            # Find the recent documents container
+            doc_container = soup.find('ul', class_='recentDocument')
+            
+            if not doc_container:
+                print("  ⚠ Could not find recent documents container")
+                driver.quit()
+                return documents
+            
+            # Find all document items
+            doc_items = doc_container.find_all('li', class_='colRecentDocument')
+            
+            if not doc_items:
+                print("  ⚠ Could not find any document items")
+                driver.quit()
+                return documents
+            
+            print(f"  ✓ Found {len(doc_items)} document items")
+            
+            processed_count = 0
+            
+            for idx, item in enumerate(doc_items):
+                try:
+                    # Extract category
+                    category_tag = item.find('p', class_='card-title')
+                    category = category_tag.get_text(strip=True) if category_tag else "Document"
+                    
+                    # Extract title
+                    title_tag = item.find('p', class_='card-text')
+                    title = title_tag.get_text(strip=True) if title_tag else None
+                    
+                    if not title:
+                        continue
+                    
+                    # Find link
+                    link_tag = item.find('a', href=True)
+                    
+                    if not link_tag:
+                        # Try clicking the button element
+                        print(f"    Processing [{category}]: {title[:60]}... (button click)")
+                        
+                        try:
+                            # Click the item in the browser
+                            card_element = driver.find_elements(By.CSS_SELECTOR, "li.colRecentDocument")[idx]
+                            driver.execute_script("arguments[0].scrollIntoView(true);", card_element)
+                            time.sleep(0.5)
+                            
+                            card_div = card_element.find_element(By.CSS_SELECTOR, ".card")
+                            card_div.click()
+                            
+                            # Wait for navigation
+                            time.sleep(2)
+                            
+                            # Get current URL and content
+                            current_url = driver.current_url
+                            page_content = driver.page_source
+                            doc_soup = BeautifulSoup(page_content, 'html.parser')
+                            
+                            # Extract content
+                            content_parts = [f"Category: {category}", title]
+                            
+                            for tag in doc_soup.find_all(['h2', 'h3', 'p']):
+                                tag_text = tag.get_text(strip=True)
+                                if tag_text and len(tag_text) > 3:
+                                    content_parts.append(tag_text)
+                            
+                            content = "\n\n".join(content_parts)
+                            description = content[:200]
+                            
+                            documents.append(Document(
+                                id=str(uuid.uuid4()),
+                                website="dpiit.gov.in",
+                                title=f"[{category}] {title}",
+                                description=description,
+                                link=current_url,
+                                content=content,
+                                scraped_at=datetime.now().isoformat()
+                            ))
+                            
+                            # Navigate back
+                            driver.get(documents_url)
+                            wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "li.colRecentDocument")))
+                            time.sleep(2)
+                            
+                            # Refresh content for next iteration
+                            page_source = driver.page_source
+                            soup = BeautifulSoup(page_source, 'html.parser')
+                            doc_container = soup.find('ul', class_='recentDocument')
+                            doc_items = doc_container.find_all('li', class_='colRecentDocument')
+                            
+                            processed_count += 1
+                            continue
+                            
+                        except Exception as e:
+                            print(f"    ⚠ Error clicking button: {e}")
+                            continue
+                    
+                    href = link_tag.get('href')
+                    
+                    # Skip javascript links or empty hrefs
+                    if not href or href.startswith('javascript:') or href == '#':
+                        print(f"    ⚠ Skipping JS/empty link for: {title[:60]}...")
+                        continue
+                    
+                    # Construct full URL
+                    if href.startswith('/'):
+                        full_url = f"{base_url}{href}"
+                    else:
+                        full_url = href if href.startswith('http') else f"{base_url}/{href}"
+                    
+                    # Skip duplicates
+                    if any(doc.link == full_url for doc in documents):
+                        continue
+                    
+                    print(f"    Processing [{category}]: {title[:60]}...")
+                    
+                    try:
+                        # Fetch the document page
+                        doc_response = session.get(full_url, timeout=30, headers={
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                        })
+                        doc_response.raise_for_status()
+                        
+                        # Check if it's a PDF
+                        content_type = doc_response.headers.get('content-type', '').lower()
+                        
+                        if 'application/pdf' in content_type or full_url.endswith('.pdf'):
+                            print(f"      Downloading PDF...")
+                            
+                            try:
+                                pdf_file = io.BytesIO(doc_response.content)
+                                pdf_reader = PyPDF2.PdfReader(pdf_file)
+                                
+                                text_content = []
+                                for page_idx in range(len(pdf_reader.pages)):
+                                    page_obj = pdf_reader.pages[page_idx]
+                                    page_text = page_obj.extract_text()
+                                    text_content.append(page_text)
+                                
+                                pdf_content = "\n\n".join(text_content)
+                                content = f"Category: {category}\n\n{title}\n\n=== PDF Content ===\n\n{pdf_content}"
+                                description = content[:200]
+                                
+                                print(f"      ✓ Extracted PDF text ({len(pdf_content)} chars)")
+                            except Exception as e:
+                                print(f"      ⚠ Error extracting PDF: {e}")
+                                content = f"Category: {category}\n\n{title}"
+                                description = title[:200]
+                        
+                        else:
+                            # HTML page
+                            doc_soup = BeautifulSoup(doc_response.content, 'html.parser')
+                            
+                            # Look for PDF links
+                            pdf_links = doc_soup.find_all('a', href=lambda x: x and x.endswith('.pdf'))
+                            
+                            content_parts = [f"Category: {category}", title]
+                            
+                            if pdf_links:
+                                pdf_href = pdf_links[0].get('href')
+                                
+                                if pdf_href.startswith('/'):
+                                    pdf_url = f"{base_url}{pdf_href}"
+                                else:
+                                    pdf_url = pdf_href if pdf_href.startswith('http') else f"{base_url}/{pdf_href}"
+                                
+                                print(f"      Downloading PDF from link...")
+                                
+                                try:
+                                    pdf_response = session.get(pdf_url, timeout=60)
+                                    pdf_response.raise_for_status()
+                                    
+                                    pdf_file = io.BytesIO(pdf_response.content)
+                                    pdf_reader = PyPDF2.PdfReader(pdf_file)
+                                    
+                                    text_content = []
+                                    for page_idx in range(len(pdf_reader.pages)):
+                                        page_obj = pdf_reader.pages[page_idx]
+                                        page_text = page_obj.extract_text()
+                                        text_content.append(page_text)
+                                    
+                                    pdf_content = "\n\n".join(text_content)
+                                    content_parts.append("=== PDF Content ===")
+                                    content_parts.append(pdf_content)
+                                    full_url = pdf_url
+                                    
+                                    print(f"      ✓ Extracted PDF text ({len(pdf_content)} chars)")
+                                except Exception as e:
+                                    print(f"      ⚠ Error extracting PDF: {e}")
+                            
+                            # Extract text content
+                            for tag in doc_soup.find_all(['h2', 'h3', 'p']):
+                                tag_text = tag.get_text(strip=True)
+                                if tag_text and len(tag_text) > 3:
+                                    content_parts.append(tag_text)
+                            
+                            content = "\n\n".join(content_parts)
+                            description = content[:200]
+                            
+                            print(f"      ✓ Extracted content ({len(content)} chars)")
+                        
+                        time.sleep(1)
+                        
+                        documents.append(Document(
+                            id=str(uuid.uuid4()),
+                            website="dpiit.gov.in",
+                            title=f"[{category}] {title}",
+                            description=description,
+                            link=full_url,
+                            content=content,
+                            scraped_at=datetime.now().isoformat()
+                        ))
+                        
+                        processed_count += 1
+                        
+                    except Exception as e:
+                        print(f"      ⚠ Error processing document page: {e}")
+                        documents.append(Document(
+                            id=str(uuid.uuid4()),
+                            website="dpiit.gov.in",
+                            title=f"[{category}] {title}",
+                            description=title[:200],
+                            link=full_url,
+                            content=f"Category: {category}\n\n{title}",
+                            scraped_at=datetime.now().isoformat()
+                        ))
+                
+                except Exception as e:
+                    print(f"    ⚠ Error parsing document item: {e}")
+                    continue
+            
+            print(f"  ✓ Processed {processed_count} documents")
+            
+        except Exception as e:
+            print(f"  ⚠ Error during browsing: {e}")
+            import traceback
+            traceback.print_exc()
+        
+        finally:
+            driver.quit()
+        
+        print(f"✓ DPIIT Recent Documents: Found {len(documents)} documents")
+        return documents
+        
+    except Exception as e:
+        print(f"✗ DPIIT scraping error: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+def scrape_india_budget() -> List[Document]:
+    """Scrape India Budget PDFs from Ministry of Finance website"""
+    try:
+        print("Starting India Budget scraper...")
+        base_url = "https://www.indiabudget.gov.in"
+        
+        documents = []
+        
+        print("  Fetching main page to discover PDF links...")
+        
+        try:
+            response = session.get(base_url, timeout=30, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find all anchor tags with PDF links
+            pdf_links = soup.find_all('a', href=lambda x: x and x.endswith('.pdf'))
+            
+            print(f"  Found {len(pdf_links)} PDF links on the page")
+            
+            page_documents = 0
+            
+            for link_tag in pdf_links:
+                try:
+                    href = link_tag.get('href')
+                    title = link_tag.get_text(strip=True)
+                    
+                    # Skip empty titles
+                    if not title or title.isspace():
+                        title = href.split('/')[-1]
+                    
+                    # Construct full URL
+                    if href.startswith('http'):
+                        full_url = href
+                    elif href.startswith('/'):
+                        parsed = urlparse(base_url)
+                        full_url = f"{parsed.scheme}://{parsed.netloc}{href}"
+                    else:
+                        full_url = f"{base_url}/{href}"
+                    
+                    content = title
+                    description = title[:200]
+                    date = None
+                    
+                    try:
+                        print(f"    Downloading: {title[:60]}...")
+                        pdf_response = session.get(full_url, timeout=60)
+                        pdf_response.raise_for_status()
+                        
+                        pdf_file = io.BytesIO(pdf_response.content)
+                        pdf_reader = PyPDF2.PdfReader(pdf_file)
+                        
+                        text_content = []
+                        for page_idx in range(len(pdf_reader.pages)):
+                            page = pdf_reader.pages[page_idx]
+                            page_text = page.extract_text()
+                            text_content.append(page_text)
+                        
+                        content = "\n\n".join(text_content)
+                        description = content[:200] if content else title[:200]
+                        
+                        print(f"      ✓ Extracted PDF text ({len(content)} chars)")
+                        
+                        time.sleep(1)
+                        
+                    except Exception as e:
+                        print(f"      ⚠ Error extracting PDF: {e}")
+                        content = title
+                        description = title[:200]
+                    
+                    # Store document in database
+                    documents.append(Document(
+                        id=str(uuid.uuid4()),
+                        website="indiabudget.gov.in",
+                        title=title,
+                        description=description,
+                        link=full_url,
+                        content=content,
+                        date=date,
+                        scraped_at=datetime.now().isoformat()
+                    ))
+                    
+                    page_documents += 1
+                    
+                except Exception as e:
+                    print(f"      ⚠ Error processing PDF link: {e}")
+                    continue
+            
+            print(f"  ✓ Found {page_documents} valid PDF documents")
+            
+        except Exception as e:
+            print(f"  ⚠ Error fetching main page: {e}")
+            return []
+        
+        print(f"✓ India Budget: Found {len(documents)} documents")
+        return documents
+        
+    except Exception as e:
+        print(f"✗ India Budget scraping error: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+    
+def scrape_ibbi() -> List[Document]:
+    """Scrape Insolvency and Bankruptcy Board of India PDFs from main website - First 5 PDFs only"""
+    try:
+        print("Starting IBBI scraper...")
+        base_url = "https://ibbi.gov.in/en"
+        
+        documents = []
+        max_pdfs = 5  # Limit to first 5 PDFs
+        
+        print(f"  Fetching main page to discover PDF links (max {max_pdfs})...")
+        
+        try:
+            response = session.get(base_url, timeout=30, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find all anchor tags with PDF links
+            pdf_links = soup.find_all('a', href=lambda x: x and x.endswith('.pdf'))
+            
+            print(f"  Found {len(pdf_links)} PDF links on the page")
+            print(f"  Processing first {max_pdfs} PDFs only...")
+            
+            page_documents = 0
+            
+            # Limit to first 5 PDFs
+            for link_tag in pdf_links[:max_pdfs]:
+                try:
+                    href = link_tag.get('href')
+                    title = link_tag.get_text(strip=True)
+                    
+                    # Skip empty titles
+                    if not title or title.isspace():
+                        title = href.split('/')[-1]
+                    
+                    # Construct full URL
+                    if href.startswith('http'):
+                        full_url = href
+                    elif href.startswith('/'):
+                        parsed = urlparse(base_url)
+                        full_url = f"{parsed.scheme}://{parsed.netloc}{href}"
+                    else:
+                        full_url = f"{base_url.rstrip('/')}/{href.lstrip('/')}"
+                    
+                    content = title
+                    description = title[:200]
+                    date = None
+                    
+                    try:
+                        print(f"    [{page_documents + 1}/{max_pdfs}] Downloading: {title[:60]}...")
+                        pdf_response = session.get(full_url, timeout=60)
+                        pdf_response.raise_for_status()
+                        
+                        pdf_file = io.BytesIO(pdf_response.content)
+                        pdf_reader = PyPDF2.PdfReader(pdf_file)
+                        
+                        text_content = []
+                        for page_idx in range(len(pdf_reader.pages)):
+                            page = pdf_reader.pages[page_idx]
+                            page_text = page.extract_text()
+                            text_content.append(page_text)
+                        
+                        content = "\n\n".join(text_content)
+                        description = content[:200] if content else title[:200]
+                        
+                        print(f"      ✓ Extracted PDF text ({len(content)} chars)")
+                        
+                        time.sleep(1)
+                        
+                    except Exception as e:
+                        print(f"      ⚠ Error extracting PDF: {e}")
+                        content = title
+                        description = title[:200]
+                    
+                    # Store document in database
+                    documents.append(Document(
+                        id=str(uuid.uuid4()),
+                        website="ibbi.gov.in",
+                        title=title,
+                        description=description,
+                        link=full_url,
+                        content=content,
+                        date=date,
+                        scraped_at=datetime.now().isoformat()
+                    ))
+                    
+                    page_documents += 1
+                    
+                except Exception as e:
+                    print(f"      ⚠ Error processing PDF link: {e}")
+                    continue
+            
+            print(f"  ✓ Found {page_documents} valid PDF documents (limited to {max_pdfs})")
+            
+        except Exception as e:
+            print(f"  ⚠ Error fetching main page: {e}")
+            return []
+        
+        print(f"✓ IBBI: Found {len(documents)} documents")
+        return documents
+        
+    except Exception as e:
+        print(f"✗ IBBI scraping error: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+    
+def scrape_irdai() -> List[Document]:
+    """Scrape IRDAI documents from home page - ALL pages"""
+    try:
+        print("Starting IRDAI scraper...")
+        base_url = "https://irdai.gov.in/home"
+        
+        documents = []
+        page_num = 0
+        total_documents_found = 0
+        
+        print("  Fetching IRDAI documents...")
+        
+        try:
+            # Fetch the main page
+            response = session.get(base_url, timeout=30, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find the main-data div containing all documents
+            main_data_div = soup.find('div', class_='main-data')
+            
+            if not main_data_div:
+                print("  ⚠ Could not find main-data div")
+                return []
+            
+            # Find all media divs within main-data
+            media_divs = main_data_div.find_all('div', class_='media')
+            
+            print(f"  Found {len(media_divs)} document entries")
+            
+            page_documents = 0
+            
+            for media_div in media_divs:
+                try:
+                    # Extract date
+                    date_elem = media_div.find('p', class_='date')
+                    date = None
+                    if date_elem:
+                        date_span = date_elem.find('span', style=lambda x: x and 'color' in x)
+                        if date_span:
+                            date = date_span.get_text(strip=True)
+                    
+                    # Extract title and link from anchor tag
+                    link_tag = media_div.find('a', href=lambda x: x and 'document-detail' in str(x))
+                    
+                    if not link_tag:
+                        continue
+                    
+                    href = link_tag.get('href')
+                    title = link_tag.find('span', class_='text-truncate')
+                    
+                    if title:
+                        title = title.get_text(strip=True)
+                    else:
+                        title = link_tag.get_text(strip=True)
+                    
+                    # Skip empty titles
+                    if not title or title.isspace():
+                        title = "IRDAI Document"
+                    
+                    # Construct full URL
+                    if href.startswith('http'):
+                        full_url = href
+                    elif href.startswith('/'):
+                        parsed = urlparse(base_url)
+                        full_url = f"{parsed.scheme}://{parsed.netloc}{href}"
+                    else:
+                        full_url = f"{base_url.rstrip('/')}/{href.lstrip('/')}"
+                    
+                    content = title
+                    description = title[:200]
+                    
+                    try:
+                        print(f"    Downloading: {title[:60]}...")
+                        
+                        # Fetch the document detail page to get the actual PDF link
+                        doc_response = session.get(full_url, timeout=60, headers={
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                        })
+                        doc_response.raise_for_status()
+                        
+                        doc_soup = BeautifulSoup(doc_response.content, 'html.parser')
+                        
+                        # Find the PDF download link on the detail page
+                        pdf_link = doc_soup.find('a', href=lambda x: x and x.endswith('.pdf'))
+                        
+                        if pdf_link:
+                            pdf_href = pdf_link.get('href')
+                            
+                            if pdf_href.startswith('http'):
+                                pdf_url = pdf_href
+                            elif pdf_href.startswith('/'):
+                                parsed = urlparse(base_url)
+                                pdf_url = f"{parsed.scheme}://{parsed.netloc}{pdf_href}"
+                            else:
+                                pdf_url = f"{base_url.rstrip('/')}/{pdf_href.lstrip('/')}"
+                            
+                            # Download and extract PDF content
+                            pdf_response = session.get(pdf_url, timeout=60)
+                            pdf_response.raise_for_status()
+                            
+                            pdf_file = io.BytesIO(pdf_response.content)
+                            pdf_reader = PyPDF2.PdfReader(pdf_file)
+                            
+                            text_content = []
+                            for page_idx in range(len(pdf_reader.pages)):
+                                page = pdf_reader.pages[page_idx]
+                                page_text = page.extract_text()
+                                text_content.append(page_text)
+                            
+                            content = "\n\n".join(text_content)
+                            description = content[:200] if content else title[:200]
+                            
+                            print(f"      ✓ Extracted PDF text ({len(content)} chars)")
+                        else:
+                            print(f"      ⚠ No PDF link found on detail page")
+                            content = title
+                            description = title[:200]
+                        
+                        time.sleep(1)
+                        
+                    except Exception as e:
+                        print(f"      ⚠ Error extracting IRDAI PDF: {e}")
+                        content = title
+                        description = title[:200]
+                    
+                    # Store document in database
+                    documents.append(Document(
+                        id=str(uuid.uuid4()),
+                        website="irdai.gov.in",
+                        title=title,
+                        description=description,
+                        link=full_url,
+                        content=content,
+                        date=date,
+                        scraped_at=datetime.now().isoformat()
+                    ))
+                    
+                    page_documents += 1
+                    
+                except Exception as e:
+                    print(f"      ⚠ Error processing document entry: {e}")
+                    continue
+            
+            print(f"  ✓ Found {page_documents} valid documents")
+            total_documents_found += page_documents
+            
+        except Exception as e:
+            print(f"  ⚠ Error fetching main page: {e}")
+            return []
+        
+        print(f"✓ IRDAI: Found {len(documents)} documents")
+        return documents
+        
+    except Exception as e:
+        print(f"✗ IRDAI scraping error: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+    
+def scrape_epfo() -> List[Document]:
+    """Scrape EPFO PDFs from home page news section - First 7 PDFs"""
+    try:
+        print("Starting EPFO scraper...")
+        base_url = "https://www.epfindia.gov.in/site_en/index.php"
+        
+        documents = []
+        max_documents = 7
+        
+        print("  Fetching EPFO home page to discover PDF links...")
+        
+        try:
+            response = session.get(base_url, timeout=30, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find the main-data div with id="news_custom"
+            news_div = soup.find('div', class_='info', id='news_custom')
+            
+            if not news_div:
+                print("  ⚠ Could not find news_custom div")
+                return []
+            
+            # Find all anchor tags with PDF links in the news div
+            pdf_links = news_div.find_all('a', href=lambda x: x and x.endswith('.pdf'))
+            
+            print(f"  Found {len(pdf_links)} PDF links in news section")
+            
+            # Limit to first 7 PDFs
+            pdf_links = pdf_links[:max_documents]
+            
+            page_documents = 0
+            
+            for link_tag in pdf_links:
+                try:
+                    href = link_tag.get('href')
+                    title = link_tag.get_text(strip=True)
+                    
+                    # Skip empty titles
+                    if not title or title.isspace():
+                        title = href.split('/')[-1]
+                    
+                    # Construct full URL
+                    if href.startswith('http'):
+                        full_url = href
+                    elif href.startswith('/'):
+                        parsed = urlparse(base_url)
+                        full_url = f"{parsed.scheme}://{parsed.netloc}{href}"
+                    else:
+                        # Handle relative URLs like ../site_docs/PDFs/Updates/...
+                        full_url = f"https://www.epfindia.gov.in{href.replace('../', '/')}"
+                    
+                    content = title
+                    description = title[:200]
+                    date = None
+                    
+                    try:
+                        print(f"    Downloading: {title[:60]}...")
+                        pdf_response = session.get(full_url, timeout=60)
+                        pdf_response.raise_for_status()
+                        
+                        pdf_file = io.BytesIO(pdf_response.content)
+                        pdf_reader = PyPDF2.PdfReader(pdf_file)
+                        
+                        text_content = []
+                        for page_idx in range(len(pdf_reader.pages)):
+                            page = pdf_reader.pages[page_idx]
+                            page_text = page.extract_text()
+                            text_content.append(page_text)
+                        
+                        content = "\n\n".join(text_content)
+                        description = content[:200] if content else title[:200]
+                        
+                        print(f"      ✓ Extracted PDF text ({len(content)} chars)")
+                        
+                        time.sleep(1)
+                        
+                    except Exception as e:
+                        print(f"      ⚠ Error extracting PDF: {e}")
+                        content = title
+                        description = title[:200]
+                    
+                    # Store document in database
+                    documents.append(Document(
+                        id=str(uuid.uuid4()),
+                        website="epfindia.gov.in",
+                        title=title,
+                        description=description,
+                        link=full_url,
+                        content=content,
+                        date=date,
+                        scraped_at=datetime.now().isoformat()
+                    ))
+                    
+                    page_documents += 1
+                    
+                except Exception as e:
+                    print(f"      ⚠ Error processing PDF link: {e}")
+                    continue
+            
+            print(f"  ✓ Found {page_documents} valid PDF documents (limited to {max_documents})")
+            
+        except Exception as e:
+            print(f"  ⚠ Error fetching main page: {e}")
+            return []
+        
+        print(f"✓ EPFO: Found {len(documents)} documents")
+        return documents
+        
+    except Exception as e:
+        print(f"✗ EPFO scraping error: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+    
+def scrape_mospi() -> List[Document]:
+    """Scrape MOSPI press releases from table - First page only"""
+    try:
+        print("Starting MOSPI scraper...")
+        base_url = "https://www.mospi.gov.in/press-release"
+        
+        documents = []
+        
+        print("  Fetching MOSPI press releases...")
+        
+        try:
+            response = session.get(base_url, timeout=30, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find the table with class "views-table"
+            table = soup.find('table', class_='views-table')
+            
+            if not table:
+                print("  ⚠ Could not find press release table")
+                return []
+            
+            # Find all table rows in tbody
+            tbody = table.find('tbody')
+            if not tbody:
+                print("  ⚠ Could not find table body")
+                return []
+            
+            rows = tbody.find_all('tr')
+            
+            if not rows:
+                print("  ⚠ No press releases found in table")
+                return []
+            
+            print(f"  Found {len(rows)} rows in table")
+            
+            page_documents = 0
+            
+            for row in rows:
+                try:
+                    # Find PDF link in the row - look for href ending with .pdf
+                    link_tag = row.find('a', href=lambda x: x and '.pdf' in x)
+                    
+                    if not link_tag:
+                        continue
+                    
+                    href = link_tag.get('href')
+                    title = link_tag.get_text(strip=True)
+                    
+                    # Skip if title is empty
+                    if not title:
+                        continue
+                    
+                    # Extract date from the date cell
+                    date_cell = row.find('span', class_='date-display-single')
+                    date = None
+                    if date_cell:
+                        date = date_cell.get_text(strip=True)
+                    
+                    # Construct full URL (links are already absolute)
+                    if href.startswith('http'):
+                        full_url = href
+                    elif href.startswith('/'):
+                        parsed = urlparse(base_url)
+                        full_url = f"{parsed.scheme}://{parsed.netloc}{href}"
+                    else:
+                        full_url = f"{base_url.rstrip('/')}/{href.lstrip('/')}"
+                    
+                    content = title
+                    description = title[:200]
+                    
+                    try:
+                        print(f"    Downloading: {title[:60]}...")
+                        pdf_response = session.get(full_url, timeout=60)
+                        pdf_response.raise_for_status()
+                        
+                        pdf_file = io.BytesIO(pdf_response.content)
+                        pdf_reader = PyPDF2.PdfReader(pdf_file)
+                        
+                        text_content = []
+                        for page_idx in range(len(pdf_reader.pages)):
+                            page = pdf_reader.pages[page_idx]
+                            page_text = page.extract_text()
+                            if page_text:
+                                text_content.append(page_text)
+                        
+                        if text_content:
+                            content = "\n\n".join(text_content)
+                            description = content[:200]
+                        else:
+                            description = title[:200]
+                        
+                        print(f"      ✓ Extracted PDF text ({len(content)} chars)")
+                        
+                        time.sleep(1)
+                        
+                    except Exception as e:
+                        print(f"      ⚠ Error extracting MOSPI PDF: {e}")
+                        content = title
+                        description = title[:200]
+                    
+                    # Store document in database
+                    documents.append(Document(
+                        id=str(uuid.uuid4()),
+                        website="mospi.gov.in",
+                        title=title,
+                        description=description,
+                        link=full_url,
+                        content=content,
+                        date=date,
+                        scraped_at=datetime.now().isoformat()
+                    ))
+                    
+                    page_documents += 1
+                    
+                except Exception as e:
+                    print(f"      ⚠ Error processing row: {e}")
+                    continue
+            
+            print(f"  ✓ Found {page_documents} documents")
+            
+        except Exception as e:
+            print(f"  ⚠ Error fetching page: {e}")
+            return []
+        
+        print(f"✓ MOSPI: Found {len(documents)} documents")
+        return documents
+        
+    except Exception as e:
+        print(f"✗ MOSPI scraping error: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+def scrape_dor() -> List[Document]:
+    """Scrape DOR press releases - First page only"""
+    try:
+        print("Starting DOR scraper...")
+        base_url = "https://dor.gov.in/press-releases"
+        
+        documents = []
+        
+        print("  Fetching DOR press releases...")
+        
+        try:
+            response = session.get(base_url, timeout=30, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find all divs with class "sthumbnail" containing anchor tags
+            sthumbnail_divs = soup.find_all('div', class_='sthumbnail')
+            
+            if not sthumbnail_divs:
+                print("  ⚠ Could not find press release thumbnails")
+                return []
+            
+            print(f"  Found {len(sthumbnail_divs)} press release entries")
+            
+            page_documents = 0
+            
+            for idx, thumbnail_div in enumerate(sthumbnail_divs):
+                try:
+                    print(f"\n    Processing entry {idx + 1}...")
+                    
+                    # Find the anchor tag in the thumbnail
+                    link_tag = thumbnail_div.find('a', href=True)
+                    
+                    if not link_tag:
+                        print(f"      ⚠ No anchor tag found")
+                        continue
+                    
+                    href = link_tag.get('href')
+                    print(f"      Found href: {href}")
+                    
+                    # Get title from img tag's alt or title attribute
+                    img_tag = link_tag.find('img')
+                    title = None
+                    
+                    if img_tag:
+                        title = img_tag.get('alt') or img_tag.get('title')
+                        print(f"      Title from img: {title}")
+                    
+                    if not title:
+                        title = link_tag.get_text(strip=True)
+                        print(f"      Title from text: {title}")
+                    
+                    if not title:
+                        print(f"      ⚠ No title found, skipping")
+                        continue
+                    
+                    print(f"      Using title: {title[:60]}...")
+                    
+                    # Construct the full URL for the press release page
+                    if href.startswith('http'):
+                        press_release_url = href
+                    elif href.startswith('/'):
+                        parsed = urlparse(base_url)
+                        press_release_url = f"{parsed.scheme}://{parsed.netloc}{href}"
+                    else:
+                        press_release_url = f"{base_url.rstrip('/')}/{href.lstrip('/')}"
+                    
+                    # Extract date from the parent container if available
+                    date = None
+                    parent_div = thumbnail_div.find_parent('div', class_='schemesBox')
+                    if parent_div:
+                        time_tag = parent_div.find('time')
+                        if time_tag:
+                            date = time_tag.get_text(strip=True)
+                            print(f"      Found date: {date}")
+                        else:
+                            print(f"      No time tag found")
+                    else:
+                        print(f"      No schemesBox parent found")
+                    
+                    content = title
+                    description = title[:200]
+                    pdf_url = None
+                    
+                    try:
+                        print(f"      Fetching press release page...")
+                        
+                        # Fetch the press release page to find the PDF link
+                        pr_response = session.get(press_release_url, timeout=60)
+                        pr_response.raise_for_status()
+                        print(f"      ✓ Page loaded successfully")
+                        
+                        pr_soup = BeautifulSoup(pr_response.content, 'html.parser')
+                        
+                        print(f"      Searching for PDF links in pdfLink elements...")
+                        
+                        # Look for li with class "pdfLink"
+                        pdf_link_li = pr_soup.find('li', class_='pdfLink')
+                        
+                        if pdf_link_li:
+                            print(f"      ✓ Found pdfLink element")
+                            
+                            # Find the anchor tag within the pdfLink li
+                            pdf_link = pdf_link_li.find('a', href=True)
+                            
+                            if pdf_link:
+                                pdf_href = pdf_link.get('href')
+                                print(f"      ✓ Found PDF href: {pdf_href}")
+                                
+                                # Construct full PDF URL
+                                if pdf_href.startswith('http'):
+                                    pdf_url = pdf_href
+                                elif pdf_href.startswith('/'):
+                                    parsed = urlparse(base_url)
+                                    pdf_url = f"{parsed.scheme}://{parsed.netloc}{pdf_href}"
+                                else:
+                                    # Handle relative paths
+                                    base_domain = urlparse(press_release_url).scheme + "://" + urlparse(press_release_url).netloc
+                                    if pdf_href.startswith('../'):
+                                        pdf_url = base_domain + '/' + pdf_href.replace('../', '')
+                                    else:
+                                        pdf_url = press_release_url.rstrip('/') + '/' + pdf_href.lstrip('/')
+                                
+                                print(f"      ✓ Constructed PDF URL: {pdf_url}")
+                            else:
+                                print(f"      ⚠ No anchor tag found in pdfLink element")
+                        else:
+                            print(f"      ⚠ No pdfLink element found on page")
+                        
+                        # If PDF found, download and extract content
+                        if pdf_url:
+                            try:
+                                print(f"    Downloading PDF: {title[:60]}...")
+                                pdf_response = session.get(pdf_url, timeout=60)
+                                pdf_response.raise_for_status()
+                                
+                                pdf_file = io.BytesIO(pdf_response.content)
+                                pdf_reader = PyPDF2.PdfReader(pdf_file)
+                                
+                                text_content = []
+                                for page_idx in range(len(pdf_reader.pages)):
+                                    page = pdf_reader.pages[page_idx]
+                                    page_text = page.extract_text()
+                                    if page_text:
+                                        text_content.append(page_text)
+                                
+                                if text_content:
+                                    content = "\n\n".join(text_content)
+                                    description = content[:200]
+                                else:
+                                    description = title[:200]
+                                
+                                print(f"      ✓ Extracted PDF text ({len(content)} chars)")
+                                
+                                time.sleep(1)
+                                
+                            except Exception as e:
+                                print(f"      ⚠ Error extracting PDF: {e}")
+                                content = title
+                                description = title[:200]
+                        else:
+                            print(f"      ⚠ No PDF found on press release page")
+                            content = title
+                            description = title[:200]
+                        
+                    except Exception as e:
+                        print(f"      ⚠ Error fetching press release page: {e}")
+                        content = title
+                        description = title[:200]
+                    
+                    # Store document in database
+                    documents.append(Document(
+                        id=str(uuid.uuid4()),
+                        website="dor.gov.in",
+                        title=title,
+                        description=description,
+                        link=press_release_url,
+                        content=content,
+                        date=date,
+                        scraped_at=datetime.now().isoformat()
+                    ))
+                    
+                    page_documents += 1
+                    
+                except Exception as e:
+                    print(f"      ⚠ Error processing press release: {e}")
+                    continue
+            
+            print(f"  ✓ Found {page_documents} documents")
+            
+        except Exception as e:
+            print(f"  ⚠ Error fetching main page: {e}")
+            return []
+        
+        print(f"✓ DOR: Found {len(documents)} documents")
+        return documents
+        
+    except Exception as e:
+        print(f"✗ DOR scraping error: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
 @app.get("/")
 def read_root():
     return {"message": "Government News Scraper API is running", "mongodb": "connected" if collection is not None else "disconnected"}
@@ -567,7 +1975,17 @@ async def scrape_news(request: ScrapeRequest):
     scraper_map = {
         "RBI": scrape_rbi,
         "Income Tax": scrape_income_tax,
-        "GST Council": scrape_gst_council
+        "GST Council": scrape_gst_council,
+        "ICAI": scrape_icai,
+        "Press Releases": scrape_press_releases,
+         "DPIIT": scrape_dpiit_recent_documents,
+        "India Budget": scrape_india_budget,
+        "IBBI": scrape_ibbi,
+        "IRDAI": scrape_irdai,
+        "EPFO": scrape_epfo,
+        "MOSPI": scrape_mospi,
+        "DOR": scrape_dor
+
     }
     
     loop = asyncio.get_event_loop()
@@ -651,7 +2069,17 @@ async def get_filtered_documents(request: FilterRequest, limit: int = 1000, skip
         source_map = {
             "RBI": "rbi.org.in",
             "Income Tax": "incometaxindia.gov.in",
-            "GST Council": "gstcouncil.gov.in"
+            "GST Council": "gstcouncil.gov.in",
+            "ICAI": "icai.org",
+            "Press Releases": "pib.gov.in",
+            "DPIIT": "dpiit.gov.in",
+            "India Budget": "indiabudget.gov.in",
+            "IBBI": "ibbi.gov.in",
+            "IRDAI": "irdai.gov.in",
+            "EPFO": "epfindia.gov.in" ,
+            "MOSPI": "mospi.gov.in",
+            'DOR': 'dor.gov.in'
+
         }
         
         website_filters = [source_map[source] for source in request.sources if source in source_map]
@@ -1172,7 +2600,16 @@ async def process_documents(request: FilterRequest, limit: int = 1000, skip: int
         source_map = {
             "RBI": "rbi.org.in",
             "Income Tax": "incometaxindia.gov.in",
-            "GST Council": "gstcouncil.gov.in"
+            "GST Council": "gstcouncil.gov.in",
+            "ICAI": "icai.org",
+           "Press Releases": "pib.gov.in",
+           "DPIIT": "dpiit.gov.in",
+            "India Budget": "indiabudget.gov.in",
+            "IBBI": "ibbi.gov.in",
+            "IRDAI": "irdai.gov.in",
+            "EPFO": "epfindia.gov.in" ,
+             "MOSPI": "mospi.gov.in",
+             'DOR': 'dor.gov.in'
         }
         
         website_filters = [source_map[source] for source in request.sources if source in source_map]
