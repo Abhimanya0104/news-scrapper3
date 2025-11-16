@@ -16,7 +16,16 @@ export default function App() {
   const sources = [
     { id: 'RBI', name: 'Reserve Bank of India' },
     { id: 'Income Tax', name: 'Income Tax India' },
-    { id: 'GST Council', name: 'GST Council' }
+    { id: 'GST Council', name: 'GST Council' },
+    { id: 'ICAI', name: 'Institute of Chartered Accountants of India' },
+    { id: 'Press Releases', name: 'PIB Press Releases' },
+     { id: 'DPIIT', name: 'Department for Promotion of Industry and Internal Trade' },
+      { id: 'India Budget', name: 'India Budget (Ministry of Finance)' },
+      { id: 'IBBI', name: 'Insolvency and Bankruptcy Board of India' },
+       { id: 'IRDAI', name: 'Insurance Regulatory and Development Authority of India' },
+       { id: 'EPFO', name: 'Employees Provident Fund Organisation' }  ,
+       { id: 'MOSPI', name: 'Ministry of Statistics and Programme Implementation' },
+       { id: 'DOR', name: 'Department of Revenue' }
   ];
 
   const handleSourceToggle = (sourceId) => {
